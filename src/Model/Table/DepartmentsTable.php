@@ -36,7 +36,7 @@ class DepartmentsTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-
+        $this->addBehavior('Translate', ['fields' => ['department']]);
         $this->setTable('departments');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');

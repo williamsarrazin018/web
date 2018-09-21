@@ -31,7 +31,7 @@
             <?php foreach ($departments as $department): ?>
             <tr>
                 <td><?= $this->Number->format($department->id) ?></td>
-                <td><?= h($department->department) ?></td>
+                <td><?= __(h($department->department)) ?></td>
                 <td><?= h($department->created) ?></td>
                 <td><?= h($department->modified) ?></td>
                 <td><?= $this->Number->format($department->user_id) ?></td>

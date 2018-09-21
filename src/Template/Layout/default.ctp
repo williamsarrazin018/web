@@ -37,7 +37,16 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <body>
         <nav class="top-bar expanded" data-topbar role="navigation">
             <ul class="title-area large-3 medium-4 columns">
-                <li>
+
+                <li class="name">
+                    <h1><a href=""><?= $this->fetch('title') ?></a></h1>
+                </li>
+            </ul>
+            <div class="top-bar-section">
+                <ul class="right">
+                    <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
+                    <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
+                    <li>
                         <?php
                         $loguser = $this->request->getSession()->read('Auth.User');
                         if ($loguser) {
@@ -47,15 +56,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                             echo $this->Html->link('login', ['controller' => 'Users', 'action' => 'login']);
                         }
                         ?>
-                </li>
-                <li class="name">
-                    <h1><a href=""><?= $this->fetch('title') ?></a></h1>
-                </li>
-            </ul>
-            <div class="top-bar-section">
-                <ul class="right">
-                    <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
-                    <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
+                    </li>
+                    <li>
+                        <?= $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['escape' => false]) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link('English', ['action' => 'changeLang', 'en_US'], ['escape' => false]) ?>
+                    </li>
                 </ul>
             </div>
         </nav>

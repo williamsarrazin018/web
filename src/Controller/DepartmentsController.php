@@ -13,6 +13,9 @@ use App\Controller\AppController;
 class DepartmentsController extends AppController
 {
 
+
+    
+    
     public function isAuthorized($user) {
         
         $action = $this->request->getParam('action');

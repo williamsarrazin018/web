@@ -38,3 +38,17 @@ Stack Trace:
 #15 {main}
 
 
+2018-09-21 15:26:35 Warning: Warning (2): mkdir(): Invalid path in [C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Shell\Task\ExtractTask.php, line 751]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+mkdir - [internal], line ??
+Cake\Shell\Task\ExtractTask::_isPathUsable() - CORE\src\Shell\Task\ExtractTask.php, line 751
+Cake\Shell\Task\ExtractTask::main() - CORE\src\Shell\Task\ExtractTask.php, line 213
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 532
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 525
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
