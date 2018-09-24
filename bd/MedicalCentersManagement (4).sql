@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 11, 2018 at 06:03 PM
+-- Generation Time: Sep 24, 2018 at 06:11 PM
 -- Server version: 5.6.37
 -- PHP Version: 5.6.31
 
@@ -44,7 +44,8 @@ CREATE TABLE IF NOT EXISTS `Adresses` (
 --
 
 INSERT INTO `Adresses` (`id`, `adress`, `city`, `zip_code`, `province`, `country`, `details`, `created`, `modified`, `user_id`) VALUES
-(3, '180 rang Point-du-Jour Nord', 'L''Assomption', 'J5W 1G6', 'Quebec', 'Canada', 'Aucuns', '2018-09-08 00:00:00', '2018-09-10 17:49:35', 6);
+(3, '180 rang Point-du-Jour Nord', 'L''Assomption', 'J5W 1G6', 'Quebec', 'Canada', 'Aucuns', '2018-09-08 00:00:00', '2018-09-10 17:49:35', 6),
+(4, '1600 boulevard du souvenir', 'Laval', 'H7L 6A3', 'Quebec', 'Canada', '', '2018-09-24 16:01:03', '2018-09-24 16:01:03', 2);
 
 -- --------------------------------------------------------
 
@@ -63,14 +64,15 @@ CREATE TABLE IF NOT EXISTS `assignments` (
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `assignments`
 --
 
 INSERT INTO `assignments` (`id`, `department_id`, `patient_id`, `assignment_date`, `reason`, `level_id`, `chamber_id`, `created`, `modified`, `user_id`) VALUES
-(1, 1, 1, '2018-09-10', 'Testing 1', 1, 1, '2018-09-10 15:53:10', '2018-09-10 15:53:10', 2);
+(1, 1, 1, '2018-09-10', 'Medical emergency.', 1, 1, '2018-09-10 15:53:10', '2018-09-24 16:09:20', 2),
+(2, 2, 2, '2018-09-24', 'Intense cough.', 1, 1, '2018-09-24 16:10:17', '2018-09-24 16:10:43', 2);
 
 -- --------------------------------------------------------
 
@@ -107,14 +109,16 @@ CREATE TABLE IF NOT EXISTS `departments` (
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `departments`
 --
 
 INSERT INTO `departments` (`id`, `department`, `created`, `modified`, `user_id`) VALUES
-(1, 'Psychology', '2018-09-08 00:00:00', '2018-09-08 00:00:00', 2);
+(1, 'Psychology', '2018-09-08 00:00:00', '2018-09-24 15:50:31', 2),
+(2, 'Rhumatology', '2018-09-24 15:51:03', '2018-09-24 15:53:15', 2),
+(3, 'Cardiology', '2018-09-24 15:52:39', '2018-09-24 15:53:34', 2);
 
 -- --------------------------------------------------------
 
@@ -131,6 +135,55 @@ CREATE TABLE IF NOT EXISTS `Doctors` (
   `modified` datetime NOT NULL,
   `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `files`
+--
+
+CREATE TABLE IF NOT EXISTS `files` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `path` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `modified` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `i18n`
+--
+
+CREATE TABLE IF NOT EXISTS `i18n` (
+  `id` int(11) NOT NULL,
+  `locale` varchar(6) COLLATE utf8_unicode_ci NOT NULL,
+  `model` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `foreign_key` int(10) NOT NULL,
+  `field` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `content` text COLLATE utf8_unicode_ci
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `i18n`
+--
+
+INSERT INTO `i18n` (`id`, `locale`, `model`, `foreign_key`, `field`, `content`) VALUES
+(1, 'fr_CA', 'Departments', 1, 'department', 'Psychologie'),
+(2, 'es_MX', 'Departments', 1, 'department', 'Psicología'),
+(3, 'fr_CA', 'Departments', 2, 'department', 'Rhumatologie'),
+(4, 'fr_CA', 'Departments', 3, 'department', 'Cardiologie'),
+(5, 'es_MX', 'Departments', 2, 'department', 'Reumatología'),
+(6, 'es_MX', 'Departments', 3, 'department', 'Cardiología'),
+(7, 'fr_CA', 'Patients', 1, 'gender', 'Mâle'),
+(8, 'es_MX', 'Patients', 1, 'gender', 'Masculino'),
+(9, 'fr_CA', 'Patients', 2, 'gender', 'Mâle'),
+(10, 'es_MX', 'Patients', 2, 'gender', 'Masculino'),
+(11, 'fr_CA', 'Assignments', 1, 'reason', 'Urgence médicale.'),
+(12, 'es_MX', 'Assignments', 1, 'reason', 'Emergencia médica.'),
+(13, 'fr_CA', 'Assignments', 2, 'reason', 'Toux intense.'),
+(14, 'es_MX', 'Assignments', 2, 'reason', 'Tos intensa.');
 
 -- --------------------------------------------------------
 
@@ -196,14 +249,15 @@ CREATE TABLE IF NOT EXISTS `Patients` (
   `modified` datetime NOT NULL,
   `slug` varchar(191) COLLATE utf8_unicode_ci NOT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `Patients`
 --
 
 INSERT INTO `Patients` (`id`, `adress_id`, `first_name`, `last_name`, `gender`, `birth_date`, `email`, `created`, `modified`, `slug`, `user_id`) VALUES
-(1, 3, 'Arthur', 'Tremble', 'Male', '2013-09-10', 'ASDF@hotmail.com', '2018-09-10 15:52:47', '2018-09-10 15:52:47', 'Arthur', 2);
+(1, 3, 'Arthur', 'Tremble', 'Male', '2013-09-10', 'ASDF@hotmail.com', '2018-09-10 15:52:47', '2018-09-24 15:56:29', 'Arthur', 2),
+(2, 4, 'Arthur', 'Comeau', 'Male', '1970-05-24', 'art@comeau.com', '2018-09-24 16:05:35', '2018-09-24 16:06:23', 'Arthur', 2);
 
 -- --------------------------------------------------------
 
@@ -218,7 +272,7 @@ CREATE TABLE IF NOT EXISTS `Users` (
   `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
-  `type` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'visiteur'
+  `type` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'secretaire'
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -279,6 +333,20 @@ ALTER TABLE `Doctors`
   ADD KEY `user_id` (`user_id`);
 
 --
+-- Indexes for table `files`
+--
+ALTER TABLE `files`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `i18n`
+--
+ALTER TABLE `i18n`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `I18N_LOCALE_FIELD` (`locale`,`model`,`foreign_key`,`field`),
+  ADD KEY `I18N_FIELD` (`model`,`foreign_key`,`field`);
+
+--
 -- Indexes for table `Levels`
 --
 ALTER TABLE `Levels`
@@ -320,7 +388,7 @@ ALTER TABLE `Adresses`
 -- AUTO_INCREMENT for table `assignments`
 --
 ALTER TABLE `assignments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `Chambers`
 --
@@ -330,7 +398,17 @@ ALTER TABLE `Chambers`
 -- AUTO_INCREMENT for table `departments`
 --
 ALTER TABLE `departments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `files`
+--
+ALTER TABLE `files`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `i18n`
+--
+ALTER TABLE `i18n`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `Levels`
 --
@@ -345,7 +423,7 @@ ALTER TABLE `Medical_Centers`
 -- AUTO_INCREMENT for table `Patients`
 --
 ALTER TABLE `Patients`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `Users`
 --
