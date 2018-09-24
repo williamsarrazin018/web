@@ -31,7 +31,11 @@
             echo $this->Form->control('first_name');
             echo $this->Form->control('last_name');
             echo $this->Form->control('gender');
-            echo $this->Form->control('birth_date');
+            echo $this->Form->input('birth_date', array(
+    'label' => 'Birth Date', 
+    'dateFormat' => 'DMY',
+    'minYear' => date('Y') - 100,
+    'maxYear' => date('Y') ));
             echo $this->Form->control('email');
             echo $this->Form->control('slug');
             echo $this->Form->control('user_id', ['options' => $users]);

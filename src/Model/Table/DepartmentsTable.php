@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Model\Table;
 
 use Cake\ORM\Query;
@@ -24,8 +25,7 @@ use Cake\Validation\Validator;
  *
  * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
-class DepartmentsTable extends Table
-{
+class DepartmentsTable extends Table {
 
     /**
      * Initialize method
@@ -33,10 +33,12 @@ class DepartmentsTable extends Table
      * @param array $config The configuration for the Table.
      * @return void
      */
-    public function initialize(array $config)
-    {
+    public function initialize(array $config) {
         parent::initialize($config);
-        $this->addBehavior('Translate', ['fields' => ['department']]);
+        $this->addBehavior('Translate', [
+            'fields' => ['department'],
+            'allowEmptyTranslations' => false
+        ]);
         $this->setTable('departments');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
@@ -61,17 +63,16 @@ class DepartmentsTable extends Table
      * @param \Cake\Validation\Validator $validator Validator instance.
      * @return \Cake\Validation\Validator
      */
-    public function validationDefault(Validator $validator)
-    {
+    public function validationDefault(Validator $validator) {
         $validator
-            ->integer('id')
-            ->allowEmpty('id', 'create');
+                ->integer('id')
+                ->allowEmpty('id', 'create');
 
         $validator
-            ->scalar('department')
-            ->maxLength('department', 255)
-            ->requirePresence('department', 'create')
-            ->notEmpty('department');
+                ->scalar('department')
+                ->maxLength('department', 255)
+                ->requirePresence('department', 'create')
+                ->notEmpty('department');
 
         return $validator;
     }
@@ -83,10 +84,10 @@ class DepartmentsTable extends Table
      * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
      * @return \Cake\ORM\RulesChecker
      */
-    public function buildRules(RulesChecker $rules)
-    {
+    public function buildRules(RulesChecker $rules) {
         $rules->add($rules->existsIn(['user_id'], 'Users'));
 
         return $rules;
     }
+
 }

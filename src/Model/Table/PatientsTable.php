@@ -33,10 +33,15 @@ class PatientsTable extends Table
      * @param array $config The configuration for the Table.
      * @return void
      */
+    
+    
     public function initialize(array $config)
     {
         parent::initialize($config);
-
+        $this->addBehavior('Translate', [
+            'fields' => ['gender'],
+            'allowEmptyTranslations' => false
+        ]);
         $this->setTable('patients');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');

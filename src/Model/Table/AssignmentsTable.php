@@ -43,6 +43,11 @@ class AssignmentsTable extends Table
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
+        $this->addBehavior('Translate', [
+            'fields' => ['reason'],
+            'allowEmptyTranslations' => false
+        ]);
+        
         $this->addBehavior('Timestamp');
 
         $this->belongsTo('Departments', [
