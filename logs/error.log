@@ -2566,3 +2566,51 @@ Stack Trace:
 #17 {main}
 
 
+2018-09-25 22:00:08 Error: [RuntimeException] Cannot insert row in "files_patients" table, it has no primary key.
+Request URL: /patients/edit/1
+Referer URL: http://localhost:8888/CakeMedical/patients/edit/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Table.php(2001): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#1 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Table.php(1914): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#2 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#4 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#6 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(851): Cake\ORM\Table->save(Object(Cake\ORM\Entity), Array)
+#7 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(795): Cake\ORM\Association\BelongsToMany->_saveLinks(Object(App\Model\Entity\Patient), Array, Array)
+#8 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1225): Cake\ORM\Association\BelongsToMany->_saveTarget(Object(App\Model\Entity\Patient), Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#10 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1245): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(729): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\Patient), Array, Array)
+#12 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(321): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\Patient), Array)
+#13 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(295): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\Patient), Array, Array)
+#14 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(260): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\PatientsTable), Object(App\Model\Entity\Patient), Array, Array, true)
+#15 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Table.php(2035): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\PatientsTable), Object(App\Model\Entity\Patient), Array, Array)
+#16 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Table.php(2007): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\Patient), Object(ArrayObject))
+#17 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Table.php(1914): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Patient), Object(ArrayObject))
+#18 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#19 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#20 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#21 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\ORM\Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#22 C:\Program Files (x86)\Ampps\www\CakeMedical\src\Controller\PatientsController.php(109): Cake\ORM\Table->save(Object(App\Model\Entity\Patient))
+#23 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\PatientsController->edit('1')
+#24 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#25 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PatientsController))
+#26 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 C:\Program Files (x86)\Ampps\www\CakeMedical\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+

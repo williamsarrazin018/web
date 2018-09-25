@@ -59,6 +59,11 @@ class PatientsTable extends Table
         $this->hasMany('Assignments', [
             'foreignKey' => 'patient_id'
         ]);
+        $this->belongsToMany('Files', [
+            'foreignKey' => 'patient_id',
+            'targetForeignKey' => 'file_id',
+            'joinTable' => 'files_patients'
+        ]);
     }
 
     /**

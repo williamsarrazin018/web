@@ -47,6 +47,7 @@ class Patient extends Entity
         'user_id' => true,
         'adress' => true,
         'user' => true,
-        'assignments' => true
+        'assignments' => true,
+        'files' => true
     ];
 }

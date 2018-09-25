@@ -63,7 +63,7 @@ class PatientsController extends AppController
     public function view($id = null)
     {
         $patient = $this->Patients->get($id, [
-            'contain' => ['Adresses', 'Users', 'Assignments']
+            'contain' => ['Adresses', 'Users', 'Assignments', 'Files']
         ]);
 
         $this->set('patient', $patient);
@@ -88,7 +88,8 @@ class PatientsController extends AppController
         }
         $adresses = $this->Patients->Adresses->find('list', ['limit' => 200]);
         $users = $this->Patients->Users->find('list', ['limit' => 200]);
-        $this->set(compact('patient', 'adresses', 'users'));
+        $files = $this->Patients->Files->find('list', ['limit' => 200]);
+        $this->set(compact('patient', 'adresses', 'users', 'files'));
     }
 
     /**
@@ -114,7 +115,8 @@ class PatientsController extends AppController
         }
         $adresses = $this->Patients->Adresses->find('list', ['limit' => 200]);
         $users = $this->Patients->Users->find('list', ['limit' => 200]);
-        $this->set(compact('patient', 'adresses', 'users'));
+        $files = $this->Patients->Files->find('list', ['limit' => 200]);
+        $this->set(compact('patient', 'adresses', 'users', 'files'));
     }
 
     /**

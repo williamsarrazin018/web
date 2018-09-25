@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Patient $patient
@@ -17,6 +18,8 @@
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Assignments'), ['controller' => 'Assignments', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Assignment'), ['controller' => 'Assignments', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="patients view large-9 medium-8 columns content">
@@ -68,6 +71,26 @@
         </tr>
     </table>
     <div class="related">
+        <h4><?= __('Related Files') ?></h4>
+        <?php if (!empty($patient->files)): ?>
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <th scope="col"><?= __('Image') ?></th>
+            </tr>
+                <?php foreach ($patient->files as $files): ?>
+            <tr>
+                <td>
+                            <?php
+                            echo $this->Html->image($files->path . $files->name, [
+                                "alt" => $files->name,
+                            ]);
+                            ?>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+<?php endif; ?>
+
         <h4><?= __('Related Assignments') ?></h4>
         <?php if (!empty($patient->assignments)): ?>
         <table cellpadding="0" cellspacing="0">
@@ -106,4 +129,7 @@
         </table>
         <?php endif; ?>
     </div>
+
 </div>
+
+</div>    
