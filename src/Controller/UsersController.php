@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Utility\Text;
 
 /**
  * Users Controller
@@ -15,7 +16,7 @@ class UsersController extends AppController
 
     public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['logout', 'add']);
+        $this->Auth->allow(['logout', 'add', 'confirm']);
     }
 
     public function isAuthorized($user) {
@@ -45,6 +46,9 @@ class UsersController extends AppController
         if ($this->request->is('post')) {
             $user = $this->Auth->identify();
             if ($user) {
+                if ($user['type'] === 'secretaireNC') {
+                    $this->Flash->success(__('Please confirm your account to get full secretary priviledges.'));
+                }
                 $this->Auth->setUser($user);
                 return $this->redirect($this->Auth->redirectUrl());
             }
@@ -65,8 +69,8 @@ class UsersController extends AppController
     public function index()
     {
         $users = $this->paginate($this->Users);
-
-        $this->set(compact('users'));
+        $user = $this->Auth->user();
+        $this->set(compact('users', 'user'));
     }
 
     /**
@@ -81,7 +85,7 @@ class UsersController extends AppController
         $user = $this->Users->get($id, [
             'contain' => ['Patients', 'Assignments']
         ]);
-
+        
         $this->set('user', $user);
     }
 
@@ -93,16 +97,19 @@ class UsersController extends AppController
     public function add()
     {
         $user = $this->Users->newEntity();
+        $uuid = Text::uuid();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect('/emails/index/' . $user['uuid'] . '/' . $user['email'] . '/' . $user['id']);
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
+            
         }
-        $this->set(compact('user'));
+        
+        $this->set(compact('user', 'uuid'));
     }
 
     /**
@@ -145,7 +152,25 @@ class UsersController extends AppController
         } else {
             $this->Flash->error(__('The user could not be deleted. Please, try again.'));
         }
-
+        
         return $this->redirect(['action' => 'index']);
+    }
+    
+    public function confirm($id = null)
+    {
+        
+        $user = $this->Users->get($id, [
+            'contain' => []
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $user = $this->Users->patchEntity($user, $this->request->getData());
+            if ($this->Users->save($user)) {
+                $this->Flash->success(__('Your e-mail has been confirmed.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The e-mail could not be confirmed. Please, try again.'));
+        }
+        $this->set(compact('user'));
     }
 }

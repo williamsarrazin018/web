@@ -17,7 +17,7 @@ class AdressesController extends AppController
         
         $action = $this->request->getParam('action');
         
-        if (in_array($action, ['view', 'add'])) {
+        if (in_array($action, ['view'])) {
             return true;
         }
 

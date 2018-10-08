@@ -2,9 +2,11 @@
 namespace App\Model\Table;
 
 use Cake\ORM\Query;
+use Cake\Auth\DefaultPasswordHasher;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
+use Cake\Utility\Security;
 
 /**
  * Users Model
@@ -108,6 +110,12 @@ class UsersTable extends Table
             ->maxLength('type', 255)
             ->requirePresence('type', 'create')
             ->notEmpty('type');
+        
+        $validator
+            ->scalar('uuid')
+            ->maxLength('uuid', 255)
+            ->requirePresence('uuid', 'create')
+            ->notEmpty('uuid');
 
         return $validator;
     }
@@ -126,4 +134,7 @@ class UsersTable extends Table
 
         return $rules;
     }
+    
+
+    
 }

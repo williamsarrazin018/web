@@ -22,7 +22,8 @@
             echo $this->Form->control('email');
             echo $this->Form->control('password');
             echo $this->Form->control('username');
-            echo $this->Form->control('type');
+            echo $this->Form->hidden('type');
+            echo $this->Form->hidden('uuid', ['value' => $uuid]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

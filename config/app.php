@@ -1,4 +1,5 @@
 <?php
+
 return [
     /**
      * Debug Level:
@@ -10,7 +11,6 @@ return [
      * true: Errors and warnings shown.
      */
     'debug' => filter_var(env('DEBUG', true), FILTER_VALIDATE_BOOLEAN),
-
     /**
      * Configure basic information about the application.
      *
@@ -59,7 +59,6 @@ return [
             'locales' => [APP . 'Locale' . DS],
         ],
     ],
-
     /**
      * Security and encryption configuration
      *
@@ -70,7 +69,6 @@ return [
     'Security' => [
         'salt' => env('SECURITY_SALT', 'a969793e8a8132b2001944d57d2efc8bf0a29face45b14e04fd1fe29a523a5ad'),
     ],
-
     /**
      * Apply timestamps with the last modified time to static assets (js, css, images).
      * Will append a querystring parameter containing the time the file was modified.
@@ -80,10 +78,9 @@ return [
      * enable timestamping regardless of debug value.
      */
     'Asset' => [
-        //'timestamp' => true,
-        // 'cacheTime' => '+1 year'
+    //'timestamp' => true,
+    // 'cacheTime' => '+1 year'
     ],
-
     /**
      * Configure the cache adapters.
      */
@@ -93,7 +90,6 @@ return [
             'path' => CACHE,
             'url' => env('CACHE_DEFAULT_URL', null),
         ],
-
         /**
          * Configure the cache used for general framework caching.
          * Translation cache files are stored with this configuration.
@@ -108,7 +104,6 @@ return [
             'duration' => '+1 years',
             'url' => env('CACHE_CAKECORE_URL', null),
         ],
-
         /**
          * Configure the cache for model and datasource caches. This cache
          * configuration is used to store schema descriptions, and table listings
@@ -123,7 +118,6 @@ return [
             'duration' => '+1 years',
             'url' => env('CACHE_CAKEMODEL_URL', null),
         ],
-
         /**
          * Configure the cache for routes. The cached routes collection is built the
          * first time the routes are processed via `config/routes.php`.
@@ -138,7 +132,6 @@ return [
             'url' => env('CACHE_CAKEROUTES_URL', null),
         ],
     ],
-
     /**
      * Configure the Error and Exception handlers used by your application.
      *
@@ -175,7 +168,6 @@ return [
         'log' => true,
         'trace' => true,
     ],
-
     /**
      * Email configuration.
      *
@@ -197,21 +189,25 @@ return [
      */
     'EmailTransport' => [
         'default' => [
-            'className' => 'Cake\Mailer\Transport\MailTransport',
-            /*
-             * The following keys are used in SMTP transports:
-             */
+            'className' => 'Mail',
+            // The following keys are used in SMTP transports
             'host' => 'localhost',
             'port' => 25,
             'timeout' => 30,
-            'username' => null,
-            'password' => null,
+            'username' => 'user',
+            'password' => 'secret',
             'client' => null,
             'tls' => null,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
+        'gmail' => [
+            'host' => 'ssl://smtp.gmail.com',
+            'port' => 465,
+            'username' => 'williamsarrazinweb@gmail.com',
+            'password' => 'eotrrlwvaqdjaqdc',
+            'className' => 'Smtp'
+        ]
     ],
-
     /**
      * Email delivery profiles
      *
@@ -223,13 +219,12 @@ return [
      */
     'Email' => [
         'default' => [
-            'transport' => 'default',
-            'from' => 'you@localhost',
-            //'charset' => 'utf-8',
-            //'headerCharset' => 'utf-8',
+            'transport' => 'gmail',
+            'from' => 'williamsarrazinweb@gmail.com',
+        //'charset' => 'utf-8',
+        //'headerCharset' => 'utf-8',
         ],
     ],
-
     /**
      * Connection information used by the ORM to connect
      * to your application's datastores.
@@ -247,6 +242,7 @@ return [
         'default' => [
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
+            //'driver' => 'Cake\Database\Driver\Sqlite',
             'persistent' => false,
             'host' => 'localhost',
             /*
@@ -258,6 +254,7 @@ return [
             'username' => 'root',
             'password' => 'mysql',
             'database' => 'MedicalCentersManagement',
+            //'database' => ROOT . DS . 'sqlite' . DS . 'default.sqlite',
             /*
              * You do not need to set this flag to use full utf-8 encoding (internal default since CakePHP 3.6).
              */
@@ -266,7 +263,6 @@ return [
             'flags' => [],
             'cacheMetadata' => true,
             'log' => false,
-
             /**
              * Set identifier quoting to true if you are using reserved words or
              * special characters in your table or column names. Enabling this
@@ -276,7 +272,6 @@ return [
              * manipulated before being executed.
              */
             'quoteIdentifiers' => false,
-
             /**
              * During development, if using MySQL < 5.6, uncommenting the
              * following line could boost the speed at which schema metadata is
@@ -285,22 +280,22 @@ return [
              * which is the recommended value in production environments
              */
             //'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
-
             'url' => env('DATABASE_URL', null),
         ],
-
         /**
          * The test connection is used during the test suite.
          */
         'test' => [
             'className' => 'Cake\Database\Connection',
-            'driver' => 'Cake\Database\Driver\Mysql',
+            //'driver' => 'Cake\Database\Driver\Mysql',
+            'driver' => 'Cake\Database\Driver\Sqlite',
             'persistent' => false,
             'host' => 'localhost',
             //'port' => 'non_standard_port_number',
             'username' => 'my_app',
             'password' => 'secret',
-            'database' => 'test_myapp',
+            //'database' => 'test_myapp',
+            'database' => ROOT . DS . 'sqlite' . DS . 'default.sqlite',
             //'encoding' => 'utf8mb4',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
@@ -310,7 +305,6 @@ return [
             'url' => env('DATABASE_TEST_URL', null),
         ],
     ],
-
     /**
      * Configures logging options
      */
@@ -340,7 +334,6 @@ return [
             'scopes' => ['queriesLog'],
         ],
     ],
-
     /**
      * Session configuration.
      *

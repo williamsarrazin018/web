@@ -52,3 +52,24 @@ Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
 
 
 
+2018-10-08 20:18:57 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'medicalcentersmanagement.alls' doesn't exist in C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('All')
+#10 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('All')
+#11 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('All')
+#12 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\Program Files (x86)\Ampps\www\CakeMedical\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+

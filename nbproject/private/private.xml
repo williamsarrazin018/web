@@ -3,14 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Model/Entity/Patient.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Controller/PatientsController.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Controller/FilesController.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Model/Table/PatientsTable.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Model/Table/FilesTable.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Template/Patients/view.ctp</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Template/Patients/add.ctp</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Template/Patients/edit.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Template/Users/index.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Controller/UsersController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Template/MedicalCenters/add.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Controller/AdressesController.php</file>
         </group>
     </open-files>
 </project-private>
