@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-09-21 15:27+0000\n"
-"PO-Revision-Date: 2018-09-24 11:13-0400\n"
+"POT-Creation-Date: 2018-10-11 01:20+0000\n"
+"PO-Revision-Date: 2018-10-10 21:48-0400\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,350 +15,976 @@ msgstr ""
 "Last-Translator: \n"
 "Language: fr_CA\n"
 
-#: Controller/AdressesController.php:83;108
+#: /Controller/AdressesController.php:102;128
 msgid "The adress has been saved."
 msgstr "L'adresse a été sauvée."
 
-#: Controller/AdressesController.php:87;112
+#: /Controller/AdressesController.php:106;132
 msgid "The adress could not be saved. Please, try again."
 msgstr ""
 "L'adresse n'a pas pu être sauvegardée. S'll vous plaît, essayez encore."
 
-#: Controller/AdressesController.php:130
+#: /Controller/AdressesController.php:151
 msgid "The adress has been deleted."
 msgstr "L'adresse a été supprimée."
 
-#: Controller/AdressesController.php:132
+#: /Controller/AdressesController.php:153
 msgid "The adress could not be deleted. Please, try again."
 msgstr "L'adresse n'a pas pu être supprimée. S'll vous plaît, essayez encore."
 
-#: Controller/AssignmentsController.php:83;112
+#: /Controller/AssignmentsController.php:84;114
 msgid "The assignment has been saved."
 msgstr "L'affectation a été sauvegardée."
 
-#: Controller/AssignmentsController.php:87;116
+#: /Controller/AssignmentsController.php:88;118
 msgid "The assignment could not be saved. Please, try again."
 msgstr ""
 "L'affectation n'a pas pu être enregistrée. S'll vous plaît, essayez encore."
 
-#: Controller/AssignmentsController.php:138
+#: /Controller/AssignmentsController.php:141
 msgid "The assignment has been deleted."
 msgstr "L'assignation a été supprimée."
 
-#: Controller/AssignmentsController.php:140
+#: /Controller/AssignmentsController.php:143
 msgid "The assignment could not be deleted. Please, try again."
 msgstr ""
 "L'assignation n'a pas pu être supprimée. S'll vous plaît, essayez encore."
 
-#: Controller/ChambersController.php:83;110
+#: /Controller/ChambersController.php:84;112
 msgid "The chamber has been saved."
 msgstr "La chambre a été sauvée."
 
-#: Controller/ChambersController.php:87;114
+#: /Controller/ChambersController.php:88;116
 msgid "The chamber could not be saved. Please, try again."
 msgstr "La chambre n'a pas pu être sauvée. S'll vous plaît, essayez encore."
 
-#: Controller/ChambersController.php:134
+#: /Controller/ChambersController.php:137
 msgid "The chamber has been deleted."
 msgstr "La chambre a été supprimée."
 
-#: Controller/ChambersController.php:136
+#: /Controller/ChambersController.php:139
 msgid "The chamber could not be deleted. Please, try again."
 msgstr "La chambre n'a pas pu être supprimée. S'll vous plaît, essayez encore."
 
-#: Controller/DepartmentsController.php:84;109
+#: /Controller/DepartmentsController.php:88;114
 msgid "The department has been saved."
 msgstr "Le départ ement a été sauvé."
 
-#: Controller/DepartmentsController.php:88;113
+#: /Controller/DepartmentsController.php:92;118
 msgid "The department could not be saved. Please, try again."
 msgstr "Le ministère n'a pas pu être sauvé. S'll vous plaît, essayez encore."
 
-#: Controller/DepartmentsController.php:131
+#: /Controller/DepartmentsController.php:137
 msgid "The department has been deleted."
 msgstr "Le ministère a été supprimé."
 
-#: Controller/DepartmentsController.php:133
+#: /Controller/DepartmentsController.php:139
 msgid "The department could not be deleted. Please, try again."
 msgstr ""
 "Le ministère n'a pas pu être supprimé. S'll vous plaît, essayez encore."
 
-#: Controller/DoctorsController.php:83;110
+#: /Controller/DoctorsController.php:84;112
 msgid "The doctor has been saved."
 msgstr "Le docteur a été sauvé."
 
-#: Controller/DoctorsController.php:87;114
+#: /Controller/DoctorsController.php:88;116
 msgid "The doctor could not be saved. Please, try again."
 msgstr "Le docteur n'a pas pu être sauvé. S'll vous plaît, essayez encore."
 
-#: Controller/DoctorsController.php:134
+#: /Controller/DoctorsController.php:137
 msgid "The doctor has been deleted."
 msgstr "Le médecin a été supprimé."
 
-#: Controller/DoctorsController.php:136
+#: /Controller/DoctorsController.php:139
 msgid "The doctor could not be deleted. Please, try again."
 msgstr "Le médecin n'a pas pu être supprimé. S'll vous plaît, essayez encore."
 
-#: Controller/LevelsController.php:82;107
+#: /Controller/EmailsController.php:14
+msgid "A confirmation email has been sent."
+msgstr "UN email de confirmation a été envoyé."
+
+#: /Controller/FilesController.php:86
+msgid "File has been uploaded and inserted successfully."
+msgstr "Fichier a été téléchargé et inséré avec succès."
+
+#: /Controller/FilesController.php:88
+msgid "Unable to upload file, please try again."
+msgstr ""
+"Impossible de télécharger le fichier, S'il vous plaît essayer à nouveau."
+
+#: /Controller/FilesController.php:91
+msgid "Unable to save file, please try again."
+msgstr "Impossible d'enregistrer le fichier, Veuillez réessayer."
+
+#: /Controller/FilesController.php:94
+msgid "Please choose a file to upload."
+msgstr "Veuillez choisir un fichier à télécharger."
+
+#: /Controller/FilesController.php:116
+msgid "The file has been saved."
+msgstr "Le fichier a été sauvegardé."
+
+#: /Controller/FilesController.php:120
+msgid "The file could not be saved. Please, try again."
+msgstr ""
+"Le fichier n'a pas pu être enregistré. S'Ll vous plaît, essayez encore."
+
+#: /Controller/FilesController.php:138
+msgid "The file has been deleted."
+msgstr "Le fichier a été supprimé."
+
+#: /Controller/FilesController.php:140
+msgid "The file could not be deleted. Please, try again."
+msgstr "Le fichier n'a pas pu être supprimé. S'Ll vous plaît, essayez encore."
+
+#: /Controller/LevelsController.php:85;111
 msgid "The level has been saved."
 msgstr "Le niveau a été sauvegardé."
 
-#: Controller/LevelsController.php:86;111
+#: /Controller/LevelsController.php:89;115
 msgid "The level could not be saved. Please, try again."
 msgstr "Le niveau n'a pas pu être enregistré. S'll vous plaît, essayez encore."
 
-#: Controller/LevelsController.php:129
+#: /Controller/LevelsController.php:134
 msgid "The level has been deleted."
 msgstr "Le niveau a été supprimé."
 
-#: Controller/LevelsController.php:131
+#: /Controller/LevelsController.php:136
 msgid "The level could not be deleted. Please, try again."
 msgstr "Le niveau n'a pas pu être supprimé. S'll vous plaît, essayez encore."
 
-#: Controller/MedicalCentersController.php:83;109
+#: /Controller/MedicalCentersController.php:86;113
 msgid "The medical center has been saved."
 msgstr "Le centre médical a été sauvé."
 
-#: Controller/MedicalCentersController.php:87;113
+#: /Controller/MedicalCentersController.php:90;117
 msgid "The medical center could not be saved. Please, try again."
 msgstr ""
 "Le centre médical n'a pas pu être sauvé. S'll vous plaît, essayez encore."
 
-#: Controller/MedicalCentersController.php:132
+#: /Controller/MedicalCentersController.php:137
 msgid "The medical center has been deleted."
 msgstr "Le centre médical a été supprimé."
 
-#: Controller/MedicalCentersController.php:134
+#: /Controller/MedicalCentersController.php:139
 msgid "The medical center could not be deleted. Please, try again."
 msgstr ""
 "Le centre médical n'a pas pu être supprimé. S'll vous plaît, essayez encore."
 
-#: Controller/PatientsController.php:83;109
+#: /Controller/PatientsController.php:85;113
 msgid "The patient has been saved."
 msgstr "Le patient a été sauvé."
 
-#: Controller/PatientsController.php:87;113
+#: /Controller/PatientsController.php:89;117
 msgid "The patient could not be saved. Please, try again."
 msgstr "Le patient n'a pas pu être sauvé. S'll vous plaît, essayez encore."
 
-#: Controller/PatientsController.php:132
+#: /Controller/PatientsController.php:138
 msgid "The patient has been deleted."
 msgstr "Le patient"
 
-#: Controller/PatientsController.php:134
+#: /Controller/PatientsController.php:140
 msgid "The patient could not be deleted. Please, try again."
 msgstr "Le patient n'a pas pu être supprimé. S'll vous plaît, essayez encore."
 
-#: Controller/UsersController.php:99;123
+#: /Controller/UsersController.php:50
+msgid "Please confirm your account to get full secretary priviledges."
+msgstr ""
+"Confirmer votre compte pour avoir accès à tous les droits de secrétaire."
+
+#: /Controller/UsersController.php:104;130
 msgid "The user has been saved."
 msgstr "L'utilisateur a été enregistré."
 
-#: Controller/UsersController.php:103;127
+#: /Controller/UsersController.php:108;134
 msgid "The user could not be saved. Please, try again."
 msgstr "L'utilisateur n'a pas pu être sauvé. Veuillez réessayer."
 
-#: Controller/UsersController.php:144
+#: /Controller/UsersController.php:151
 msgid "The user has been deleted."
 msgstr "L'utilisateur a été supprimé."
 
-#: Controller/UsersController.php:146
+#: /Controller/UsersController.php:153
 msgid "The user could not be deleted. Please, try again."
 msgstr ""
 "L'utilisateur n'a pas pu être supprimé. S'll vous plaît, essayez encore."
 
-#: Template/Adresses/add.ctp:9 Template/Adresses/edit.ctp:9
-#: Template/Adresses/index.ctp:9;32 Template/Adresses/view.ctp:9;78;117
-#: Template/Assignments/add.ctp:9 Template/Assignments/edit.ctp:9
-#: Template/Assignments/index.ctp:9;38 Template/Assignments/view.ctp:9
-#: Template/Chambers/add.ctp:9 Template/Chambers/edit.ctp:9
-#: Template/Chambers/index.ctp:9;31 Template/Chambers/view.ctp:9;69
-#: Template/Departments/add.ctp:9 Template/Departments/edit.ctp:9
-#: Template/Departments/index.ctp:9;27 Template/Departments/view.ctp:9;56;92
-#: Template/Doctors/add.ctp:9 Template/Doctors/edit.ctp:9
-#: Template/Doctors/index.ctp:9;29 Template/Doctors/view.ctp:9
-#: Template/Levels/add.ctp:9 Template/Levels/edit.ctp:9
-#: Template/Levels/index.ctp:9;27 Template/Levels/view.ctp:9;56;92
-#: Template/MedicalCenters/add.ctp:9 Template/MedicalCenters/edit.ctp:9
-#: Template/MedicalCenters/index.ctp:9;31 Template/MedicalCenters/view.ctp:9;72
-#: Template/Patients/add.ctp:9 Template/Patients/edit.ctp:9
-#: Template/Patients/index.ctp:9;35 Template/Patients/view.ctp:9;85
-#: Template/Users/add.ctp:9 Template/Users/edit.ctp:9
-#: Template/Users/index.ctp:9;29 Template/Users/view.ctp:9;68;108
+#: /Controller/UsersController.php:168
+msgid "Your e-mail has been confirmed."
+msgstr "Votre e-mail a été confirmé."
+
+#: /Controller/UsersController.php:172
+msgid "The e-mail could not be confirmed. Please, try again."
+msgstr "L'e-mail n'a pas pu être confirmé.  Veuillez réessayez."
+
+#: /Template/Adresses/add.ctp:9 /Template/Adresses/edit.ctp:9
+#: /Template/Adresses/index.ctp:9;76 /Template/Adresses/view.ctp:9;111;145
+#: /Template/Assignments/add.ctp:9 /Template/Assignments/edit.ctp:9
+#: /Template/Assignments/index.ctp:9;76 /Template/Assignments/view.ctp:9
+#: /Template/Chambers/add.ctp:9 /Template/Chambers/edit.ctp:9
+#: /Template/Chambers/index.ctp:9;73 /Template/Chambers/view.ctp:9;102
+#: /Template/Departments/add.ctp:9 /Template/Departments/edit.ctp:9
+#: /Template/Departments/index.ctp:9;71 /Template/Departments/view.ctp:9;92
+#: /Template/Doctors/add.ctp:9 /Template/Doctors/edit.ctp:9
+#: /Template/Doctors/index.ctp:9;58 /Template/Doctors/view.ctp:9
+#: /Template/Files/add.ctp:9 /Template/Files/edit.ctp:9
+#: /Template/Files/index.ctp:9;72 /Template/Files/view.ctp:9
+#: /Template/Levels/add.ctp:9 /Template/Levels/edit.ctp:9
+#: /Template/Levels/index.ctp:9;71 /Template/Levels/view.ctp:9
+#: /Template/MedicalCenters/add.ctp:9 /Template/MedicalCenters/edit.ctp:9
+#: /Template/MedicalCenters/index.ctp:9;75 /Template/MedicalCenters/view.ctp:9
+#: /Template/Patients/add.ctp:10 /Template/Patients/edit.ctp:9
+#: /Template/Patients/index.ctp:9;77 /Template/Patients/view.ctp:10;135
+#: /Template/Users/add.ctp:9 /Template/Users/confirm.ctp:9
+#: /Template/Users/edit.ctp:9 /Template/Users/index.ctp:9;73
+#: /Template/Users/login.ctp:9 /Template/Users/view.ctp:9
 msgid "Actions"
 msgstr "Actions"
 
-#: Template/Adresses/add.ctp:10 Template/Adresses/edit.ctp:16
-#: Template/Adresses/view.ctp:12 Template/MedicalCenters/add.ctp:11
-#: Template/MedicalCenters/edit.ctp:17 Template/MedicalCenters/index.ctp:11
-#: Template/MedicalCenters/view.ctp:14 Template/Patients/add.ctp:11
-#: Template/Patients/edit.ctp:17 Template/Patients/index.ctp:11
-#: Template/Patients/view.ctp:14
-msgid "List Adresses"
-msgstr "Liste des adresses"
+#: /Template/Adresses/add.ctp:12 /Template/Adresses/edit.ctp:12
+#: /Template/Adresses/index.ctp:12 /Template/Adresses/view.ctp:12
+#: /Template/Assignments/add.ctp:12 /Template/Assignments/edit.ctp:12
+#: /Template/Assignments/index.ctp:12 /Template/Assignments/view.ctp:12
+#: /Template/Chambers/add.ctp:12 /Template/Chambers/edit.ctp:12
+#: /Template/Chambers/index.ctp:12 /Template/Chambers/view.ctp:12
+#: /Template/Departments/add.ctp:12 /Template/Departments/edit.ctp:12
+#: /Template/Departments/index.ctp:12 /Template/Departments/view.ctp:12
+#: /Template/Doctors/add.ctp:12 /Template/Doctors/edit.ctp:12
+#: /Template/Doctors/index.ctp:12 /Template/Doctors/view.ctp:12
+#: /Template/Files/add.ctp:12 /Template/Files/edit.ctp:12
+#: /Template/Files/index.ctp:12 /Template/Files/view.ctp:12
+#: /Template/Levels/add.ctp:12 /Template/Levels/edit.ctp:12
+#: /Template/Levels/index.ctp:12 /Template/Levels/view.ctp:12
+#: /Template/MedicalCenters/add.ctp:12 /Template/MedicalCenters/edit.ctp:12
+#: /Template/MedicalCenters/index.ctp:12 /Template/MedicalCenters/view.ctp:12
+#: /Template/Patients/add.ctp:13 /Template/Patients/edit.ctp:12
+#: /Template/Patients/index.ctp:12 /Template/Patients/view.ctp:13
+#: /Template/Users/add.ctp:12 /Template/Users/confirm.ctp:12
+#: /Template/Users/edit.ctp:12 /Template/Users/index.ctp:12
+#: /Template/Users/view.ctp:12
+msgid "See patients"
+msgstr "Patients"
 
-#: Template/Adresses/add.ctp:11 Template/Adresses/edit.ctp:17
-#: Template/Adresses/index.ctp:11 Template/Adresses/view.ctp:14
-#: Template/Doctors/add.ctp:11 Template/Doctors/edit.ctp:17
-#: Template/Doctors/index.ctp:11 Template/Doctors/view.ctp:14
-#: Template/MedicalCenters/add.ctp:10 Template/MedicalCenters/edit.ctp:16
-#: Template/MedicalCenters/view.ctp:12
-msgid "List Medical Centers"
-msgstr "Liste des centres médicaux"
+#: /Template/Adresses/add.ctp:13 /Template/Adresses/edit.ctp:13
+#: /Template/Adresses/index.ctp:13 /Template/Adresses/view.ctp:13
+#: /Template/Assignments/add.ctp:13 /Template/Assignments/edit.ctp:13
+#: /Template/Assignments/index.ctp:13 /Template/Assignments/view.ctp:13
+#: /Template/Chambers/add.ctp:13 /Template/Chambers/edit.ctp:13
+#: /Template/Chambers/index.ctp:13 /Template/Chambers/view.ctp:13
+#: /Template/Departments/add.ctp:13 /Template/Departments/edit.ctp:13
+#: /Template/Departments/index.ctp:13 /Template/Departments/view.ctp:13
+#: /Template/Doctors/add.ctp:13 /Template/Doctors/edit.ctp:13
+#: /Template/Doctors/index.ctp:13 /Template/Doctors/view.ctp:13
+#: /Template/Files/add.ctp:13 /Template/Files/edit.ctp:13
+#: /Template/Files/index.ctp:13 /Template/Files/view.ctp:13
+#: /Template/Levels/add.ctp:13 /Template/Levels/edit.ctp:13
+#: /Template/Levels/index.ctp:13 /Template/Levels/view.ctp:13
+#: /Template/MedicalCenters/add.ctp:13 /Template/MedicalCenters/edit.ctp:13
+#: /Template/MedicalCenters/index.ctp:13 /Template/MedicalCenters/view.ctp:13
+#: /Template/Patients/add.ctp:14 /Template/Patients/edit.ctp:13
+#: /Template/Patients/index.ctp:13 /Template/Patients/view.ctp:14
+#: /Template/Users/add.ctp:13 /Template/Users/confirm.ctp:13
+#: /Template/Users/edit.ctp:13 /Template/Users/index.ctp:13
+#: /Template/Users/view.ctp:13
+msgid "See assignments"
+msgstr "Affectations"
 
-#: Template/Adresses/add.ctp:12 Template/Adresses/edit.ctp:18
-#: Template/Adresses/index.ctp:12 Template/Adresses/view.ctp:15
-#: Template/Doctors/add.ctp:12 Template/Doctors/edit.ctp:18
-#: Template/Doctors/index.ctp:12 Template/Doctors/view.ctp:15
-#: Template/MedicalCenters/index.ctp:10 Template/MedicalCenters/view.ctp:13
+#: /Template/Adresses/add.ctp:14 /Template/Adresses/edit.ctp:14
+#: /Template/Adresses/index.ctp:14 /Template/Adresses/view.ctp:14
+#: /Template/Assignments/add.ctp:14 /Template/Assignments/edit.ctp:14
+#: /Template/Assignments/index.ctp:14 /Template/Assignments/view.ctp:14
+#: /Template/Chambers/add.ctp:14 /Template/Chambers/edit.ctp:14
+#: /Template/Chambers/index.ctp:14 /Template/Chambers/view.ctp:14
+#: /Template/Departments/add.ctp:14 /Template/Departments/edit.ctp:14
+#: /Template/Departments/index.ctp:14 /Template/Departments/view.ctp:14
+#: /Template/Doctors/add.ctp:14 /Template/Doctors/edit.ctp:14
+#: /Template/Doctors/index.ctp:14 /Template/Doctors/view.ctp:14
+#: /Template/Files/add.ctp:14 /Template/Files/edit.ctp:14
+#: /Template/Files/index.ctp:14 /Template/Files/view.ctp:14
+#: /Template/Levels/add.ctp:14 /Template/Levels/edit.ctp:14
+#: /Template/Levels/index.ctp:14 /Template/Levels/view.ctp:14
+#: /Template/MedicalCenters/add.ctp:14 /Template/MedicalCenters/edit.ctp:14
+#: /Template/MedicalCenters/index.ctp:14 /Template/MedicalCenters/view.ctp:14
+#: /Template/Patients/add.ctp:15 /Template/Patients/edit.ctp:14
+#: /Template/Patients/index.ctp:14 /Template/Patients/view.ctp:15
+#: /Template/Users/add.ctp:14 /Template/Users/confirm.ctp:14
+#: /Template/Users/edit.ctp:14 /Template/Users/index.ctp:14
+#: /Template/Users/view.ctp:14
+msgid "See adresses"
+msgstr "Adresses"
+
+#: /Template/Adresses/add.ctp:15;28;51 /Template/Adresses/edit.ctp:15;28;51
+#: /Template/Adresses/index.ctp:15;28;51 /Template/Adresses/view.ctp:15;28;51
+#: /Template/Assignments/add.ctp:15;28;51
+#: /Template/Assignments/edit.ctp:15;28;51
+#: /Template/Assignments/index.ctp:15;28;51
+#: /Template/Assignments/view.ctp:15;28;51 /Template/Chambers/add.ctp:15;28;51
+#: /Template/Chambers/edit.ctp:15;28;51 /Template/Chambers/index.ctp:15;28;51
+#: /Template/Chambers/view.ctp:15;28;51 /Template/Departments/add.ctp:15;28;51
+#: /Template/Departments/edit.ctp:15;28;51
+#: /Template/Departments/index.ctp:15;28;51
+#: /Template/Departments/view.ctp:15;28;51 /Template/Doctors/add.ctp:15;23;36
+#: /Template/Doctors/edit.ctp:15;23;36 /Template/Doctors/index.ctp:15;23;36
+#: /Template/Doctors/view.ctp:15;23;36 /Template/Files/add.ctp:15;28;51
+#: /Template/Files/edit.ctp:15;28;51 /Template/Files/index.ctp:15;28;51
+#: /Template/Files/view.ctp:15;28;51 /Template/Levels/add.ctp:15;28;51
+#: /Template/Levels/edit.ctp:15;28;51 /Template/Levels/index.ctp:15;28;51
+#: /Template/Levels/view.ctp:15;28;51 /Template/MedicalCenters/add.ctp:15;28;51
+#: /Template/MedicalCenters/edit.ctp:15;28;51
+#: /Template/MedicalCenters/index.ctp:15;28;51
+#: /Template/MedicalCenters/view.ctp:15;28;51
+#: /Template/Patients/add.ctp:16;29;52 /Template/Patients/edit.ctp:15;28;51
+#: /Template/Patients/index.ctp:15;28;51 /Template/Patients/view.ctp:16;29;52
+#: /Template/Users/add.ctp:15;28;51 /Template/Users/confirm.ctp:15;28;51
+#: /Template/Users/edit.ctp:15;28;51 /Template/Users/index.ctp:15;28;51
+#: /Template/Users/view.ctp:15;28;51
+msgid "Profile"
+msgstr "Profil"
+
+#: /Template/Adresses/add.ctp:16 /Template/Adresses/edit.ctp:16
+#: /Template/Adresses/index.ctp:16 /Template/Adresses/view.ctp:16
+#: /Template/Assignments/add.ctp:16 /Template/Assignments/edit.ctp:16
+#: /Template/Assignments/index.ctp:16 /Template/Assignments/view.ctp:16
+#: /Template/Chambers/add.ctp:16 /Template/Chambers/edit.ctp:16
+#: /Template/Chambers/index.ctp:16 /Template/Chambers/view.ctp:16
+#: /Template/Departments/add.ctp:16 /Template/Departments/edit.ctp:16
+#: /Template/Departments/index.ctp:16 /Template/Departments/view.ctp:16
+#: /Template/Doctors/add.ctp:16 /Template/Doctors/edit.ctp:16
+#: /Template/Doctors/index.ctp:16 /Template/Doctors/view.ctp:16
+#: /Template/Files/add.ctp:16 /Template/Files/edit.ctp:16
+#: /Template/Files/index.ctp:16 /Template/Files/view.ctp:16
+#: /Template/Levels/add.ctp:16 /Template/Levels/edit.ctp:16
+#: /Template/Levels/index.ctp:16 /Template/Levels/view.ctp:16
+#: /Template/MedicalCenters/add.ctp:16 /Template/MedicalCenters/edit.ctp:16
+#: /Template/MedicalCenters/index.ctp:16 /Template/MedicalCenters/view.ctp:16
+#: /Template/Patients/add.ctp:17 /Template/Patients/edit.ctp:16
+#: /Template/Patients/index.ctp:16 /Template/Patients/view.ctp:17
+#: /Template/Users/add.ctp:16 /Template/Users/confirm.ctp:16
+#: /Template/Users/edit.ctp:16 /Template/Users/index.ctp:16
+#: /Template/Users/view.ctp:16
+msgid "Resend confirmation link"
+msgstr "Réenvoyer le lien de confirmation"
+
+#: /Template/Adresses/add.ctp:20;39 /Template/Adresses/edit.ctp:20;39
+#: /Template/Adresses/index.ctp:20;39 /Template/Adresses/view.ctp:20;39
+#: /Template/Assignments/add.ctp:20;39 /Template/Assignments/edit.ctp:20;39
+#: /Template/Assignments/index.ctp:20;39 /Template/Assignments/view.ctp:20;39
+#: /Template/Chambers/add.ctp:20;39 /Template/Chambers/edit.ctp:20;39
+#: /Template/Chambers/index.ctp:20;39 /Template/Chambers/view.ctp:20;39
+#: /Template/Departments/add.ctp:20;39 /Template/Departments/edit.ctp:20;39
+#: /Template/Departments/index.ctp:20;39 /Template/Departments/view.ctp:20;39
+#: /Template/Doctors/add.ctp:20;31 /Template/Doctors/edit.ctp:20;31
+#: /Template/Doctors/index.ctp:20;31 /Template/Doctors/view.ctp:20;31
+#: /Template/Files/add.ctp:20;39 /Template/Files/edit.ctp:20;39
+#: /Template/Files/index.ctp:20;39 /Template/Files/view.ctp:20;39
+#: /Template/Levels/add.ctp:20;39 /Template/Levels/edit.ctp:20;39
+#: /Template/Levels/index.ctp:20;39 /Template/Levels/view.ctp:20;39
+#: /Template/MedicalCenters/add.ctp:20;39
+#: /Template/MedicalCenters/edit.ctp:20;39
+#: /Template/MedicalCenters/index.ctp:20;39
+#: /Template/MedicalCenters/view.ctp:20;39 /Template/Patients/add.ctp:21;40
+#: /Template/Patients/edit.ctp:20;39 /Template/Patients/index.ctp:20;39
+#: /Template/Patients/view.ctp:21;40 /Template/Users/add.ctp:20;39
+#: /Template/Users/confirm.ctp:20;39 /Template/Users/edit.ctp:20;39
+#: /Template/Users/index.ctp:20;39 /Template/Users/view.ctp:20;39
+msgid "Patients management"
+msgstr "Gestion des utilisateurs"
+
+#: /Template/Adresses/add.ctp:21;40 /Template/Adresses/edit.ctp:21;40
+#: /Template/Adresses/index.ctp:21;40 /Template/Adresses/view.ctp:21;40
+#: /Template/Assignments/add.ctp:21;40 /Template/Assignments/edit.ctp:21;40
+#: /Template/Assignments/index.ctp:21;40 /Template/Assignments/view.ctp:21;40
+#: /Template/Chambers/add.ctp:21;40 /Template/Chambers/edit.ctp:21;40
+#: /Template/Chambers/index.ctp:21;40 /Template/Chambers/view.ctp:21;40
+#: /Template/Departments/add.ctp:21;40 /Template/Departments/edit.ctp:21;40
+#: /Template/Departments/index.ctp:21;40 /Template/Departments/view.ctp:21;40
+#: /Template/Files/add.ctp:21;40 /Template/Files/edit.ctp:21;40
+#: /Template/Files/index.ctp:21;40 /Template/Files/view.ctp:21;40
+#: /Template/Levels/add.ctp:21;40 /Template/Levels/edit.ctp:21;40
+#: /Template/Levels/index.ctp:21;40 /Template/Levels/view.ctp:21;40
+#: /Template/MedicalCenters/add.ctp:21;40
+#: /Template/MedicalCenters/edit.ctp:21;40
+#: /Template/MedicalCenters/index.ctp:21;40
+#: /Template/MedicalCenters/view.ctp:21;40 /Template/Patients/add.ctp:22;41
+#: /Template/Patients/edit.ctp:21;40 /Template/Patients/index.ctp:21;40
+#: /Template/Patients/view.ctp:22;41 /Template/Users/add.ctp:21;40
+#: /Template/Users/confirm.ctp:21;40 /Template/Users/edit.ctp:21;40
+#: /Template/Users/index.ctp:21;40 /Template/Users/view.ctp:21;40
+msgid "New patient"
+msgstr "Nouveau patient"
+
+#: /Template/Adresses/add.ctp:22;41 /Template/Adresses/edit.ctp:22;41
+#: /Template/Adresses/index.ctp:22;41 /Template/Adresses/view.ctp:22;41
+#: /Template/Assignments/add.ctp:22;41 /Template/Assignments/edit.ctp:22;41
+#: /Template/Assignments/index.ctp:22;41 /Template/Assignments/view.ctp:22;41
+#: /Template/Chambers/add.ctp:22;41 /Template/Chambers/edit.ctp:22;41
+#: /Template/Chambers/index.ctp:22;41 /Template/Chambers/view.ctp:22;41
+#: /Template/Departments/add.ctp:22;41 /Template/Departments/edit.ctp:22;41
+#: /Template/Departments/index.ctp:22;41 /Template/Departments/view.ctp:22;41
+#: /Template/Doctors/add.ctp:21;32 /Template/Doctors/edit.ctp:21;32
+#: /Template/Doctors/index.ctp:21;32 /Template/Doctors/view.ctp:21;32
+#: /Template/Files/add.ctp:22;41 /Template/Files/edit.ctp:22;41
+#: /Template/Files/index.ctp:22;41 /Template/Files/view.ctp:22;41
+#: /Template/Levels/add.ctp:22;41 /Template/Levels/edit.ctp:22;41
+#: /Template/Levels/index.ctp:22;41 /Template/Levels/view.ctp:22;41
+#: /Template/MedicalCenters/add.ctp:22;41
+#: /Template/MedicalCenters/edit.ctp:22;41
+#: /Template/MedicalCenters/index.ctp:22;41
+#: /Template/MedicalCenters/view.ctp:22;41 /Template/Patients/add.ctp:23;42
+#: /Template/Patients/edit.ctp:22;41 /Template/Patients/index.ctp:22;41
+#: /Template/Patients/view.ctp:23;42 /Template/Users/add.ctp:22;41
+#: /Template/Users/confirm.ctp:22;41 /Template/Users/edit.ctp:22;41
+#: /Template/Users/index.ctp:22;41 /Template/Users/view.ctp:22;41
+msgid "Assignments management"
+msgstr "Gestion des utilisateurs"
+
+#: /Template/Adresses/add.ctp:23;42 /Template/Adresses/edit.ctp:23;42
+#: /Template/Adresses/index.ctp:23;42 /Template/Adresses/view.ctp:23;42
+#: /Template/Assignments/add.ctp:23;42 /Template/Assignments/edit.ctp:23;42
+#: /Template/Assignments/index.ctp:23;42 /Template/Assignments/view.ctp:23;42
+#: /Template/Chambers/add.ctp:23;42 /Template/Chambers/edit.ctp:23;42
+#: /Template/Chambers/index.ctp:23;42 /Template/Chambers/view.ctp:23;42
+#: /Template/Departments/add.ctp:23;42 /Template/Departments/edit.ctp:23;42
+#: /Template/Departments/index.ctp:23;42 /Template/Departments/view.ctp:23;42
+#: /Template/Files/add.ctp:23;42 /Template/Files/edit.ctp:23;42
+#: /Template/Files/index.ctp:23;42 /Template/Files/view.ctp:23;42
+#: /Template/Levels/add.ctp:23;42 /Template/Levels/edit.ctp:23;42
+#: /Template/Levels/index.ctp:23;42 /Template/Levels/view.ctp:23;42
+#: /Template/MedicalCenters/add.ctp:23;42
+#: /Template/MedicalCenters/edit.ctp:23;42
+#: /Template/MedicalCenters/index.ctp:23;42
+#: /Template/MedicalCenters/view.ctp:23;42 /Template/Patients/add.ctp:24;43
+#: /Template/Patients/edit.ctp:23;42 /Template/Patients/index.ctp:23;42
+#: /Template/Patients/view.ctp:24;43 /Template/Users/add.ctp:23;42
+#: /Template/Users/confirm.ctp:23;42 /Template/Users/edit.ctp:23;42
+#: /Template/Users/index.ctp:23;42 /Template/Users/view.ctp:23;42
+msgid "New assignment"
+msgstr "Nouveau patient"
+
+#: /Template/Adresses/add.ctp:24;43 /Template/Adresses/edit.ctp:24;43
+#: /Template/Adresses/index.ctp:24;43 /Template/Adresses/view.ctp:24;43
+#: /Template/Assignments/add.ctp:24;43 /Template/Assignments/edit.ctp:24;43
+#: /Template/Assignments/index.ctp:24;43 /Template/Assignments/view.ctp:24;43
+#: /Template/Chambers/add.ctp:24;43 /Template/Chambers/edit.ctp:24;43
+#: /Template/Chambers/index.ctp:24;43 /Template/Chambers/view.ctp:24;43
+#: /Template/Departments/add.ctp:24;43 /Template/Departments/edit.ctp:24;43
+#: /Template/Departments/index.ctp:24;43 /Template/Departments/view.ctp:24;43
+#: /Template/Doctors/add.ctp:22;33 /Template/Doctors/edit.ctp:22;33
+#: /Template/Doctors/index.ctp:22;33 /Template/Doctors/view.ctp:22;33
+#: /Template/Files/add.ctp:24;43 /Template/Files/edit.ctp:24;43
+#: /Template/Files/index.ctp:24;43 /Template/Files/view.ctp:24;43
+#: /Template/Levels/add.ctp:24;43 /Template/Levels/edit.ctp:24;43
+#: /Template/Levels/index.ctp:24;43 /Template/Levels/view.ctp:24;43
+#: /Template/MedicalCenters/add.ctp:24;43
+#: /Template/MedicalCenters/edit.ctp:24;43
+#: /Template/MedicalCenters/index.ctp:24;43
+#: /Template/MedicalCenters/view.ctp:24;43 /Template/Patients/add.ctp:25;44
+#: /Template/Patients/edit.ctp:24;43 /Template/Patients/index.ctp:24;43
+#: /Template/Patients/view.ctp:25;44 /Template/Users/add.ctp:24;43
+#: /Template/Users/confirm.ctp:24;43 /Template/Users/edit.ctp:24;43
+#: /Template/Users/index.ctp:24;43 /Template/Users/view.ctp:24;43
+msgid "Adresses management"
+msgstr "Gestion des utilisateurs"
+
+#: /Template/Adresses/add.ctp:25;44 /Template/Adresses/edit.ctp:25;44
+#: /Template/Adresses/index.ctp:25;44 /Template/Adresses/view.ctp:25;44
+#: /Template/Assignments/add.ctp:25;44 /Template/Assignments/edit.ctp:25;44
+#: /Template/Assignments/index.ctp:25;44 /Template/Assignments/view.ctp:25;44
+#: /Template/Chambers/add.ctp:25;44 /Template/Chambers/edit.ctp:25;44
+#: /Template/Chambers/index.ctp:25;44 /Template/Chambers/view.ctp:25;44
+#: /Template/Departments/add.ctp:25;44 /Template/Departments/edit.ctp:25;44
+#: /Template/Departments/index.ctp:25;44 /Template/Departments/view.ctp:25;44
+#: /Template/Files/add.ctp:25;44 /Template/Files/edit.ctp:25;44
+#: /Template/Files/index.ctp:25;44 /Template/Files/view.ctp:25;44
+#: /Template/Levels/add.ctp:25;44 /Template/Levels/edit.ctp:25;44
+#: /Template/Levels/index.ctp:25;44 /Template/Levels/view.ctp:25;44
+#: /Template/MedicalCenters/add.ctp:25;44
+#: /Template/MedicalCenters/edit.ctp:25;44
+#: /Template/MedicalCenters/index.ctp:25;44
+#: /Template/MedicalCenters/view.ctp:25;44 /Template/Patients/add.ctp:26;45
+#: /Template/Patients/edit.ctp:25;44 /Template/Patients/index.ctp:25;44
+#: /Template/Patients/view.ctp:26;45 /Template/Users/add.ctp:25;44
+#: /Template/Users/confirm.ctp:25;44 /Template/Users/edit.ctp:25;44
+#: /Template/Users/index.ctp:25;44 /Template/Users/view.ctp:25;44
+msgid "New adress"
+msgstr "Nouvelle adresse"
+
+#: /Template/Adresses/add.ctp:26;49 /Template/Adresses/edit.ctp:26;49
+#: /Template/Adresses/index.ctp:26;49 /Template/Adresses/view.ctp:26;49
+#: /Template/Assignments/add.ctp:26;49 /Template/Assignments/edit.ctp:26;49
+#: /Template/Assignments/index.ctp:26;49 /Template/Assignments/view.ctp:26;49
+#: /Template/Chambers/add.ctp:26;49 /Template/Chambers/edit.ctp:26;49
+#: /Template/Chambers/index.ctp:26;49 /Template/Chambers/view.ctp:26;49
+#: /Template/Departments/add.ctp:26;49 /Template/Departments/edit.ctp:26;49
+#: /Template/Departments/index.ctp:26;49 /Template/Departments/view.ctp:26;49
+#: /Template/Files/add.ctp:26;49 /Template/Files/edit.ctp:26;49
+#: /Template/Files/index.ctp:26;49 /Template/Files/view.ctp:26;49
+#: /Template/Levels/add.ctp:26;49 /Template/Levels/edit.ctp:26;49
+#: /Template/Levels/index.ctp:26;49 /Template/Levels/view.ctp:26;49
+#: /Template/MedicalCenters/add.ctp:26;49
+#: /Template/MedicalCenters/edit.ctp:26;49
+#: /Template/MedicalCenters/index.ctp:26;49
+#: /Template/MedicalCenters/view.ctp:26;49 /Template/Patients/add.ctp:27;50
+#: /Template/Patients/edit.ctp:26;49 /Template/Patients/index.ctp:26;49
+#: /Template/Patients/view.ctp:27;50 /Template/Users/add.ctp:26;49
+#: /Template/Users/confirm.ctp:26;49 /Template/Users/edit.ctp:26;49
+#: /Template/Users/index.ctp:26;49 /Template/Users/view.ctp:26;49
+msgid "Files management"
+msgstr "Gestion des fichiers"
+
+#: /Template/Adresses/add.ctp:27;50 /Template/Adresses/edit.ctp:27;50
+#: /Template/Adresses/index.ctp:27;50 /Template/Adresses/view.ctp:27;50
+#: /Template/Assignments/add.ctp:27;50 /Template/Assignments/edit.ctp:27;50
+#: /Template/Assignments/index.ctp:27;50 /Template/Assignments/view.ctp:27;50
+#: /Template/Chambers/add.ctp:27;50 /Template/Chambers/edit.ctp:27;50
+#: /Template/Chambers/index.ctp:27;50 /Template/Chambers/view.ctp:27;50
+#: /Template/Departments/add.ctp:27;50 /Template/Departments/edit.ctp:27;50
+#: /Template/Departments/index.ctp:27;50 /Template/Departments/view.ctp:27;50
+#: /Template/Files/add.ctp:27;50 /Template/Files/edit.ctp:27;50
+#: /Template/Files/index.ctp:27;50 /Template/Files/view.ctp:27;50
+#: /Template/Levels/add.ctp:27;50 /Template/Levels/edit.ctp:27;50
+#: /Template/Levels/index.ctp:27;50 /Template/Levels/view.ctp:27;50
+#: /Template/MedicalCenters/add.ctp:27;50
+#: /Template/MedicalCenters/edit.ctp:27;50
+#: /Template/MedicalCenters/index.ctp:27;50
+#: /Template/MedicalCenters/view.ctp:27;50 /Template/Patients/add.ctp:28;51
+#: /Template/Patients/edit.ctp:27;50 /Template/Patients/index.ctp:27;50
+#: /Template/Patients/view.ctp:28;51 /Template/Users/add.ctp:27;50
+#: /Template/Users/confirm.ctp:27;50 /Template/Users/edit.ctp:27;50
+#: /Template/Users/index.ctp:27;50 /Template/Users/view.ctp:27;50
+msgid "New file"
+msgstr "Nouvel utilisateur"
+
+#: /Template/Adresses/add.ctp:33 /Template/Adresses/edit.ctp:33
+#: /Template/Adresses/index.ctp:33 /Template/Adresses/view.ctp:33
+#: /Template/Assignments/add.ctp:33 /Template/Assignments/edit.ctp:33
+#: /Template/Assignments/index.ctp:33 /Template/Assignments/view.ctp:33
+#: /Template/Chambers/add.ctp:33 /Template/Chambers/edit.ctp:33
+#: /Template/Chambers/index.ctp:33 /Template/Chambers/view.ctp:33
+#: /Template/Departments/add.ctp:33 /Template/Departments/edit.ctp:33
+#: /Template/Departments/index.ctp:33 /Template/Departments/view.ctp:33
+#: /Template/Doctors/add.ctp:28 /Template/Doctors/edit.ctp:28
+#: /Template/Doctors/index.ctp:28 /Template/Doctors/view.ctp:28
+#: /Template/Files/add.ctp:33 /Template/Files/edit.ctp:33
+#: /Template/Files/index.ctp:33 /Template/Files/view.ctp:33
+#: /Template/Levels/add.ctp:33 /Template/Levels/edit.ctp:33
+#: /Template/Levels/index.ctp:33 /Template/Levels/view.ctp:33
+#: /Template/MedicalCenters/add.ctp:33 /Template/MedicalCenters/edit.ctp:33
+#: /Template/MedicalCenters/index.ctp:33 /Template/MedicalCenters/view.ctp:33
+#: /Template/Patients/add.ctp:34 /Template/Patients/edit.ctp:33
+#: /Template/Patients/index.ctp:33 /Template/Patients/view.ctp:34
+#: /Template/Users/add.ctp:33 /Template/Users/confirm.ctp:33
+#: /Template/Users/edit.ctp:33 /Template/Users/index.ctp:33
+#: /Template/Users/view.ctp:33
+msgid "Users management"
+msgstr "Gestion des utilisateurs"
+
+#: /Template/Adresses/add.ctp:34 /Template/Adresses/edit.ctp:34
+#: /Template/Adresses/index.ctp:34 /Template/Adresses/view.ctp:34
+#: /Template/Assignments/add.ctp:34 /Template/Assignments/edit.ctp:34
+#: /Template/Assignments/index.ctp:34 /Template/Assignments/view.ctp:34
+#: /Template/Chambers/add.ctp:34 /Template/Chambers/edit.ctp:34
+#: /Template/Chambers/index.ctp:34 /Template/Chambers/view.ctp:34
+#: /Template/Departments/add.ctp:34 /Template/Departments/edit.ctp:34
+#: /Template/Departments/index.ctp:34 /Template/Departments/view.ctp:34
+#: /Template/Files/add.ctp:34 /Template/Files/edit.ctp:34
+#: /Template/Files/index.ctp:34 /Template/Files/view.ctp:34
+#: /Template/Levels/add.ctp:34 /Template/Levels/edit.ctp:34
+#: /Template/Levels/index.ctp:34 /Template/Levels/view.ctp:34
+#: /Template/MedicalCenters/add.ctp:34 /Template/MedicalCenters/edit.ctp:34
+#: /Template/MedicalCenters/index.ctp:34 /Template/MedicalCenters/view.ctp:34
+#: /Template/Patients/add.ctp:35 /Template/Patients/edit.ctp:34
+#: /Template/Patients/index.ctp:34 /Template/Patients/view.ctp:35
+#: /Template/Users/add.ctp:34 /Template/Users/confirm.ctp:34
+#: /Template/Users/edit.ctp:34 /Template/Users/index.ctp:34
+#: /Template/Users/view.ctp:34
+msgid "New User"
+msgstr "Nouvel utilisateur"
+
+#: /Template/Adresses/add.ctp:35 /Template/Adresses/edit.ctp:35
+#: /Template/Adresses/index.ctp:35 /Template/Adresses/view.ctp:35
+#: /Template/Assignments/add.ctp:35 /Template/Assignments/edit.ctp:35
+#: /Template/Assignments/index.ctp:35 /Template/Assignments/view.ctp:35
+#: /Template/Chambers/add.ctp:35 /Template/Chambers/edit.ctp:35
+#: /Template/Chambers/index.ctp:35 /Template/Chambers/view.ctp:35
+#: /Template/Departments/add.ctp:35 /Template/Departments/edit.ctp:35
+#: /Template/Departments/index.ctp:35 /Template/Departments/view.ctp:35
+#: /Template/Doctors/add.ctp:29 /Template/Doctors/edit.ctp:29
+#: /Template/Doctors/index.ctp:29 /Template/Doctors/view.ctp:29
+#: /Template/Files/add.ctp:35 /Template/Files/edit.ctp:35
+#: /Template/Files/index.ctp:35 /Template/Files/view.ctp:35
+#: /Template/Levels/add.ctp:35 /Template/Levels/edit.ctp:35
+#: /Template/Levels/index.ctp:35 /Template/Levels/view.ctp:35
+#: /Template/MedicalCenters/add.ctp:35 /Template/MedicalCenters/edit.ctp:35
+#: /Template/MedicalCenters/index.ctp:35 /Template/MedicalCenters/view.ctp:35
+#: /Template/Patients/add.ctp:36 /Template/Patients/edit.ctp:35
+#: /Template/Patients/index.ctp:35 /Template/Patients/view.ctp:36
+#: /Template/Users/add.ctp:35 /Template/Users/confirm.ctp:35
+#: /Template/Users/edit.ctp:35 /Template/Users/index.ctp:35
+#: /Template/Users/view.ctp:35
+msgid "Medical centers management"
+msgstr "Centres médicaux connexes"
+
+#: /Template/Adresses/add.ctp:36 /Template/Adresses/edit.ctp:36
+#: /Template/Adresses/index.ctp:36 /Template/Adresses/view.ctp:36
+#: /Template/Assignments/add.ctp:36 /Template/Assignments/edit.ctp:36
+#: /Template/Assignments/index.ctp:36 /Template/Assignments/view.ctp:36
+#: /Template/Chambers/add.ctp:36 /Template/Chambers/edit.ctp:36
+#: /Template/Chambers/index.ctp:36 /Template/Chambers/view.ctp:36
+#: /Template/Departments/add.ctp:36 /Template/Departments/edit.ctp:36
+#: /Template/Departments/index.ctp:36 /Template/Departments/view.ctp:36
+#: /Template/Files/add.ctp:36 /Template/Files/edit.ctp:36
+#: /Template/Files/index.ctp:36 /Template/Files/view.ctp:36
+#: /Template/Levels/add.ctp:36 /Template/Levels/edit.ctp:36
+#: /Template/Levels/index.ctp:36 /Template/Levels/view.ctp:36
+#: /Template/MedicalCenters/add.ctp:36 /Template/MedicalCenters/edit.ctp:36
+#: /Template/MedicalCenters/index.ctp:36 /Template/MedicalCenters/view.ctp:36
+#: /Template/Patients/add.ctp:37 /Template/Patients/edit.ctp:36
+#: /Template/Patients/index.ctp:36 /Template/Patients/view.ctp:37
+#: /Template/Users/add.ctp:36 /Template/Users/confirm.ctp:36
+#: /Template/Users/edit.ctp:36 /Template/Users/index.ctp:36
+#: /Template/Users/view.ctp:36
 msgid "New Medical Center"
 msgstr "Nouveau centre médical"
 
-#: Template/Adresses/add.ctp:13 Template/Adresses/edit.ctp:19
-#: Template/Adresses/index.ctp:13 Template/Adresses/view.ctp:16
-#: Template/Assignments/add.ctp:13 Template/Assignments/edit.ctp:19
-#: Template/Assignments/index.ctp:13 Template/Assignments/view.ctp:16
-#: Template/Patients/add.ctp:10 Template/Patients/edit.ctp:16
-#: Template/Patients/view.ctp:12 Template/Users/add.ctp:11
-#: Template/Users/edit.ctp:17 Template/Users/index.ctp:11
-#: Template/Users/view.ctp:14
-msgid "List Patients"
-msgstr "Liste des patients"
+#: /Template/Adresses/add.ctp:37 /Template/Adresses/edit.ctp:37
+#: /Template/Adresses/index.ctp:37 /Template/Adresses/view.ctp:37
+#: /Template/Assignments/add.ctp:37 /Template/Assignments/edit.ctp:37
+#: /Template/Assignments/index.ctp:37 /Template/Assignments/view.ctp:37
+#: /Template/Chambers/add.ctp:37 /Template/Chambers/edit.ctp:37
+#: /Template/Chambers/index.ctp:37 /Template/Chambers/view.ctp:37
+#: /Template/Departments/add.ctp:37 /Template/Departments/edit.ctp:37
+#: /Template/Departments/index.ctp:37 /Template/Departments/view.ctp:37
+#: /Template/Doctors/add.ctp:30 /Template/Doctors/edit.ctp:30
+#: /Template/Doctors/index.ctp:30 /Template/Doctors/view.ctp:30
+#: /Template/Files/add.ctp:37 /Template/Files/edit.ctp:37
+#: /Template/Files/index.ctp:37 /Template/Files/view.ctp:37
+#: /Template/Levels/add.ctp:37 /Template/Levels/edit.ctp:37
+#: /Template/Levels/index.ctp:37 /Template/Levels/view.ctp:37
+#: /Template/MedicalCenters/add.ctp:37 /Template/MedicalCenters/edit.ctp:37
+#: /Template/MedicalCenters/index.ctp:37 /Template/MedicalCenters/view.ctp:37
+#: /Template/Patients/add.ctp:38 /Template/Patients/edit.ctp:37
+#: /Template/Patients/index.ctp:37 /Template/Patients/view.ctp:38
+#: /Template/Users/add.ctp:37 /Template/Users/confirm.ctp:37
+#: /Template/Users/edit.ctp:37 /Template/Users/index.ctp:37
+#: /Template/Users/view.ctp:37
+msgid "Departments management"
+msgstr "Ministères"
 
-#: Template/Adresses/add.ctp:14 Template/Adresses/edit.ctp:20
-#: Template/Adresses/index.ctp:14 Template/Adresses/view.ctp:17
-#: Template/Assignments/add.ctp:14 Template/Assignments/edit.ctp:20
-#: Template/Assignments/index.ctp:14 Template/Assignments/view.ctp:17
-#: Template/Patients/index.ctp:10 Template/Patients/view.ctp:13
-#: Template/Users/add.ctp:12 Template/Users/edit.ctp:18
-#: Template/Users/index.ctp:12 Template/Users/view.ctp:15
-msgid "New Patient"
-msgstr "Nouveau patient"
+#: /Template/Adresses/add.ctp:38 /Template/Adresses/edit.ctp:38
+#: /Template/Adresses/index.ctp:38 /Template/Adresses/view.ctp:38
+#: /Template/Assignments/add.ctp:38 /Template/Assignments/edit.ctp:38
+#: /Template/Assignments/index.ctp:38 /Template/Assignments/view.ctp:38
+#: /Template/Chambers/add.ctp:38 /Template/Chambers/edit.ctp:38
+#: /Template/Chambers/index.ctp:38 /Template/Chambers/view.ctp:38
+#: /Template/Departments/add.ctp:38 /Template/Departments/edit.ctp:38
+#: /Template/Departments/index.ctp:38 /Template/Departments/view.ctp:38
+#: /Template/Files/add.ctp:38 /Template/Files/edit.ctp:38
+#: /Template/Files/index.ctp:38 /Template/Files/view.ctp:38
+#: /Template/Levels/add.ctp:38 /Template/Levels/edit.ctp:38
+#: /Template/Levels/index.ctp:38 /Template/Levels/view.ctp:38
+#: /Template/MedicalCenters/add.ctp:38 /Template/MedicalCenters/edit.ctp:38
+#: /Template/MedicalCenters/index.ctp:38 /Template/MedicalCenters/view.ctp:38
+#: /Template/Patients/add.ctp:39 /Template/Patients/edit.ctp:38
+#: /Template/Patients/index.ctp:38 /Template/Patients/view.ctp:39
+#: /Template/Users/add.ctp:38 /Template/Users/confirm.ctp:38
+#: /Template/Users/edit.ctp:38 /Template/Users/index.ctp:38
+#: /Template/Users/view.ctp:38
+msgid "New department"
+msgstr "Nouveau département"
 
-#: Template/Adresses/add.ctp:20
+#: /Template/Adresses/add.ctp:45 /Template/Adresses/edit.ctp:45
+#: /Template/Adresses/index.ctp:45 /Template/Adresses/view.ctp:45
+#: /Template/Assignments/add.ctp:45 /Template/Assignments/edit.ctp:45
+#: /Template/Assignments/index.ctp:45 /Template/Assignments/view.ctp:45
+#: /Template/Chambers/add.ctp:45 /Template/Chambers/edit.ctp:45
+#: /Template/Chambers/index.ctp:45 /Template/Chambers/view.ctp:45
+#: /Template/Departments/add.ctp:45 /Template/Departments/edit.ctp:45
+#: /Template/Departments/index.ctp:45 /Template/Departments/view.ctp:45
+#: /Template/Doctors/add.ctp:34 /Template/Doctors/edit.ctp:34
+#: /Template/Doctors/index.ctp:34 /Template/Doctors/view.ctp:34
+#: /Template/Files/add.ctp:45 /Template/Files/edit.ctp:45
+#: /Template/Files/index.ctp:45 /Template/Files/view.ctp:45
+#: /Template/Levels/add.ctp:45 /Template/Levels/edit.ctp:45
+#: /Template/Levels/index.ctp:45 /Template/Levels/view.ctp:45
+#: /Template/MedicalCenters/add.ctp:45 /Template/MedicalCenters/edit.ctp:45
+#: /Template/MedicalCenters/index.ctp:45 /Template/MedicalCenters/view.ctp:45
+#: /Template/Patients/add.ctp:46 /Template/Patients/edit.ctp:45
+#: /Template/Patients/index.ctp:45 /Template/Patients/view.ctp:46
+#: /Template/Users/add.ctp:45 /Template/Users/confirm.ctp:45
+#: /Template/Users/edit.ctp:45 /Template/Users/index.ctp:45
+#: /Template/Users/view.ctp:45
+msgid "Chambers management"
+msgstr "Gestion des fichiers"
+
+#: /Template/Adresses/add.ctp:46 /Template/Adresses/edit.ctp:46
+#: /Template/Adresses/index.ctp:46 /Template/Adresses/view.ctp:46
+#: /Template/Assignments/add.ctp:46 /Template/Assignments/edit.ctp:46
+#: /Template/Assignments/index.ctp:46 /Template/Assignments/view.ctp:46
+#: /Template/Chambers/add.ctp:46 /Template/Chambers/edit.ctp:46
+#: /Template/Chambers/index.ctp:46 /Template/Chambers/view.ctp:46
+#: /Template/Departments/add.ctp:46 /Template/Departments/edit.ctp:46
+#: /Template/Departments/index.ctp:46 /Template/Departments/view.ctp:46
+#: /Template/Files/add.ctp:46 /Template/Files/edit.ctp:46
+#: /Template/Files/index.ctp:46 /Template/Files/view.ctp:46
+#: /Template/Levels/add.ctp:46 /Template/Levels/edit.ctp:46
+#: /Template/Levels/index.ctp:46 /Template/Levels/view.ctp:46
+#: /Template/MedicalCenters/add.ctp:46 /Template/MedicalCenters/edit.ctp:46
+#: /Template/MedicalCenters/index.ctp:46 /Template/MedicalCenters/view.ctp:46
+#: /Template/Patients/add.ctp:47 /Template/Patients/edit.ctp:46
+#: /Template/Patients/index.ctp:46 /Template/Patients/view.ctp:47
+#: /Template/Users/add.ctp:46 /Template/Users/confirm.ctp:46
+#: /Template/Users/edit.ctp:46 /Template/Users/index.ctp:46
+#: /Template/Users/view.ctp:46
+msgid "New chamber"
+msgstr "Nouvelle chambre"
+
+#: /Template/Adresses/add.ctp:47 /Template/Adresses/edit.ctp:47
+#: /Template/Adresses/index.ctp:47 /Template/Adresses/view.ctp:47
+#: /Template/Assignments/add.ctp:47 /Template/Assignments/edit.ctp:47
+#: /Template/Assignments/index.ctp:47 /Template/Assignments/view.ctp:47
+#: /Template/Chambers/add.ctp:47 /Template/Chambers/edit.ctp:47
+#: /Template/Chambers/index.ctp:47 /Template/Chambers/view.ctp:47
+#: /Template/Departments/add.ctp:47 /Template/Departments/edit.ctp:47
+#: /Template/Departments/index.ctp:47 /Template/Departments/view.ctp:47
+#: /Template/Doctors/add.ctp:35 /Template/Doctors/edit.ctp:35
+#: /Template/Doctors/index.ctp:35 /Template/Doctors/view.ctp:35
+#: /Template/Files/add.ctp:47 /Template/Files/edit.ctp:47
+#: /Template/Files/index.ctp:47 /Template/Files/view.ctp:47
+#: /Template/Levels/add.ctp:47 /Template/Levels/edit.ctp:47
+#: /Template/Levels/index.ctp:47 /Template/Levels/view.ctp:47
+#: /Template/MedicalCenters/add.ctp:47 /Template/MedicalCenters/edit.ctp:47
+#: /Template/MedicalCenters/index.ctp:47 /Template/MedicalCenters/view.ctp:47
+#: /Template/Patients/add.ctp:48 /Template/Patients/edit.ctp:47
+#: /Template/Patients/index.ctp:47 /Template/Patients/view.ctp:48
+#: /Template/Users/add.ctp:47 /Template/Users/confirm.ctp:47
+#: /Template/Users/edit.ctp:47 /Template/Users/index.ctp:47
+#: /Template/Users/view.ctp:47
+msgid "Levels management"
+msgstr "Niveaux"
+
+#: /Template/Adresses/add.ctp:48 /Template/Adresses/edit.ctp:48
+#: /Template/Adresses/index.ctp:48 /Template/Adresses/view.ctp:48
+#: /Template/Assignments/add.ctp:48 /Template/Assignments/edit.ctp:48
+#: /Template/Assignments/index.ctp:48 /Template/Assignments/view.ctp:48
+#: /Template/Chambers/add.ctp:48 /Template/Chambers/edit.ctp:48
+#: /Template/Chambers/index.ctp:48 /Template/Chambers/view.ctp:48
+#: /Template/Departments/add.ctp:48 /Template/Departments/edit.ctp:48
+#: /Template/Departments/index.ctp:48 /Template/Departments/view.ctp:48
+#: /Template/Files/add.ctp:48 /Template/Files/edit.ctp:48
+#: /Template/Files/index.ctp:48 /Template/Files/view.ctp:48
+#: /Template/Levels/add.ctp:48 /Template/Levels/edit.ctp:48
+#: /Template/Levels/index.ctp:48 /Template/Levels/view.ctp:48
+#: /Template/MedicalCenters/add.ctp:48 /Template/MedicalCenters/edit.ctp:48
+#: /Template/MedicalCenters/index.ctp:48 /Template/MedicalCenters/view.ctp:48
+#: /Template/Patients/add.ctp:49 /Template/Patients/edit.ctp:48
+#: /Template/Patients/index.ctp:48 /Template/Patients/view.ctp:49
+#: /Template/Users/add.ctp:48 /Template/Users/confirm.ctp:48
+#: /Template/Users/edit.ctp:48 /Template/Users/index.ctp:48
+#: /Template/Users/view.ctp:48
+msgid "New level"
+msgstr "Nouveau niveau"
+
+#: /Template/Adresses/add.ctp:54 /Template/Adresses/edit.ctp:54
+#: /Template/Adresses/index.ctp:54 /Template/Adresses/view.ctp:54
+#: /Template/Assignments/add.ctp:54 /Template/Assignments/edit.ctp:54
+#: /Template/Assignments/index.ctp:54 /Template/Assignments/view.ctp:54
+#: /Template/Chambers/add.ctp:54 /Template/Chambers/edit.ctp:54
+#: /Template/Chambers/index.ctp:54 /Template/Chambers/view.ctp:54
+#: /Template/Departments/add.ctp:54 /Template/Departments/edit.ctp:54
+#: /Template/Departments/index.ctp:54 /Template/Departments/view.ctp:54
+#: /Template/Doctors/add.ctp:39 /Template/Doctors/edit.ctp:39
+#: /Template/Doctors/index.ctp:39 /Template/Doctors/view.ctp:39
+#: /Template/Files/add.ctp:54 /Template/Files/edit.ctp:54
+#: /Template/Files/index.ctp:54 /Template/Files/view.ctp:54
+#: /Template/Levels/add.ctp:54 /Template/Levels/edit.ctp:54
+#: /Template/Levels/index.ctp:54 /Template/Levels/view.ctp:54
+#: /Template/MedicalCenters/add.ctp:54 /Template/MedicalCenters/edit.ctp:54
+#: /Template/MedicalCenters/index.ctp:54 /Template/MedicalCenters/view.ctp:54
+#: /Template/Patients/add.ctp:55 /Template/Patients/edit.ctp:54
+#: /Template/Patients/index.ctp:54 /Template/Patients/view.ctp:55
+#: /Template/Users/add.ctp:54 /Template/Users/confirm.ctp:54
+#: /Template/Users/edit.ctp:54 /Template/Users/index.ctp:54
+#: /Template/Users/login.ctp:10 /Template/Users/view.ctp:54
+msgid "New account"
+msgstr "Nouvel utilisateur"
+
+#: /Template/Adresses/add.ctp:55 /Template/Adresses/edit.ctp:55
+#: /Template/Adresses/index.ctp:55 /Template/Adresses/view.ctp:55
+#: /Template/Assignments/add.ctp:55 /Template/Assignments/edit.ctp:55
+#: /Template/Assignments/index.ctp:55 /Template/Assignments/view.ctp:55
+#: /Template/Chambers/add.ctp:55 /Template/Chambers/edit.ctp:55
+#: /Template/Chambers/index.ctp:55 /Template/Chambers/view.ctp:55
+#: /Template/Departments/add.ctp:55 /Template/Departments/edit.ctp:55
+#: /Template/Departments/index.ctp:55 /Template/Departments/view.ctp:55
+#: /Template/Doctors/add.ctp:40 /Template/Doctors/edit.ctp:40
+#: /Template/Doctors/index.ctp:40 /Template/Doctors/view.ctp:40
+#: /Template/Files/add.ctp:55 /Template/Files/edit.ctp:55
+#: /Template/Files/index.ctp:55 /Template/Files/view.ctp:55
+#: /Template/Levels/add.ctp:55 /Template/Levels/edit.ctp:55
+#: /Template/Levels/index.ctp:55 /Template/Levels/view.ctp:55
+#: /Template/MedicalCenters/add.ctp:55 /Template/MedicalCenters/edit.ctp:55
+#: /Template/MedicalCenters/index.ctp:55 /Template/MedicalCenters/view.ctp:55
+#: /Template/Patients/add.ctp:56 /Template/Patients/edit.ctp:55
+#: /Template/Patients/index.ctp:55 /Template/Patients/view.ctp:56
+#: /Template/Users/add.ctp:55 /Template/Users/confirm.ctp:55
+#: /Template/Users/edit.ctp:55 /Template/Users/index.ctp:55
+#: /Template/Users/login.ctp:11 /Template/Users/view.ctp:55
+msgid "Login"
+msgstr ""
+
+#: /Template/Adresses/add.ctp:56 /Template/Adresses/edit.ctp:56
+#: /Template/Adresses/index.ctp:56 /Template/Adresses/view.ctp:56
+#: /Template/Assignments/add.ctp:56 /Template/Assignments/edit.ctp:56
+#: /Template/Assignments/index.ctp:56 /Template/Assignments/view.ctp:56
+#: /Template/Chambers/add.ctp:56 /Template/Chambers/edit.ctp:56
+#: /Template/Chambers/index.ctp:56 /Template/Chambers/view.ctp:56
+#: /Template/Departments/add.ctp:56 /Template/Departments/edit.ctp:56
+#: /Template/Departments/index.ctp:56 /Template/Departments/view.ctp:56
+#: /Template/Doctors/add.ctp:41 /Template/Doctors/edit.ctp:41
+#: /Template/Doctors/index.ctp:41 /Template/Doctors/view.ctp:41
+#: /Template/Files/add.ctp:56 /Template/Files/edit.ctp:56
+#: /Template/Files/index.ctp:56 /Template/Files/view.ctp:56
+#: /Template/Levels/add.ctp:56 /Template/Levels/edit.ctp:56
+#: /Template/Levels/index.ctp:56 /Template/Levels/view.ctp:56
+#: /Template/MedicalCenters/add.ctp:56 /Template/MedicalCenters/edit.ctp:56
+#: /Template/MedicalCenters/index.ctp:56 /Template/MedicalCenters/view.ctp:56
+#: /Template/Patients/add.ctp:57 /Template/Patients/edit.ctp:56
+#: /Template/Patients/index.ctp:56 /Template/Patients/view.ctp:57
+#: /Template/Users/add.ctp:56 /Template/Users/confirm.ctp:56
+#: /Template/Users/edit.ctp:56 /Template/Users/index.ctp:56
+#: /Template/Users/login.ctp:12 /Template/Users/view.ctp:56
+msgid "See medical centers"
+msgstr "Centres médicaux"
+
+#: /Template/Adresses/add.ctp:57 /Template/Adresses/edit.ctp:57
+#: /Template/Adresses/index.ctp:57 /Template/Adresses/view.ctp:57
+#: /Template/Assignments/add.ctp:57 /Template/Assignments/edit.ctp:57
+#: /Template/Assignments/index.ctp:57 /Template/Assignments/view.ctp:57
+#: /Template/Chambers/add.ctp:57 /Template/Chambers/edit.ctp:57
+#: /Template/Chambers/index.ctp:57 /Template/Chambers/view.ctp:57
+#: /Template/Departments/add.ctp:57 /Template/Departments/edit.ctp:57
+#: /Template/Departments/index.ctp:57 /Template/Departments/view.ctp:57
+#: /Template/Doctors/add.ctp:42 /Template/Doctors/edit.ctp:42
+#: /Template/Doctors/index.ctp:42 /Template/Doctors/view.ctp:42
+#: /Template/Files/add.ctp:57 /Template/Files/edit.ctp:57
+#: /Template/Files/index.ctp:57 /Template/Files/view.ctp:57
+#: /Template/Levels/add.ctp:57 /Template/Levels/edit.ctp:57
+#: /Template/Levels/index.ctp:57 /Template/Levels/view.ctp:57
+#: /Template/MedicalCenters/add.ctp:57 /Template/MedicalCenters/edit.ctp:57
+#: /Template/MedicalCenters/index.ctp:57 /Template/MedicalCenters/view.ctp:57
+#: /Template/Patients/add.ctp:58 /Template/Patients/edit.ctp:57
+#: /Template/Patients/index.ctp:57 /Template/Patients/view.ctp:58
+#: /Template/Users/add.ctp:57 /Template/Users/confirm.ctp:57
+#: /Template/Users/edit.ctp:57 /Template/Users/index.ctp:57
+#: /Template/Users/login.ctp:13 /Template/Users/view.ctp:57
+msgid "See departments"
+msgstr "Ministères"
+
+#: /Template/Adresses/add.ctp:64
 msgid "Add Adress"
 msgstr "Ajouter une adresse"
 
-#: Template/Adresses/add.ctp:31 Template/Adresses/edit.ctp:37
-#: Template/Assignments/add.ctp:37 Template/Assignments/edit.ctp:43
-#: Template/Chambers/add.ctp:30 Template/Chambers/edit.ctp:36
-#: Template/Departments/add.ctp:26 Template/Departments/edit.ctp:32
-#: Template/Doctors/add.ctp:28 Template/Doctors/edit.ctp:34
-#: Template/Levels/add.ctp:26 Template/Levels/edit.ctp:32
-#: Template/MedicalCenters/add.ctp:30 Template/MedicalCenters/edit.ctp:36
-#: Template/Patients/add.ctp:34 Template/Patients/edit.ctp:40
-#: Template/Users/add.ctp:28 Template/Users/edit.ctp:34
+#: /Template/Adresses/add.ctp:75 /Template/Adresses/edit.ctp:75
+#: /Template/Assignments/add.ctp:75 /Template/Assignments/edit.ctp:75
+#: /Template/Chambers/add.ctp:72 /Template/Chambers/edit.ctp:72
+#: /Template/Departments/add.ctp:70 /Template/Departments/edit.ctp:70
+#: /Template/Doctors/add.ctp:58 /Template/Doctors/edit.ctp:57
+#: /Template/Files/add.ctp:70 /Template/Files/edit.ctp:70
+#: /Template/Levels/add.ctp:70 /Template/Levels/edit.ctp:70
+#: /Template/MedicalCenters/add.ctp:74 /Template/MedicalCenters/edit.ctp:74
+#: /Template/Patients/add.ctp:86 /Template/Patients/edit.ctp:81
+#: /Template/Users/add.ctp:73 /Template/Users/edit.ctp:72
+#: View/Helper/FormHelper.php:1988
 msgid "Submit"
 msgstr "Soumettre"
 
-#: Template/Adresses/edit.ctp:11 Template/Adresses/index.ctp:51
-#: Template/Adresses/view.ctp:94;135 Template/Assignments/edit.ctp:11
-#: Template/Assignments/index.ctp:57 Template/Chambers/edit.ctp:11
-#: Template/Chambers/index.ctp:47 Template/Chambers/view.ctp:86
-#: Template/Departments/edit.ctp:11 Template/Departments/index.ctp:41
-#: Template/Departments/view.ctp:70;109 Template/Doctors/edit.ctp:11
-#: Template/Doctors/index.ctp:45 Template/Levels/edit.ctp:11
-#: Template/Levels/index.ctp:41 Template/Levels/view.ctp:70;109
-#: Template/MedicalCenters/edit.ctp:11 Template/MedicalCenters/index.ctp:49
-#: Template/MedicalCenters/view.ctp:86 Template/Patients/edit.ctp:11
-#: Template/Patients/index.ctp:55 Template/Patients/view.ctp:102
-#: Template/Users/edit.ctp:11 Template/Users/index.ctp:45
-#: Template/Users/view.ctp:86;125
-msgid "Delete"
-msgstr "Supprimer"
-
-#: Template/Adresses/edit.ctp:13 Template/Adresses/index.ctp:51
-#: Template/Adresses/view.ctp:11;94;135 Template/Assignments/edit.ctp:13
-#: Template/Assignments/index.ctp:57 Template/Assignments/view.ctp:11
-#: Template/Chambers/edit.ctp:13 Template/Chambers/index.ctp:47
-#: Template/Chambers/view.ctp:11;86 Template/Departments/edit.ctp:13
-#: Template/Departments/index.ctp:41 Template/Departments/view.ctp:11;70;109
-#: Template/Doctors/edit.ctp:13 Template/Doctors/index.ctp:45
-#: Template/Doctors/view.ctp:11 Template/Levels/edit.ctp:13
-#: Template/Levels/index.ctp:41 Template/Levels/view.ctp:11;70;109
-#: Template/MedicalCenters/edit.ctp:13 Template/MedicalCenters/index.ctp:49
-#: Template/MedicalCenters/view.ctp:11;86 Template/Patients/edit.ctp:13
-#: Template/Patients/index.ctp:55 Template/Patients/view.ctp:11;102
-#: Template/Users/edit.ctp:13 Template/Users/index.ctp:45
-#: Template/Users/view.ctp:11;86;125
-msgid "Are you sure you want to delete # {0}?"
-msgstr "Êtes-vous sûr de vouloir supprimer # {0}?"
-
-#: Template/Adresses/edit.ctp:26 Template/Adresses/view.ctp:10
+#: /Template/Adresses/edit.ctp:64
 msgid "Edit Adress"
 msgstr "Modifier l'adresse"
 
-#: Template/Adresses/index.ctp:10 Template/Adresses/view.ctp:13
-#: Template/MedicalCenters/add.ctp:12 Template/MedicalCenters/edit.ctp:18
-#: Template/MedicalCenters/index.ctp:12 Template/MedicalCenters/view.ctp:15
-#: Template/Patients/add.ctp:12 Template/Patients/edit.ctp:18
-#: Template/Patients/index.ctp:12 Template/Patients/view.ctp:15
-msgid "New Adress"
-msgstr "Nouvelle adresse"
-
-#: Template/Adresses/index.ctp:18
+#: /Template/Adresses/index.ctp:62
 msgid "Adresses"
 msgstr "Adresses"
 
-#: Template/Adresses/index.ctp:49 Template/Adresses/view.ctp:92;133
-#: Template/Assignments/index.ctp:55 Template/Chambers/index.ctp:45
-#: Template/Chambers/view.ctp:84 Template/Departments/index.ctp:39
-#: Template/Departments/view.ctp:68;107 Template/Doctors/index.ctp:43
-#: Template/Levels/index.ctp:39 Template/Levels/view.ctp:68;107
-#: Template/MedicalCenters/index.ctp:47 Template/MedicalCenters/view.ctp:84
-#: Template/Patients/index.ctp:53 Template/Patients/view.ctp:100
-#: Template/Users/index.ctp:43 Template/Users/view.ctp:84;123
+#: /Template/Adresses/index.ctp:93 /Template/Adresses/view.ctp:123;158
+#: /Template/Assignments/index.ctp:93 /Template/Chambers/index.ctp:87
+#: /Template/Chambers/view.ctp:117 /Template/Departments/index.ctp:83
+#: /Template/Departments/view.ctp:105 /Template/Doctors/index.ctp:72
+#: /Template/Files/index.ctp:94 /Template/Levels/index.ctp:83
+#: /Template/MedicalCenters/index.ctp:91 /Template/Patients/index.ctp:95
+#: /Template/Patients/view.ctp:148 /Template/Users/index.ctp:87
 #: View/Helper/PaginatorHelper.php:1212
 msgid "View"
 msgstr "Voir"
 
-#: Template/Adresses/index.ctp:50 Template/Adresses/view.ctp:93;134
-#: Template/Assignments/index.ctp:56 Template/Chambers/index.ctp:46
-#: Template/Chambers/view.ctp:85 Template/Departments/index.ctp:40
-#: Template/Departments/view.ctp:69;108 Template/Doctors/index.ctp:44
-#: Template/Levels/index.ctp:40 Template/Levels/view.ctp:69;108
-#: Template/MedicalCenters/index.ctp:48 Template/MedicalCenters/view.ctp:85
-#: Template/Patients/index.ctp:54 Template/Patients/view.ctp:101
-#: Template/Users/index.ctp:44 Template/Users/view.ctp:85;124
+#: /Template/Adresses/index.ctp:94 /Template/Adresses/view.ctp:124;159
+#: /Template/Assignments/index.ctp:94 /Template/Chambers/index.ctp:88
+#: /Template/Chambers/view.ctp:118 /Template/Departments/index.ctp:84
+#: /Template/Departments/view.ctp:106 /Template/Doctors/index.ctp:73
+#: /Template/Files/index.ctp:95 /Template/Levels/index.ctp:84
+#: /Template/MedicalCenters/index.ctp:92 /Template/Patients/index.ctp:96
+#: /Template/Patients/view.ctp:149 /Template/Users/index.ctp:88
 msgid "Edit"
 msgstr "Modifier"
 
-#: Template/Adresses/index.ctp:59 Template/Assignments/index.ctp:65
-#: Template/Chambers/index.ctp:55 Template/Departments/index.ctp:49
-#: Template/Doctors/index.ctp:53 Template/Levels/index.ctp:49
-#: Template/MedicalCenters/index.ctp:57 Template/Patients/index.ctp:63
-#: Template/Users/index.ctp:53
+#: /Template/Adresses/index.ctp:95 /Template/Adresses/view.ctp:125;160
+#: /Template/Assignments/index.ctp:95 /Template/Chambers/index.ctp:89
+#: /Template/Chambers/view.ctp:119 /Template/Departments/index.ctp:85
+#: /Template/Departments/view.ctp:107 /Template/Doctors/index.ctp:74
+#: /Template/Files/index.ctp:96 /Template/Levels/index.ctp:85
+#: /Template/MedicalCenters/index.ctp:93 /Template/Patients/index.ctp:97
+#: /Template/Patients/view.ctp:150 /Template/Users/index.ctp:89
+msgid "Delete"
+msgstr "Supprimer"
+
+#: /Template/Adresses/index.ctp:95 /Template/Adresses/view.ctp:125;160
+#: /Template/Assignments/index.ctp:95 /Template/Chambers/index.ctp:89
+#: /Template/Chambers/view.ctp:119 /Template/Departments/index.ctp:85
+#: /Template/Departments/view.ctp:107 /Template/Doctors/index.ctp:74
+#: /Template/Files/index.ctp:96 /Template/Levels/index.ctp:85
+#: /Template/MedicalCenters/index.ctp:93 /Template/Patients/index.ctp:97
+#: /Template/Patients/view.ctp:150 /Template/Users/index.ctp:89
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Êtes-vous sûr de vouloir supprimer # {0}?"
+
+#: /Template/Adresses/index.ctp:103 /Template/Assignments/index.ctp:103
+#: /Template/Chambers/index.ctp:97 /Template/Departments/index.ctp:93
+#: /Template/Doctors/index.ctp:82 /Template/Files/index.ctp:104
+#: /Template/Levels/index.ctp:93 /Template/MedicalCenters/index.ctp:101
+#: /Template/Patients/index.ctp:105 /Template/Users/index.ctp:97
 msgid "first"
 msgstr "Première"
 
-#: Template/Adresses/index.ctp:60 Template/Assignments/index.ctp:66
-#: Template/Chambers/index.ctp:56 Template/Departments/index.ctp:50
-#: Template/Doctors/index.ctp:54 Template/Levels/index.ctp:50
-#: Template/MedicalCenters/index.ctp:58 Template/Patients/index.ctp:64
-#: Template/Users/index.ctp:54
+#: /Template/Adresses/index.ctp:104 /Template/Assignments/index.ctp:104
+#: /Template/Chambers/index.ctp:98 /Template/Departments/index.ctp:94
+#: /Template/Doctors/index.ctp:83 /Template/Files/index.ctp:105
+#: /Template/Levels/index.ctp:94 /Template/MedicalCenters/index.ctp:102
+#: /Template/Patients/index.ctp:106 /Template/Users/index.ctp:98
 msgid "previous"
 msgstr "précédent"
 
-#: Template/Adresses/index.ctp:62 Template/Assignments/index.ctp:68
-#: Template/Chambers/index.ctp:58 Template/Departments/index.ctp:52
-#: Template/Doctors/index.ctp:56 Template/Levels/index.ctp:52
-#: Template/MedicalCenters/index.ctp:60 Template/Patients/index.ctp:66
-#: Template/Users/index.ctp:56
+#: /Template/Adresses/index.ctp:106 /Template/Assignments/index.ctp:106
+#: /Template/Chambers/index.ctp:100 /Template/Departments/index.ctp:96
+#: /Template/Doctors/index.ctp:85 /Template/Files/index.ctp:107
+#: /Template/Levels/index.ctp:96 /Template/MedicalCenters/index.ctp:104
+#: /Template/Patients/index.ctp:108 /Template/Users/index.ctp:100
 msgid "next"
 msgstr "suivant"
 
-#: Template/Adresses/index.ctp:63 Template/Assignments/index.ctp:69
-#: Template/Chambers/index.ctp:59 Template/Departments/index.ctp:53
-#: Template/Doctors/index.ctp:57 Template/Levels/index.ctp:53
-#: Template/MedicalCenters/index.ctp:61 Template/Patients/index.ctp:67
-#: Template/Users/index.ctp:57
+#: /Template/Adresses/index.ctp:107 /Template/Assignments/index.ctp:107
+#: /Template/Chambers/index.ctp:101 /Template/Departments/index.ctp:97
+#: /Template/Doctors/index.ctp:86 /Template/Files/index.ctp:108
+#: /Template/Levels/index.ctp:97 /Template/MedicalCenters/index.ctp:105
+#: /Template/Patients/index.ctp:109 /Template/Users/index.ctp:101
 msgid "last"
 msgstr "Dernière"
 
-#: Template/Adresses/index.ctp:65 Template/Assignments/index.ctp:71
-#: Template/Chambers/index.ctp:61 Template/Departments/index.ctp:55
-#: Template/Doctors/index.ctp:59 Template/Levels/index.ctp:55
-#: Template/MedicalCenters/index.ctp:63 Template/Patients/index.ctp:69
-#: Template/Users/index.ctp:59
+#: /Template/Adresses/index.ctp:109 /Template/Assignments/index.ctp:109
+#: /Template/Chambers/index.ctp:103 /Template/Departments/index.ctp:99
+#: /Template/Doctors/index.ctp:88 /Template/Files/index.ctp:110
+#: /Template/Levels/index.ctp:99 /Template/MedicalCenters/index.ctp:107
+#: /Template/Patients/index.ctp:111 /Template/Users/index.ctp:103
 msgid ""
 "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
 "total"
@@ -366,472 +992,612 @@ msgstr ""
 "Page {{page}} de {{pages}}, affichage {{Current}} enregistrement (s) sur "
 "{{Count}} total"
 
-#: Template/Adresses/view.ctp:11
-msgid "Delete Adress"
-msgstr "Supprimer l'adresse"
-
-#: Template/Adresses/view.ctp:24 Template/MedicalCenters/view.ctp:24
-#: Template/Patients/view.ctp:26
+#: /Template/Adresses/view.ctp:65 /Template/MedicalCenters/view.ctp:65
+#: /Template/Patients/view.ctp:66
 msgid "Adress"
 msgstr "Adresse"
 
-#: Template/Adresses/view.ctp:28
+#: /Template/Adresses/view.ctp:69
 msgid "City"
 msgstr "Ville"
 
-#: Template/Adresses/view.ctp:32
+#: /Template/Adresses/view.ctp:73
 msgid "Zip Code"
 msgstr "Code postal"
 
-#: Template/Adresses/view.ctp:36
+#: /Template/Adresses/view.ctp:77
 msgid "Province"
 msgstr "Province"
 
-#: Template/Adresses/view.ctp:40
+#: /Template/Adresses/view.ctp:81
 msgid "Country"
 msgstr "Pays"
 
-#: Template/Adresses/view.ctp:44;74 Template/MedicalCenters/view.ctp:40
+#: /Template/Adresses/view.ctp:85;108 /Template/MedicalCenters/view.ctp:81
 msgid "Details"
 msgstr "Détails"
 
-#: Template/Adresses/view.ctp:48;69;106 Template/Assignments/view.ctp:54
-#: Template/Chambers/view.ctp:34;59 Template/Departments/view.ctp:28;49;82
-#: Template/Doctors/view.ctp:36 Template/Levels/view.ctp:24;49;82
-#: Template/MedicalCenters/view.ctp:44;65 Template/Patients/view.ctp:54;75
-#: Template/Users/view.ctp:40;57;98
-msgid "Id"
-msgstr "Id"
-
-#: Template/Adresses/view.ctp:52;77;116 Template/Chambers/view.ctp:42;68
-#: Template/Departments/view.ctp:32;55;91 Template/Levels/view.ctp:32;55;91
-#: Template/MedicalCenters/view.ctp:48;71 Template/Patients/view.ctp:84
-#: Template/Users/view.ctp:67;107
-msgid "User Id"
-msgstr "Identifiant utilisateur"
-
-#: Template/Adresses/view.ctp:56;75;113 Template/Assignments/view.ctp:62
-#: Template/Chambers/view.ctp:46;66 Template/Departments/view.ctp:36;53;89
-#: Template/Doctors/view.ctp:44 Template/Levels/view.ctp:36;53;89
-#: Template/MedicalCenters/view.ctp:52;69 Template/Patients/view.ctp:62;82
-#: Template/Users/view.ctp:44;64;105
+#: /Template/Adresses/view.ctp:91;109;143 /Template/Assignments/view.ctp:93
+#: /Template/Chambers/view.ctp:79;99 /Template/Departments/view.ctp:70;90
+#: /Template/Doctors/view.ctp:70 /Template/Files/view.ctp:73
+#: /Template/Levels/view.ctp:69 /Template/MedicalCenters/view.ctp:85
+#: /Template/Patients/view.ctp:94;133 /Template/Users/view.ctp:81
 msgid "Created"
 msgstr "Créé"
 
-#: Template/Adresses/view.ctp:60;76;114 Template/Assignments/view.ctp:66
-#: Template/Chambers/view.ctp:50;67 Template/Departments/view.ctp:40;54;90
-#: Template/Doctors/view.ctp:48 Template/Levels/view.ctp:40;54;90
-#: Template/MedicalCenters/view.ctp:56;70 Template/Patients/view.ctp:66;83
-#: Template/Users/view.ctp:48;65;106
+#: /Template/Adresses/view.ctp:95;110;144 /Template/Assignments/view.ctp:97
+#: /Template/Chambers/view.ctp:83;100 /Template/Departments/view.ctp:74;91
+#: /Template/Doctors/view.ctp:74 /Template/Files/view.ctp:77
+#: /Template/Levels/view.ctp:73 /Template/MedicalCenters/view.ctp:89
+#: /Template/Patients/view.ctp:98;134 /Template/Users/view.ctp:85
 msgid "Modified"
 msgstr "Modifié"
 
-#: Template/Adresses/view.ctp:65
+#: /Template/Adresses/view.ctp:100
 msgid "Related Medical Centers"
 msgstr "Centres médicaux connexes"
 
-#: Template/Adresses/view.ctp:70;107 Template/Users/view.ctp:58
+#: /Template/Adresses/view.ctp:104;137
 msgid "Adress Id"
 msgstr "Adresse ID"
 
-#: Template/Adresses/view.ctp:71 Template/Doctors/view.ctp:28
-#: Template/MedicalCenters/view.ctp:28;68
+#: /Template/Adresses/view.ctp:105 /Template/Doctors/view.ctp:54
+#: /Template/Files/view.ctp:65 /Template/MedicalCenters/view.ctp:69
 msgid "Name"
 msgstr "Nom"
 
-#: Template/Adresses/view.ctp:72 Template/MedicalCenters/view.ctp:32
+#: /Template/Adresses/view.ctp:106 /Template/MedicalCenters/view.ctp:73
 msgid "Director"
 msgstr "Directeur"
 
-#: Template/Adresses/view.ctp:73 Template/MedicalCenters/view.ctp:36
+#: /Template/Adresses/view.ctp:107 /Template/MedicalCenters/view.ctp:77
 msgid "Phone"
 msgstr "Téléphone"
 
-#: Template/Adresses/view.ctp:102 Template/Users/view.ctp:53
+#: /Template/Adresses/view.ctp:133
 msgid "Related Patients"
 msgstr "Patients apparentés"
 
-#: Template/Adresses/view.ctp:108 Template/Patients/view.ctp:30
-#: Template/Users/view.ctp:59
+#: /Template/Adresses/view.ctp:138 /Template/Patients/view.ctp:70
 msgid "First Name"
 msgstr "Prénom"
 
-#: Template/Adresses/view.ctp:109 Template/Patients/view.ctp:34
-#: Template/Users/view.ctp:60
+#: /Template/Adresses/view.ctp:139 /Template/Patients/view.ctp:74
 msgid "Last Name"
 msgstr "Nom"
 
-#: Template/Adresses/view.ctp:110 Template/Patients/view.ctp:38
-#: Template/Users/view.ctp:61
+#: /Template/Adresses/view.ctp:140 /Template/Patients/view.ctp:78
 msgid "Gender"
 msgstr "Genre"
 
-#: Template/Adresses/view.ctp:111 Template/Patients/view.ctp:58
-#: Template/Users/view.ctp:62
+#: /Template/Adresses/view.ctp:141 /Template/Patients/view.ctp:90
 msgid "Birth Date"
 msgstr "Date de Naissance"
 
-#: Template/Adresses/view.ctp:112 Template/Patients/view.ctp:42
-#: Template/Users/view.ctp:24;63
+#: /Template/Adresses/view.ctp:142 /Template/Patients/view.ctp:82
+#: /Template/Users/view.ctp:65
 msgid "Email"
 msgstr "Courriel"
 
-#: Template/Adresses/view.ctp:115 Template/Patients/view.ctp:46
-#: Template/Users/view.ctp:66
-msgid "Slug"
-msgstr "Slug"
-
-#: Template/Assignments/add.ctp:10 Template/Assignments/edit.ctp:16
-#: Template/Assignments/view.ctp:12 Template/Chambers/add.ctp:15
-#: Template/Chambers/edit.ctp:21 Template/Chambers/index.ctp:15
-#: Template/Chambers/view.ctp:18 Template/Departments/add.ctp:13
-#: Template/Departments/edit.ctp:19 Template/Departments/index.ctp:13
-#: Template/Departments/view.ctp:16 Template/Levels/add.ctp:13
-#: Template/Levels/edit.ctp:19 Template/Levels/index.ctp:13
-#: Template/Levels/view.ctp:16 Template/Patients/add.ctp:15
-#: Template/Patients/edit.ctp:21 Template/Patients/index.ctp:15
-#: Template/Patients/view.ctp:18 Template/Users/add.ctp:13
-#: Template/Users/edit.ctp:19 Template/Users/index.ctp:13
-#: Template/Users/view.ctp:16
-msgid "List Assignments"
-msgstr "Liste des affectations"
-
-#: Template/Assignments/add.ctp:11 Template/Assignments/edit.ctp:17
-#: Template/Assignments/index.ctp:11 Template/Assignments/view.ctp:14
-#: Template/Chambers/add.ctp:13 Template/Chambers/edit.ctp:19
-#: Template/Chambers/index.ctp:13 Template/Chambers/view.ctp:16
-#: Template/Departments/add.ctp:10 Template/Departments/edit.ctp:16
-#: Template/Departments/view.ctp:12
-msgid "List Departments"
-msgstr "Liste des départements"
-
-#: Template/Assignments/add.ctp:12 Template/Assignments/edit.ctp:18
-#: Template/Assignments/index.ctp:12 Template/Assignments/view.ctp:15
-#: Template/Chambers/add.ctp:14 Template/Chambers/edit.ctp:20
-#: Template/Chambers/index.ctp:14 Template/Chambers/view.ctp:17
-#: Template/Departments/index.ctp:10 Template/Departments/view.ctp:13
-msgid "New Department"
-msgstr "Nouveau département"
-
-#: Template/Assignments/add.ctp:15 Template/Assignments/edit.ctp:21
-#: Template/Assignments/index.ctp:15 Template/Assignments/view.ctp:18
-#: Template/Chambers/add.ctp:11 Template/Chambers/edit.ctp:17
-#: Template/Chambers/index.ctp:11 Template/Chambers/view.ctp:14
-#: Template/Levels/add.ctp:10 Template/Levels/edit.ctp:16
-#: Template/Levels/view.ctp:12
-msgid "List Levels"
-msgstr "Niveaux de liste"
-
-#: Template/Assignments/add.ctp:16 Template/Assignments/edit.ctp:22
-#: Template/Assignments/index.ctp:16 Template/Assignments/view.ctp:19
-#: Template/Chambers/add.ctp:12 Template/Chambers/edit.ctp:18
-#: Template/Chambers/index.ctp:12 Template/Chambers/view.ctp:15
-#: Template/Levels/index.ctp:10 Template/Levels/view.ctp:13
-msgid "New Level"
-msgstr "Nouveau niveau"
-
-#: Template/Assignments/add.ctp:17 Template/Assignments/edit.ctp:23
-#: Template/Assignments/index.ctp:17 Template/Assignments/view.ctp:20
-#: Template/Chambers/add.ctp:10 Template/Chambers/edit.ctp:16
-#: Template/Chambers/view.ctp:12 Template/Departments/add.ctp:11
-#: Template/Departments/edit.ctp:17 Template/Departments/index.ctp:11
-#: Template/Departments/view.ctp:14 Template/Levels/add.ctp:11
-#: Template/Levels/edit.ctp:17 Template/Levels/index.ctp:11
-#: Template/Levels/view.ctp:14
-msgid "List Chambers"
-msgstr "Liste des chambres"
-
-#: Template/Assignments/add.ctp:18 Template/Assignments/edit.ctp:24
-#: Template/Assignments/index.ctp:18 Template/Assignments/view.ctp:21
-#: Template/Chambers/index.ctp:10 Template/Chambers/view.ctp:13
-#: Template/Departments/add.ctp:12 Template/Departments/edit.ctp:18
-#: Template/Departments/index.ctp:12 Template/Departments/view.ctp:15
-#: Template/Levels/add.ctp:12 Template/Levels/edit.ctp:18
-#: Template/Levels/index.ctp:12 Template/Levels/view.ctp:15
-msgid "New Chamber"
-msgstr "Nouvelle chambre"
-
-#: Template/Assignments/add.ctp:19 Template/Assignments/edit.ctp:25
-#: Template/Assignments/index.ctp:19 Template/Assignments/view.ctp:22
-#: Template/Doctors/add.ctp:13 Template/Doctors/edit.ctp:19
-#: Template/Doctors/index.ctp:13 Template/Doctors/view.ctp:16
-#: Template/Patients/add.ctp:13 Template/Patients/edit.ctp:19
-#: Template/Patients/index.ctp:13 Template/Patients/view.ctp:16
-#: Template/Users/add.ctp:10 Template/Users/edit.ctp:16
-#: Template/Users/view.ctp:12
-msgid "List Users"
-msgstr "Liste des utilisateurs"
-
-#: Template/Assignments/add.ctp:20 Template/Assignments/edit.ctp:26
-#: Template/Assignments/index.ctp:20 Template/Assignments/view.ctp:23
-#: Template/Doctors/add.ctp:14 Template/Doctors/edit.ctp:20
-#: Template/Doctors/index.ctp:14 Template/Doctors/view.ctp:17
-#: Template/Patients/add.ctp:14 Template/Patients/edit.ctp:20
-#: Template/Patients/index.ctp:14 Template/Patients/view.ctp:17
-#: Template/Users/index.ctp:10 Template/Users/view.ctp:13
-msgid "New User"
-msgstr "Nouvel utilisateur"
-
-#: Template/Assignments/add.ctp:26
+#: /Template/Assignments/add.ctp:64
 msgid "Add Assignment"
 msgstr "Ajouter une affectation"
 
-#: Template/Assignments/edit.ctp:32 Template/Assignments/view.ctp:10
+#: /Template/Assignments/edit.ctp:64
 msgid "Edit Assignment"
 msgstr "Modifier l'adresse"
 
-#: Template/Assignments/index.ctp:10 Template/Assignments/view.ctp:13
-#: Template/Chambers/add.ctp:16 Template/Chambers/edit.ctp:22
-#: Template/Chambers/index.ctp:16 Template/Chambers/view.ctp:19
-#: Template/Departments/add.ctp:14 Template/Departments/edit.ctp:20
-#: Template/Departments/index.ctp:14 Template/Departments/view.ctp:17
-#: Template/Levels/add.ctp:14 Template/Levels/edit.ctp:20
-#: Template/Levels/index.ctp:14 Template/Levels/view.ctp:17
-#: Template/Patients/add.ctp:16 Template/Patients/edit.ctp:22
-#: Template/Patients/index.ctp:16 Template/Patients/view.ctp:19
-#: Template/Users/add.ctp:14 Template/Users/edit.ctp:20
-#: Template/Users/index.ctp:14 Template/Users/view.ctp:17
-msgid "New Assignment"
-msgstr "Nouveau patient"
-
-#: Template/Assignments/index.ctp:24
+#: /Template/Assignments/index.ctp:62
 msgid "Assignments"
 msgstr "Affectations"
 
-#: Template/Assignments/view.ctp:11
-msgid "Delete Assignment"
-msgstr "Supprimer"
-
-#: Template/Assignments/view.ctp:30 Template/Chambers/view.ctp:30
-#: Template/Departments/view.ctp:24
+#: /Template/Assignments/view.ctp:65 /Template/Chambers/view.ctp:69
+#: /Template/Departments/view.ctp:65
 msgid "Department"
 msgstr "Département"
 
-#: Template/Assignments/view.ctp:34
+#: /Template/Assignments/view.ctp:69
 msgid "Patient"
 msgstr "Patient"
 
-#: Template/Assignments/view.ctp:38 Template/Chambers/view.ctp:63
-#: Template/Departments/view.ctp:86 Template/Levels/view.ctp:86
-#: Template/Patients/view.ctp:79 Template/Users/view.ctp:102
+#: /Template/Assignments/view.ctp:73 /Template/Chambers/view.ctp:96
+#: /Template/Departments/view.ctp:87 /Template/Patients/view.ctp:130
 msgid "Reason"
 msgstr "Motif"
 
-#: Template/Assignments/view.ctp:42 Template/Chambers/view.ctp:26
+#: /Template/Assignments/view.ctp:77 /Template/Chambers/view.ctp:65
 msgid "Level"
 msgstr "Niveau de bassin"
 
-#: Template/Assignments/view.ctp:46
+#: /Template/Assignments/view.ctp:81
 msgid "Chamber"
 msgstr "Chambre"
 
-#: Template/Assignments/view.ctp:50 Template/Doctors/view.ctp:32
-#: Template/Patients/view.ctp:50
+#: /Template/Assignments/view.ctp:85 /Template/Doctors/view.ctp:58
+#: /Template/Patients/view.ctp:86
 msgid "User"
 msgstr "Utilisateur"
 
-#: Template/Assignments/view.ctp:58 Template/Chambers/view.ctp:62
-#: Template/Departments/view.ctp:85 Template/Levels/view.ctp:85
-#: Template/Patients/view.ctp:78 Template/Users/view.ctp:101
+#: /Template/Assignments/view.ctp:89 /Template/Chambers/view.ctp:95
+#: /Template/Departments/view.ctp:86 /Template/Patients/view.ctp:129
 msgid "Assignment Date"
 msgstr "Date d'affectation"
 
-#: Template/Chambers/add.ctp:22
+#: /Template/Chambers/add.ctp:64
 msgid "Add Chamber"
 msgstr "Ajouter une chambre"
 
-#: Template/Chambers/edit.ctp:28 Template/Chambers/view.ctp:10
+#: /Template/Chambers/edit.ctp:64
 msgid "Edit Chamber"
 msgstr "Modifier la chambre"
 
-#: Template/Chambers/index.ctp:20
+#: /Template/Chambers/index.ctp:62
 msgid "Chambers"
 msgstr "Chambres"
 
-#: Template/Chambers/view.ctp:11
-msgid "Delete Chamber"
-msgstr "Supprimer la chambre"
-
-#: Template/Chambers/view.ctp:38 Template/Departments/view.ctp:50
-#: Template/Levels/view.ctp:28;50
+#: /Template/Chambers/view.ctp:74 /Template/Levels/view.ctp:65
 msgid "Number"
 msgstr "Numéro"
 
-#: Template/Chambers/view.ctp:55 Template/Departments/view.ctp:78
-#: Template/Levels/view.ctp:78 Template/Patients/view.ctp:71
-#: Template/Users/view.ctp:94
+#: /Template/Chambers/view.ctp:88 /Template/Departments/view.ctp:80
+#: /Template/Patients/view.ctp:123
 msgid "Related Assignments"
 msgstr "Affectations connexes"
 
-#: Template/Chambers/view.ctp:60 Template/Departments/view.ctp:52;83
-#: Template/Levels/view.ctp:52;83 Template/Patients/view.ctp:76
-#: Template/Users/view.ctp:99
+#: /Template/Chambers/view.ctp:93 /Template/Departments/view.ctp:84
+#: /Template/Patients/view.ctp:127
 msgid "Department Id"
 msgstr "ID du département"
 
-#: Template/Chambers/view.ctp:61 Template/Departments/view.ctp:84
-#: Template/Levels/view.ctp:84 Template/Patients/view.ctp:77
-#: Template/Users/view.ctp:100
+#: /Template/Chambers/view.ctp:94 /Template/Departments/view.ctp:85
+#: /Template/Patients/view.ctp:128
 msgid "Patient Id"
 msgstr "ID du patient"
 
-#: Template/Chambers/view.ctp:64 Template/Departments/view.ctp:51;87
-#: Template/Levels/view.ctp:51;87 Template/Patients/view.ctp:80
-#: Template/Users/view.ctp:103
+#: /Template/Chambers/view.ctp:97 /Template/Departments/view.ctp:88
+#: /Template/Patients/view.ctp:131
 msgid "Level Id"
 msgstr "Identifiant de niveau"
 
-#: Template/Chambers/view.ctp:65 Template/Departments/view.ctp:88
-#: Template/Levels/view.ctp:88 Template/Patients/view.ctp:81
-#: Template/Users/view.ctp:104
+#: /Template/Chambers/view.ctp:98 /Template/Departments/view.ctp:89
+#: /Template/Patients/view.ctp:132
 msgid "Chamber Id"
 msgstr "ID de chambre"
 
-#: Template/Departments/add.ctp:20
+#: /Template/Departments/add.ctp:64
 msgid "Add Department"
 msgstr "Ajouter un département"
 
-#: Template/Departments/edit.ctp:26 Template/Departments/view.ctp:10
+#: /Template/Departments/edit.ctp:64
 msgid "Edit Department"
 msgstr "Editer le département"
 
-#: Template/Departments/index.ctp:18
+#: /Template/Departments/index.ctp:62
 msgid "Departments"
 msgstr "Ministères"
 
-#: Template/Departments/view.ctp:11
-msgid "Delete Department"
-msgstr "Supprimer le service"
-
-#: Template/Departments/view.ctp:45 Template/Levels/view.ctp:45
-msgid "Related Chambers"
-msgstr "Chambres connexes"
-
-#: Template/Doctors/add.ctp:10 Template/Doctors/edit.ctp:16
-#: Template/Doctors/view.ctp:12 Template/MedicalCenters/add.ctp:13
-#: Template/MedicalCenters/edit.ctp:19 Template/MedicalCenters/index.ctp:13
-#: Template/MedicalCenters/view.ctp:16
-msgid "List Doctors"
-msgstr "Liste des médecins"
-
-#: Template/Doctors/add.ctp:20
+#: /Template/Doctors/add.ctp:50
 msgid "Add Doctor"
 msgstr "Ajouter un médecin"
 
-#: Template/Doctors/edit.ctp:26 Template/Doctors/view.ctp:10
+#: /Template/Doctors/edit.ctp:49
 msgid "Edit Doctor"
 msgstr "Modifier le médecin"
 
-#: Template/Doctors/index.ctp:10 Template/Doctors/view.ctp:13
-#: Template/MedicalCenters/add.ctp:14 Template/MedicalCenters/edit.ctp:20
-#: Template/MedicalCenters/index.ctp:14 Template/MedicalCenters/view.ctp:17
-msgid "New Doctor"
-msgstr "Nouveau médecin"
-
-#: Template/Doctors/index.ctp:18
+#: /Template/Doctors/index.ctp:47
 msgid "Doctors"
 msgstr "Médecins"
 
-#: Template/Doctors/view.ctp:11
-msgid "Delete Doctor"
-msgstr "Supprimer"
-
-#: Template/Doctors/view.ctp:24
+#: /Template/Doctors/view.ctp:50
 msgid "Medical Center"
 msgstr "Le centre médical a été sauvé."
 
-#: Template/Doctors/view.ctp:40 Template/MedicalCenters/view.ctp:66
+#: /Template/Doctors/view.ctp:62
+msgid "Id"
+msgstr "Id"
+
+#: /Template/Doctors/view.ctp:66
 msgid "Address Id"
 msgstr "Identifiant utilisateur"
 
-#: Template/Layout/error.ctp:35
+#: /Template/Emails/index.ctp:1
+msgid "sent"
+msgstr ""
+
+#: /Template/Files/add.ctp:64
+msgid "Add File"
+msgstr "Ajouter un Utilisateur"
+
+#: /Template/Files/edit.ctp:64
+msgid "Edit File"
+msgstr "Modifier"
+
+#: /Template/Files/index.ctp:62
+msgid "Files"
+msgstr "Fichiers"
+
+#: /Template/Files/index.ctp:68
+msgid "Preview"
+msgstr ""
+
+#: /Template/Files/view.ctp:69
+msgid "Path"
+msgstr "Chemin"
+
+#: /Template/Files/view.ctp:81
+msgid "Status"
+msgstr "Statut"
+
+#: /Template/Files/view.ctp:82
+msgid "Yes"
+msgstr "Oui"
+
+#: /Template/Files/view.ctp:82
+msgid "No"
+msgstr "Non"
+
+#: /Template/Layout/error.ctp:35 /Template/Error/error400.ctp:36
+#: /Template/Error/error500.ctp:41
 msgid "Error"
 msgstr "Erreur"
 
-#: Template/Layout/error.ctp:43
+#: /Template/Layout/error.ctp:43
 msgid "Back"
 msgstr "Retour"
 
-#: Template/Levels/add.ctp:20
+#: /Template/Levels/add.ctp:64
 msgid "Add Level"
 msgstr "Ajouter un niveau"
 
-#: Template/Levels/edit.ctp:26 Template/Levels/view.ctp:10
+#: /Template/Levels/edit.ctp:64
 msgid "Edit Level"
 msgstr "Modifier le niveau"
 
-#: Template/Levels/index.ctp:18
+#: /Template/Levels/index.ctp:62
 msgid "Levels"
 msgstr "Niveaux"
 
-#: Template/Levels/view.ctp:11
-msgid "Delete Level"
-msgstr "Supprimer le niveau"
-
-#: Template/MedicalCenters/add.ctp:20
+#: /Template/MedicalCenters/add.ctp:64
 msgid "Add Medical Center"
 msgstr "Ajouter un centre médical"
 
-#: Template/MedicalCenters/edit.ctp:26 Template/MedicalCenters/view.ctp:10
+#: /Template/MedicalCenters/edit.ctp:64
 msgid "Edit Medical Center"
 msgstr "Edit Medical Center"
 
-#: Template/MedicalCenters/index.ctp:18
+#: /Template/MedicalCenters/index.ctp:62
 msgid "Medical Centers"
 msgstr "Centres médicaux"
 
-#: Template/MedicalCenters/view.ctp:11
-msgid "Delete Medical Center"
-msgstr "Supprimer le centre médical"
-
-#: Template/MedicalCenters/view.ctp:61
-msgid "Related Doctors"
-msgstr "Médecins associés"
-
-#: Template/MedicalCenters/view.ctp:67
-msgid "Medical Center Id"
-msgstr "ID du centre médical"
-
-#: Template/Patients/add.ctp:22
+#: /Template/Patients/add.ctp:65
 msgid "Add Patient"
 msgstr "Ajouter un patient"
 
-#: Template/Patients/edit.ctp:28 Template/Patients/view.ctp:10
+#: /Template/Patients/edit.ctp:64
 msgid "Edit Patient"
 msgstr "Modifier le patient"
 
-#: Template/Patients/index.ctp:20
+#: /Template/Patients/index.ctp:62
 msgid "Patients"
 msgstr "Patients"
 
-#: Template/Patients/view.ctp:11
-msgid "Delete Patient"
-msgstr "Supprimer le patient"
+#: /Template/Patients/view.ctp:103
+msgid "Related Files"
+msgstr "Fichiers associés"
 
-#: Template/Users/add.ctp:20
+#: /Template/Patients/view.ctp:107
+msgid "Image"
+msgstr ""
+
+#: /Template/Users/add.ctp:64
 msgid "Add User"
 msgstr "Ajouter un Utilisateur"
 
-#: Template/Users/edit.ctp:26 Template/Users/view.ctp:10
+#: /Template/Users/confirm.ctp:64
+msgid "Confirm E-Mail"
+msgstr "Confirmer l'email"
+
+#: /Template/Users/confirm.ctp:73
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: /Template/Users/edit.ctp:64
 msgid "Edit User"
 msgstr "Modifier l'utilisateur"
 
-#: Template/Users/index.ctp:18
+#: /Template/Users/index.ctp:62
 msgid "Users"
 msgstr "Utilisateurs"
 
-#: Template/Users/view.ctp:11
-msgid "Delete User"
-msgstr "Supprimer l'utilisateur"
-
-#: Template/Users/view.ctp:28
+#: /Template/Users/view.ctp:69
 msgid "Password"
 msgstr "Mot de passe"
 
-#: Template/Users/view.ctp:32
+#: /Template/Users/view.ctp:73
 msgid "Username"
 msgstr "Nom d'utilisateur"
 
-#: Template/Users/view.ctp:36
+#: /Template/Users/view.ctp:77
 msgid "Type"
 msgstr "Type"
+
+#: /Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: /Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+#: Controller/Component/AuthComponent.php:500
+msgid "You are not authorized to access that location."
+msgstr "Accès refusé."
+
+#: Controller/Component/CsrfComponent.php:162
+#: Http/Middleware/CsrfProtectionMiddleware.php:191
+msgid "Missing CSRF token cookie"
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:166
+#: Http/Middleware/CsrfProtectionMiddleware.php:195
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:262
+msgid "Not Found"
+msgstr ""
+
+#: Error/ExceptionRenderer.php:264
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: Http/Response.php:2603
+msgid "The requested file contains `..` and will not be read."
+msgstr ""
+
+#: Http/Response.php:2624
+msgid "The requested file was not found"
+msgstr ""
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154;332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155;333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156;334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157;335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171;346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172;347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173;348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174;349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+#, fuzzy
+msgid "on %s"
+msgstr ""
+"Page {{page}} de {{pages}}, affichage {{Current}} enregistrement (s) sur "
+"{{Count}} total"
+
+#: I18n/RelativeTimeFormatter.php:47;126;316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51;129;319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57;132;322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59;135;325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64;138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68;141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72;144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr ""
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr ""
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:917
+msgid "and"
+msgstr ""
+
+#: Validation/Validator.php:111
+msgid "This field is required"
+msgstr ""
+
+#: Validation/Validator.php:112
+msgid "This field cannot be left empty"
+msgstr ""
+
+#: Validation/Validator.php:2054
+msgid "The provided value is invalid"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1099
+msgid "Edit {0}"
+msgstr "Modifier"
+
+#: View/Helper/FormHelper.php:1101
+msgid "New {0}"
+msgstr "Nouvel utilisateur"
+
+#: View/Helper/HtmlHelper.php:815
+msgid "Home"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "January"
+msgstr "janvier"
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "February"
+msgstr "fevrier"
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "March"
+msgstr "mars"
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "April"
+msgstr "avril"
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "May"
+msgstr "mai"
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "June"
+msgstr "juin"
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "July"
+msgstr "juillet"
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "August"
+msgstr "août"
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "September"
+msgstr "septembre"
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "October"
+msgstr "octobre"
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "November"
+msgstr "novembre"
+
+#: View/Widget/DateTimeWidget.php:551
+msgid "December"
+msgstr "décembre"
