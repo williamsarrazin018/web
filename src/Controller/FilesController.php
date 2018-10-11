@@ -14,9 +14,24 @@ class FilesController extends AppController
 {
 
     public function isAuthorized($user) {
-        $action = $this->request->getParam('action');
-        // The edit and delete actions are allowed to logged in users for comments.
-        if (in_array($action, ['add', 'edit', 'delete'])) {
+         $action = $this->request->getParam('action');
+        
+        if (in_array($action, ['view', 'add'])) {
+            return true;
+        }
+
+        // All other actions require a slug.
+        $id = $this->request->getParam('pass.0');
+        if (!$id) {
+            return false;
+        }
+
+        if ($user['type'] === 'secretaire') {
+            // Check that the   belongs to the current user.
+            $file = $this->Files->findById($id)->first();
+
+            return $file->user_id === $user['id'];
+        } else if ($user['type'] === 'admin'){
             return true;
         }
     }
@@ -29,8 +44,8 @@ class FilesController extends AppController
     public function index()
     {
         $files = $this->paginate($this->Files);
-
-        $this->set(compact('files'));
+        $user = $this->Auth->user();
+        $this->set(compact('files', 'user'));
     }
 
     /**
@@ -45,8 +60,9 @@ class FilesController extends AppController
         $file = $this->Files->get($id, [
             'contain' => ['FilesPatients']
         ]);
-
+        $user = $this->Auth->user();
         $this->set('file', $file);
+        $this->set('user', $user);
     }
 
     /**
@@ -78,7 +94,8 @@ class FilesController extends AppController
                 $this->Flash->error(__('Please choose a file to upload.'));
             }
         }
-        $this->set(compact('file'));
+        $user = $this->Auth->user();
+        $this->set(compact('file', 'user'));
     }
 
     /**
@@ -102,7 +119,8 @@ class FilesController extends AppController
             }
             $this->Flash->error(__('The file could not be saved. Please, try again.'));
         }
-        $this->set(compact('file'));
+        $user = $this->Auth->user();
+        $this->set(compact('file', 'user'));
     }
 
     /**

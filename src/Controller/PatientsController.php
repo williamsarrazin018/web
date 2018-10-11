@@ -28,7 +28,7 @@ class PatientsController extends AppController
         }
 
         if ($user['type'] === 'secretaire') {
-            // Check that the article belongs to the current user.
+            // Check that the   belongs to the current user.
             $patient = $this->Patients->findById($id)->first();
 
             return $patient->user_id === $user['id'];
@@ -50,7 +50,8 @@ class PatientsController extends AppController
         ];
         $patients = $this->paginate($this->Patients);
 
-        $this->set(compact('patients'));
+        $user = $this->Auth->user();
+        $this->set(compact('patients', 'user'));
     }
 
     /**
@@ -65,8 +66,9 @@ class PatientsController extends AppController
         $patient = $this->Patients->get($id, [
             'contain' => ['Adresses', 'Users', 'Assignments', 'Files']
         ]);
-
+        $user = $this->Auth->user();
         $this->set('patient', $patient);
+        $this->set('user', $user);
     }
 
     /**
@@ -87,9 +89,10 @@ class PatientsController extends AppController
             $this->Flash->error(__('The patient could not be saved. Please, try again.'));
         }
         $adresses = $this->Patients->Adresses->find('list', ['limit' => 200]);
+        $user = $this->Auth->user();
         $users = $this->Patients->Users->find('list', ['limit' => 200]);
         $files = $this->Patients->Files->find('list', ['limit' => 200]);
-        $this->set(compact('patient', 'adresses', 'users', 'files'));
+        $this->set(compact('patient', 'adresses', 'users', 'files', 'user'));
     }
 
     /**
@@ -116,7 +119,8 @@ class PatientsController extends AppController
         $adresses = $this->Patients->Adresses->find('list', ['limit' => 200]);
         $users = $this->Patients->Users->find('list', ['limit' => 200]);
         $files = $this->Patients->Files->find('list', ['limit' => 200]);
-        $this->set(compact('patient', 'adresses', 'users', 'files'));
+        $user = $this->Auth->user();
+        $this->set(compact('patient', 'adresses', 'users', 'files', 'user'));
     }
 
     /**

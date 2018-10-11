@@ -28,7 +28,7 @@ class LevelsController extends AppController
         }
 
         if ($user['type'] === 'secretaire') {
-            // Check that the article belongs to the current user.
+            // Check that the   belongs to the current user.
             $level = $this->Levels->findById($id)->first();
 
             return $level->user_id === $user['id'];
@@ -49,7 +49,9 @@ class LevelsController extends AppController
            $this->paginate = [
             'contain' => ['Users']
         ];
-        $this->set(compact('levels', 'users'));
+           $user = $this->Auth->user();
+        $this->set(compact('levels', 'users', 'user'));
+        
     }
 
     /**
@@ -64,8 +66,9 @@ class LevelsController extends AppController
         $level = $this->Levels->get($id, [
             'contain' => ['Chambers', 'Assignments']
         ]);
-
+        $user = $this->Auth->user();
         $this->set('level', $level);
+        $this->set('user', $user);
     }
 
     /**
@@ -85,8 +88,9 @@ class LevelsController extends AppController
             }
             $this->Flash->error(__('The level could not be saved. Please, try again.'));
         }
+        $user = $this->Auth->user();
         $users = $this->Levels->Users->find('list', ['limit' => 200]);
-        $this->set(compact('level', 'users'));
+        $this->set(compact('level', 'users', 'user'));
     }
 
     /**
@@ -110,8 +114,9 @@ class LevelsController extends AppController
             }
             $this->Flash->error(__('The level could not be saved. Please, try again.'));
         }
+        $user = $this->Auth->user();
         $users = $this->Levels->Users->find('list', ['limit' => 200]);
-        $this->set(compact('level', 'users'));
+        $this->set(compact('level', 'users', 'user'));
     }
 
     /**

@@ -28,7 +28,7 @@ class ChambersController extends AppController
         }
 
         if ($user['type'] === 'secretaire') {
-            // Check that the article belongs to the current user.
+            // Check that the   belongs to the current user.
             $chamber = $this->Chambers->findById($id)->first();
 
             return $chamber->user_id === $user['id'];
@@ -49,8 +49,8 @@ class ChambersController extends AppController
             'contain' => ['Levels', 'Departments', 'Users']
         ];
         $chambers = $this->paginate($this->Chambers);
-
-        $this->set(compact('chambers'));
+        $user = $this->Auth->user();
+        $this->set(compact('chambers', 'user'));
     }
 
     /**
@@ -65,8 +65,9 @@ class ChambersController extends AppController
         $chamber = $this->Chambers->get($id, [
             'contain' => ['Levels', 'Departments', 'Assignments']
         ]);
-
+        $user = $this->Auth->user();
         $this->set('chamber', $chamber);
+        $this->set('user', $user);
     }
 
     /**
@@ -89,7 +90,8 @@ class ChambersController extends AppController
         $users = $this->Chambers->Users->find('list', ['limit' => 200]);
         $levels = $this->Chambers->Levels->find('list', ['limit' => 200]);
         $departments = $this->Chambers->Departments->find('list', ['limit' => 200]);
-        $this->set(compact('chamber', 'levels', 'departments', 'users'));
+        $user = $this->Auth->user();
+        $this->set(compact('chamber', 'levels', 'departments', 'users', 'user'));
     }
 
     /**
@@ -116,7 +118,8 @@ class ChambersController extends AppController
         $users = $this->Chambers->Users->find('list', ['limit' => 200]);
         $levels = $this->Chambers->Levels->find('list', ['limit' => 200]);
         $departments = $this->Chambers->Departments->find('list', ['limit' => 200]);
-        $this->set(compact('chamber', 'levels', 'departments', 'users'));
+        $user = $this->Auth->user();
+        $this->set(compact('chamber', 'levels', 'departments', 'users', 'user'));
     }
 
     /**

@@ -33,7 +33,7 @@ class UsersController extends AppController
         }
 
         if ($user['type'] === 'secretaire') {
-            // Check that the article belongs to the current user.
+            // Check that the   belongs to the current user.
             $user1 = $this->Users->findById($id)->first();
 
             return $user1->id === $user['id'];

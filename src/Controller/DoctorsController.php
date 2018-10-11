@@ -28,7 +28,7 @@ class DoctorsController extends AppController
         }
 
         if ($user['type'] === 'secretaire') {
-            // Check that the article belongs to the current user.
+            // Check that the   belongs to the current user.
             $doctor = $this->Doctors->findById($id)->first();
 
             return $doctor->user_id === $user['id'];
@@ -49,8 +49,8 @@ class DoctorsController extends AppController
             'contain' => ['Addresses', 'MedicalCenters', 'Users']
         ];
         $doctors = $this->paginate($this->Doctors);
-
-        $this->set(compact('doctors'));
+        $user = $this->Auth->user();
+        $this->set(compact('doctors', 'user'));
     }
 
     /**
@@ -65,8 +65,9 @@ class DoctorsController extends AppController
         $doctor = $this->Doctors->get($id, [
             'contain' => ['Addresses', 'MedicalCenters', 'Users']
         ]);
-
+        $user = $this->Auth->user();
         $this->set('doctor', $doctor);
+        $this->set('user', $user);        
     }
 
     /**
@@ -89,7 +90,8 @@ class DoctorsController extends AppController
         $addresses = $this->Doctors->Addresses->find('list', ['limit' => 200]);
         $medicalCenters = $this->Doctors->MedicalCenters->find('list', ['limit' => 200]);
         $users = $this->Doctors->Users->find('list', ['limit' => 200]);
-        $this->set(compact('doctor', 'addresses', 'medicalCenters', 'users'));
+        $user = $this->Auth->user();
+        $this->set(compact('doctor', 'addresses', 'medicalCenters', 'users', 'user'));
     }
 
     /**
@@ -116,7 +118,8 @@ class DoctorsController extends AppController
         $addresses = $this->Doctors->Addresses->find('list', ['limit' => 200]);
         $medicalCenters = $this->Doctors->MedicalCenters->find('list', ['limit' => 200]);
         $users = $this->Doctors->Users->find('list', ['limit' => 200]);
-        $this->set(compact('doctor', 'addresses', 'medicalCenters', 'users'));
+        $user = $this->Auth->user();
+        $this->set(compact('doctor', 'addresses', 'medicalCenters', 'users', 'user'));
     }
 
     /**

@@ -31,7 +31,7 @@ class DepartmentsController extends AppController
         }
 
         if ($user['type'] === 'secretaire') {
-            // Check that the article belongs to the current user.
+            // Check that the   belongs to the current user.
             $department = $this->Departments->findById($id)->first();
 
             return $department->user_id === $user['id'];
@@ -53,8 +53,8 @@ class DepartmentsController extends AppController
         $this->paginate = [
             'contain' => ['Users']
         ];
-        
-        $this->set(compact('departments'));
+        $user = $this->Auth->user();
+        $this->set(compact('departments', 'user'));
     }
 
     /**
@@ -69,8 +69,9 @@ class DepartmentsController extends AppController
         $department = $this->Departments->get($id, [
             'contain' => ['Chambers', 'Assignments']
         ]);
-
+        $user = $this->Auth->user();
         $this->set('department', $department);
+        $this->set('user', $user);
     }
 
     /**
@@ -91,7 +92,8 @@ class DepartmentsController extends AppController
             $this->Flash->error(__('The department could not be saved. Please, try again.'));
         }
         $users = $this->Departments->Users->find('list', ['limit' => 200]);
-        $this->set(compact('department', 'users'));
+        $user = $this->Auth->user();
+        $this->set(compact('department', 'users', 'user'));
     }
 
     /**
@@ -115,8 +117,9 @@ class DepartmentsController extends AppController
             }
             $this->Flash->error(__('The department could not be saved. Please, try again.'));
         }
+        $user = $this->Auth->user();
         $users = $this->Departments->Users->find('list', ['limit' => 200]);
-        $this->set(compact('department', 'users'));
+        $this->set(compact('department', 'users', 'user'));
     }
 
     /**

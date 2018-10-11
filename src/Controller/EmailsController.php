@@ -13,7 +13,7 @@
          
          $this->Flash->success(__('A confirmation email has been sent.'));
 
-         return $this->redirect('/users/login');
+         return $this->redirect('/Patients/index');
       }
    }
 ?>

@@ -17,10 +17,21 @@ class AdressesController extends AppController
         
         $action = $this->request->getParam('action');
         
-        if (in_array($action, ['view'])) {
+        if ($user['type'] === 'secretaireNC') {
+ 
+            if (in_array($action, ['view'])) {
+                   return true;
+            }
+
+            
+        }
+        
+        if (in_array($action, ['view', 'add'])) {
             return true;
         }
 
+        
+        
         // All other actions require a slug.
         $id = $this->request->getParam('pass.0');
         if (!$id) {
@@ -28,10 +39,17 @@ class AdressesController extends AppController
         }
 
         if ($user['type'] === 'secretaire') {
-            // Check that the article belongs to the current user.
+            // Check that the   belongs to the current user.
             $adress = $this->Adresses->findById($id)->first();
+            
+            if($adress->user_id === $user['id']){
+                if (in_array($action, ['view', 'add', 'edit', 'delete'])) {
+                    return true;
+                }
+                    
+            } 
 
-            return $adress->user_id === $user['id'];
+            
         } else if ($user['type'] === 'admin'){
             return true;
         }
@@ -49,8 +67,8 @@ class AdressesController extends AppController
             'contain' => ['Users']
         ];
         $adresses = $this->paginate($this->Adresses);
-
-        $this->set(compact('adresses'));
+        $user = $this->Auth->user();
+        $this->set(compact('adresses', 'user'));
     }
 
     /**
@@ -65,8 +83,9 @@ class AdressesController extends AppController
         $adress = $this->Adresses->get($id, [
             'contain' => ['MedicalCenters', 'Patients']
         ]);
-
+        $user = $this->Auth->user();
         $this->set('adress', $adress);
+        $this->set('user', $user);
     }
 
     /**
@@ -86,8 +105,9 @@ class AdressesController extends AppController
             }
             $this->Flash->error(__('The adress could not be saved. Please, try again.'));
         }
+        $user = $this->Auth->user();
         $users = $this->Adresses->Users->find('list', ['limit' => 200]);
-        $this->set(compact('adress', 'users'));
+        $this->set(compact('adress', 'users', 'user'));
     }
 
     /**
@@ -112,7 +132,8 @@ class AdressesController extends AppController
             $this->Flash->error(__('The adress could not be saved. Please, try again.'));
         }
         $users = $this->Adresses->Users->find('list', ['limit' => 200]);
-        $this->set(compact('adress', 'users'));
+        $user = $this->Auth->user();
+        $this->set(compact('adress', 'users', 'user'));
     }
 
     /**

@@ -28,7 +28,7 @@ class AssignmentsController extends AppController
         }
 
         if ($user['type'] === 'secretaire') {
-            // Check that the article belongs to the current user.
+            // Check that the   belongs to the current user.
             $assignment = $this->Assigments->findById($id)->first();
 
             return $assignment->user_id === $user['id'];
@@ -49,8 +49,8 @@ class AssignmentsController extends AppController
             'contain' => ['Departments', 'Patients', 'Levels', 'Chambers', 'Users']
         ];
         $assignments = $this->paginate($this->Assignments);
-
-        $this->set(compact('assignments'));
+        $user = $this->Auth->user();
+        $this->set(compact('assignments', 'user'));
     }
 
     /**
@@ -65,8 +65,9 @@ class AssignmentsController extends AppController
         $assignment = $this->Assignments->get($id, [
             'contain' => ['Departments', 'Patients', 'Levels', 'Chambers', 'Users']
         ]);
-
+        $user = $this->Auth->user();
         $this->set('assignment', $assignment);
+        $this->set('user', $user);
     }
 
     /**
@@ -91,7 +92,8 @@ class AssignmentsController extends AppController
         $levels = $this->Assignments->Levels->find('list', ['limit' => 200]);
         $chambers = $this->Assignments->Chambers->find('list', ['limit' => 200]);
         $users = $this->Assignments->Users->find('list', ['limit' => 200]);
-        $this->set(compact('assignment', 'departments', 'patients', 'levels', 'chambers', 'users'));
+        $user = $this->Auth->user();
+        $this->set(compact('assignment', 'departments', 'patients', 'levels', 'chambers', 'users', 'user'));
     }
 
     /**
@@ -120,7 +122,8 @@ class AssignmentsController extends AppController
         $levels = $this->Assignments->Levels->find('list', ['limit' => 200]);
         $chambers = $this->Assignments->Chambers->find('list', ['limit' => 200]);
         $users = $this->Assignments->Users->find('list', ['limit' => 200]);
-        $this->set(compact('assignment', 'departments', 'patients', 'levels', 'chambers', 'users'));
+        $user = $this->Auth->user();
+        $this->set(compact('assignment', 'departments', 'patients', 'levels', 'chambers', 'users', 'user'));
     }
 
     /**

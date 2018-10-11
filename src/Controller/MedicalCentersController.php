@@ -28,7 +28,7 @@ class MedicalCentersController extends AppController
         }
 
         if ($user['type'] === 'secretaire') {
-            // Check that the article belongs to the current user.
+            // Check that the   belongs to the current user.
             $medicalcenter = $this->MedicalCenters->findById($id)->first();
 
             return $medicalcenter->user_id === $user['id'];
@@ -49,8 +49,8 @@ class MedicalCentersController extends AppController
             'contain' => ['Adresses', 'Users']
         ];
         $medicalCenters = $this->paginate($this->MedicalCenters);
-
-        $this->set(compact('medicalCenters'));
+        $user = $this->Auth->user();
+        $this->set(compact('medicalCenters', 'user'));
     }
 
     /**
@@ -66,7 +66,10 @@ class MedicalCentersController extends AppController
             'contain' => ['Adresses', 'Doctors']
         ]);
 
+        $user = $this->Auth->user();
         $this->set('medicalCenter', $medicalCenter);
+        $this->set('user', $user);
+        
     }
 
     /**
@@ -88,7 +91,8 @@ class MedicalCentersController extends AppController
         }
         $users = $this->MedicalCenters->Users->find('list', ['limit' => 200]);
         $adresses = $this->MedicalCenters->Adresses->find('list', ['limit' => 200]);
-        $this->set(compact('medicalCenter', 'adresses', 'users'));
+        $user = $this->Auth->user();
+        $this->set(compact('medicalCenter', 'adresses', 'users', 'user'));
     }
 
     /**
@@ -114,7 +118,8 @@ class MedicalCentersController extends AppController
         }
         $users = $this->MedicalCenters->Users->find('list', ['limit' => 200]);
         $adresses = $this->MedicalCenters->Adresses->find('list', ['limit' => 200]);
-        $this->set(compact('medicalCenter', 'adresses', 'users'));
+        $user = $this->Auth->user();
+        $this->set(compact('medicalCenter', 'adresses', 'users', 'user'));
     }
 
     /**
