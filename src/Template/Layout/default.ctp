@@ -44,8 +44,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </ul>
             <div class="top-bar-section">
                 <ul class="right">
-                    <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
-                    <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
+
                     <li>
                         <?php
                         $loguser = $this->request->getSession()->read('Auth.User');
@@ -66,7 +65,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <li>
                         <?= $this->Html->link('Español', ['action' => 'changeLang', 'es_MX'], ['escape' => false]) ?>
                     </li>
+                    <li>
+                        <?= $this->Html->link('À propos', ['controller' => 'Apropos', 'action' => 'index']) ?>
+                    </li>
                 </ul>
+                
             </div>
         </nav>
     <?= $this->Flash->render() ?>

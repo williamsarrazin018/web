@@ -64,7 +64,7 @@
         <legend><?= __('Add File') ?></legend>
         <?php
             echo $this->Form->control('name', ['type' => 'file']);
-            echo $this->Form->control('status');
+            echo $this->Form->hidden('status', ['value' => '1']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
