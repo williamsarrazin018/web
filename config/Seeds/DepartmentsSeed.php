@@ -40,6 +40,62 @@ class DepartmentsSeed extends AbstractSeed
                 'modified' => '2018-09-24 15:53:34',
                 'user_id' => '2',
             ],
+            [
+                'id' => '4',
+                'department' => 'ER',
+                'created' => '2018-09-24 15:52:39',
+                'modified' => '2018-09-24 15:53:34',
+                'user_id' => '2',
+            ],
+            [
+                'id' => '5',
+                'department' => 'Psychiatry',
+                'created' => '2018-09-24 15:52:39',
+                'modified' => '2018-09-24 15:53:34',
+                'user_id' => '2',
+            ],
+            [
+                'id' => '6',
+                'department' => 'Pediatry',
+                'created' => '2018-09-24 15:52:39',
+                'modified' => '2018-09-24 15:53:34',
+                'user_id' => '2',
+            ],
+            [
+                'id' => '7',
+                'department' => 'Allergy',
+                'created' => '2018-09-24 15:52:39',
+                'modified' => '2018-09-24 15:53:34',
+                'user_id' => '2',
+            ],
+            [
+                'id' => '8',
+                'department' => 'Surgery',
+                'created' => '2018-09-24 15:52:39',
+                'modified' => '2018-09-24 15:53:34',
+                'user_id' => '2',
+            ],
+            [
+                'id' => '9',
+                'department' => 'Anaesthetics',
+                'created' => '2018-09-24 15:52:39',
+                'modified' => '2018-09-24 15:53:34',
+                'user_id' => '2',
+            ],
+            [
+                'id' => '10',
+                'department' => 'Gastroenterology',
+                'created' => '2018-09-24 15:52:39',
+                'modified' => '2018-09-24 15:53:34',
+                'user_id' => '2',
+            ],
+            [
+                'id' => '11',
+                'department' => 'Gynaecology',
+                'created' => '2018-09-24 15:52:39',
+                'modified' => '2018-09-24 15:53:34',
+                'user_id' => '2',
+            ],
         ];
 
         $table = $this->table('departments');

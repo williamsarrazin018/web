@@ -87,13 +87,28 @@ class AssignmentsController extends AppController
             }
             $this->Flash->error(__('The assignment could not be saved. Please, try again.'));
         }
+        
+        // Bâtir la liste des Levels
+        $this->loadModel('Levels');
+        $levels = $this->Levels->find('list', ['limit' => 200]);
+
+        // Extraire le id du 1er leve;
+        $levels = $levels->toArray();
+        reset($levels);
+        $level_id = key($levels);
+
+        // Bâtir la liste des chambres
+        $chambers = $this->Assignments->Chambers->find('list', [
+            'conditions' => ['Chambers.level_id' => $level_id],
+        ]);
+        
         $departments = $this->Assignments->Departments->find('list', ['limit' => 200]);
         $patients = $this->Assignments->Patients->find('list', ['limit' => 200]);
-        $levels = $this->Assignments->Levels->find('list', ['limit' => 200]);
-        $chambers = $this->Assignments->Chambers->find('list', ['limit' => 200]);
+        //$levels = $this->Assignments->Levels->find('list', ['limit' => 200]);
+        //$chambers = $this->Assignments->Chambers->find('list', ['limit' => 200]);
         $users = $this->Assignments->Users->find('list', ['limit' => 200]);
         $user = $this->Auth->user();
-        $this->set(compact('assignment', 'departments', 'patients', 'levels', 'chambers', 'users', 'user'));
+        $this->set(compact('assignment', 'departments', 'patients', 'users', 'user', 'chambers', 'levels'));
     }
 
     /**
@@ -117,10 +132,24 @@ class AssignmentsController extends AppController
             }
             $this->Flash->error(__('The assignment could not be saved. Please, try again.'));
         }
+        
+        // Bâtir la liste des Levels
+        $this->loadModel('Levels');
+        $levels = $this->Levels->find('list', ['limit' => 200]);
+
+        // Extraire le id du 1er leve;
+        $levels = $levels->toArray();
+        reset($levels);
+        $level_id = key($levels);
+
+        // Bâtir la liste des chambres
+        $chambers = $this->Assignments->Chambers->find('list', [
+            'conditions' => ['Chambers.level_id' => $level_id],
+        ]);
+        
         $departments = $this->Assignments->Departments->find('list', ['limit' => 200]);
         $patients = $this->Assignments->Patients->find('list', ['limit' => 200]);
-        $levels = $this->Assignments->Levels->find('list', ['limit' => 200]);
-        $chambers = $this->Assignments->Chambers->find('list', ['limit' => 200]);
+        
         $users = $this->Assignments->Users->find('list', ['limit' => 200]);
         $user = $this->Auth->user();
         $this->set(compact('assignment', 'departments', 'patients', 'levels', 'chambers', 'users', 'user'));

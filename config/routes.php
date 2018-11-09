@@ -23,6 +23,7 @@ use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
 
+Router::extensions(['json', 'xml']);
 /**
  * The default class to use for all routes
  *
@@ -49,8 +50,8 @@ Router::defaultRouteClass(DashedRoute::class);
 Router::scope('/', function (RouteBuilder $routes) {
 
     $routes->connect('/', ['controller' => 'Patients', 'action' => 'index']);
-    $routes->connect('locale', ['controller' => 'Localizations', 'action' => 'index']);
-    $routes->connect('/email', ['controller' => 'Emails', 'action' => 'index']);
+    //$routes->connect('locale', ['controller' => 'Localizations', 'action' => 'index']);
+    //$routes->connect('/email', ['controller' => 'Emails', 'action' => 'index']);
 
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 

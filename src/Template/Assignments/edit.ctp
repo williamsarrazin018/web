@@ -3,6 +3,14 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Assignment $assignment
  */
+
+$urlToLinkedListFilter = $this->Url->build([
+    "controller" => "Chambers",
+    "action" => "getByLevel",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
+echo $this->Html->script('Assignments/edit', ['block' => 'scriptBottom']);
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">

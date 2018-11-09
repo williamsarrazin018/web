@@ -18,17 +18,9 @@ class LevelsSeed extends AbstractSeed
      */
     public function run()
     {
-        $data = [
-            [
-                'id' => '1',
-                'number' => '1',
-                'created' => '2018-09-08 00:00:00',
-                'modified' => '2018-09-08 00:00:00',
-                'user_id' => '2',
-            ],
-        ];
+        $data = [];
 
-        $table = $this->table('levels');
+        $table = $this->table('Levels');
         $table->insert($data)->save();
     }
 }

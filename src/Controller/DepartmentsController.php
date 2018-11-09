@@ -20,7 +20,7 @@ class DepartmentsController extends AppController
         
         $action = $this->request->getParam('action');
         
-        if (in_array($action, ['view', 'add'])) {
+        if (in_array($action, ['view', 'add', 'findDepartments', 'autocomplete'])) {
             return true;
         }
 
@@ -39,6 +39,28 @@ class DepartmentsController extends AppController
             return true;
         }
         
+    }
+    
+    public function findDepartments() {
+
+        if ($this->request->is('ajax')) {
+
+            $this->autoRender = false;
+            $name = $this->request->query['term'];
+            $results = $this->Departments->find('all', array(
+                'conditions' => array('Departments.department LIKE ' => '%' . $name . '%')
+            ));
+
+            $resultArr = array();
+            foreach ($results as $result) {
+                $resultArr[] = array('label' => $result['department'], 'value' => $result['department']);
+            }
+            echo json_encode($resultArr);
+        }
+    }
+    
+    public function autocomplete() {
+
     }
     
     /**

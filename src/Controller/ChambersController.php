@@ -17,7 +17,7 @@ class ChambersController extends AppController
         
         $action = $this->request->getParam('action');
         
-        if (in_array($action, ['view', 'add'])) {
+        if (in_array($action, ['view', 'add', 'getByLevel'])) {
             return true;
         }
 
@@ -36,6 +36,16 @@ class ChambersController extends AppController
             return true;
         }
         
+    }
+    
+    public function getByLevel() {
+        $level_id = $this->request->query('level_id');
+
+        $chambers = $this->Chambers->find('all', [
+            'conditions' => ['Chambers.level_id' => $level_id],
+        ]);
+        $this->set('chambers', $chambers);
+        $this->set('_serialize', ['chambers']);
     }
     
     /**
