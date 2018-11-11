@@ -41,7 +41,6 @@ abstract class Rule
     const BITFIELD_DISABLED = 16;
 
     protected $bitfield;
-    protected $job;
     protected $reasonData;
 
     /**
@@ -68,7 +67,7 @@ abstract class Rule
 
     public function getJob()
     {
-        return $this->job;
+        return isset($this->job) ? $this->job : null;
     }
 
     abstract public function equals(Rule $rule);

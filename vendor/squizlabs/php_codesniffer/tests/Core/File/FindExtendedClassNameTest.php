@@ -36,7 +36,7 @@ class FindExtendedClassNameTest extends TestCase
     public function setUp()
     {
         $config            = new Config();
-        $config->standards = ['Generic'];
+        $config->standards = array('Generic');
 
         $ruleset = new Ruleset($config);
 

@@ -12,7 +12,6 @@
 
 namespace Composer\Console;
 
-use Composer\IO\NullIO;
 use Composer\Util\Platform;
 use Composer\Util\Silencer;
 use Symfony\Component\Console\Application as BaseApplication;
@@ -85,8 +84,6 @@ class Application extends BaseApplication
                 }
             });
         }
-
-        $this->io = new NullIO();
 
         parent::__construct('Composer', Composer::VERSION);
     }
@@ -231,13 +228,7 @@ class Application extends BaseApplication
                             if ($this->has($script)) {
                                 $io->writeError('<warning>A script named '.$script.' would override a Composer command and has been skipped</warning>');
                             } else {
-                                $description = null;
-
-                                if (isset($composer['scripts-descriptions'][$script])) {
-                                    $description = $composer['scripts-descriptions'][$script];
-                                }
-
-                                $this->add(new Command\ScriptAliasCommand($script, $description));
+                                $this->add(new Command\ScriptAliasCommand($script));
                             }
                         }
                     }
@@ -406,7 +397,6 @@ class Application extends BaseApplication
             new Command\HomeCommand(),
             new Command\ExecCommand(),
             new Command\OutdatedCommand(),
-            new Command\CheckPlatformReqsCommand(),
         ));
 
         if ('phar:' === substr(__FILE__, 0, 5)) {

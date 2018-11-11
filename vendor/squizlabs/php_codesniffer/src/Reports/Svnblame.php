@@ -31,7 +31,7 @@ class Svnblame extends VersionControl
      */
     protected function getAuthor($line)
     {
-        $blameParts = [];
+        $blameParts = array();
         preg_match('|\s*([^\s]+)\s+([^\s]+)|', $line, $blameParts);
 
         if (isset($blameParts[2]) === false) {

@@ -159,5 +159,3 @@ try {
 }
 
 $var = $foo['blah'] + [];
-
-$a = 2 * ${x} - ${minus};

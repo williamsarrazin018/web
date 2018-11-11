@@ -73,3 +73,1191 @@ Stack Trace:
 #16 {main}
 
 
+2018-11-10 20:44:20 Error: Fatal Error (1): Class 'IntlDateFormatter' not found in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 375]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-10 20:44:20 Error: [Cake\Error\FatalErrorException] Class 'IntlDateFormatter' not found in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php on line 375
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'IntlDate...', 'C:\\Program File...', 375)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-10 21:02:48 Error: Fatal Error (1): Class 'IntlDateFormatter' not found in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 375]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-10 21:02:48 Error: [Cake\Error\FatalErrorException] Class 'IntlDateFormatter' not found in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php on line 375
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'IntlDate...', 'C:\\Program File...', 375)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-10 21:03:08 Error: Fixture creation for "adresses" failed "SQLSTATE[HY000]: General error: 1 table "adresses" already exists"
+2018-11-10 21:03:08 Warning: Warning (512): Fixture creation for "adresses" failed "SQLSTATE[HY000]: General error: 1 table "adresses" already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:03:08 Error: Fixture creation for "medical_centers" failed "SQLSTATE[HY000]: General error: 1 table "medical_centers" already exists"
+2018-11-10 21:03:08 Warning: Warning (512): Fixture creation for "medical_centers" failed "SQLSTATE[HY000]: General error: 1 table "medical_centers" already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:03:08 Error: Fixture creation for "patients" failed "SQLSTATE[HY000]: General error: 1 table "patients" already exists"
+2018-11-10 21:03:08 Warning: Warning (512): Fixture creation for "patients" failed "SQLSTATE[HY000]: General error: 1 table "patients" already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:03:08 Error: [Cake\Core\Exception\Exception] Unable to insert fixture "App\Test\Fixture\MedicalCentersFixture" in "App\Test\TestCase\Controller\AdressesControllerTest" test case: 
+SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: Medical_Centers.id in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 345
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(349): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\AdressesControllerTest))
+#9 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\AdressesControllerTest))
+#10 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\AdressesControllerTest))
+#11 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AdressesControllerTest))
+#12 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#16 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#17 C:\Program Files (x86)\Ampps\www\web\vendor\phpunit.phar(570): PHPUnit\TextUI\Command::main()
+#18 {main}
+
+
+2018-11-10 21:04:55 Error: Fixture creation for "patients" failed "SQLSTATE[HY000]: General error: 1 table "patients" already exists"
+2018-11-10 21:04:55 Warning: Warning (512): Fixture creation for "patients" failed "SQLSTATE[HY000]: General error: 1 table "patients" already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:04:55 Error: Fixture creation for "adresses" failed "SQLSTATE[HY000]: General error: 1 table "adresses" already exists"
+2018-11-10 21:04:55 Warning: Warning (512): Fixture creation for "adresses" failed "SQLSTATE[HY000]: General error: 1 table "adresses" already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:04:55 Error: Fixture creation for "users" failed "SQLSTATE[HY000]: General error: 1 table "users" already exists"
+2018-11-10 21:04:55 Warning: Warning (512): Fixture creation for "users" failed "SQLSTATE[HY000]: General error: 1 table "users" already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:04:55 Error: [Cake\Core\Exception\Exception] Unable to insert fixture "App\Test\Fixture\PatientsFixture" in "App\Test\TestCase\Controller\PatientsControllerTest" test case: 
+SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: Patients.id in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 345
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(349): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\PatientsControllerTest))
+#9 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\PatientsControllerTest))
+#10 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\PatientsControllerTest))
+#11 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\PatientsControllerTest))
+#12 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\web\vendor\phpunit.phar(570): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-10 21:07:30 Error: Fixture creation for "patients" failed "SQLSTATE[HY000]: General error: 1 table "patients" already exists"
+2018-11-10 21:07:30 Warning: Warning (512): Fixture creation for "patients" failed "SQLSTATE[HY000]: General error: 1 table "patients" already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:07:30 Error: Fixture creation for "adresses" failed "SQLSTATE[HY000]: General error: 1 table "adresses" already exists"
+2018-11-10 21:07:30 Warning: Warning (512): Fixture creation for "adresses" failed "SQLSTATE[HY000]: General error: 1 table "adresses" already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:07:30 Error: Fixture creation for "users" failed "SQLSTATE[HY000]: General error: 1 table "users" already exists"
+2018-11-10 21:07:30 Warning: Warning (512): Fixture creation for "users" failed "SQLSTATE[HY000]: General error: 1 table "users" already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:07:30 Error: [Cake\Core\Exception\Exception] Unable to insert fixture "App\Test\Fixture\PatientsFixture" in "App\Test\TestCase\Model\Table\PatientsTableTest" test case: 
+SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: Patients.id in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 345
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(349): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\PatientsTableTest))
+#9 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\PatientsTableTest))
+#10 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\PatientsTableTest))
+#11 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\PatientsTableTest))
+#12 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\web\vendor\phpunit.phar(570): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-10 21:11:01 Error: Fixture creation for "patients" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'patients' already exists"
+2018-11-10 21:11:01 Warning: Warning (512): Fixture creation for "patients" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'patients' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:11:01 Error: Fixture creation for "adresses" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'adresses' already exists"
+2018-11-10 21:11:01 Warning: Warning (512): Fixture creation for "adresses" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'adresses' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:11:01 Error: Fixture creation for "users" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists"
+2018-11-10 21:11:01 Warning: Warning (512): Fixture creation for "users" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:11:01 Error: [Cake\Core\Exception\Exception] Unable to create constraints for fixture "App\Test\Fixture\PatientsFixture" in "App\Test\TestCase\Model\Table\PatientsTableTest" test case: 
+SQLSTATE[HY000]: General error: 1826 Duplicate foreign key constraint name 'test_medicalcentersmanagment/patients_ibfk_1' in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 327
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(331): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\PatientsTableTest))
+#9 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\PatientsTableTest))
+#10 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\PatientsTableTest))
+#11 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\PatientsTableTest))
+#12 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\web\vendor\phpunit.phar(570): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-10 21:13:29 Error: Fixture creation for "users" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists"
+2018-11-10 21:13:29 Warning: Warning (512): Fixture creation for "users" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:13:29 Error: Fixture creation for "patients" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'patients' already exists"
+2018-11-10 21:13:29 Warning: Warning (512): Fixture creation for "patients" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'patients' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:13:29 Error: [Cake\Core\Exception\Exception] Unable to create constraints for fixture "App\Test\Fixture\PatientsFixture" in "App\Test\TestCase\Model\Table\UsersTableTest" test case: 
+SQLSTATE[HY000]: General error: 1826 Duplicate foreign key constraint name 'test_medicalcentersmanagment/patients_ibfk_1' in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 327
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(331): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\UsersTableTest))
+#9 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\UsersTableTest))
+#10 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\UsersTableTest))
+#11 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\UsersTableTest))
+#12 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\web\vendor\phpunit.phar(570): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-10 21:13:54 Error: Fixture creation for "medical_centers" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'medical_centers' already exists"
+2018-11-10 21:13:54 Warning: Warning (512): Fixture creation for "medical_centers" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'medical_centers' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:13:54 Error: Fixture creation for "adresses" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'adresses' already exists"
+2018-11-10 21:13:54 Warning: Warning (512): Fixture creation for "adresses" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'adresses' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:13:54 Error: Fixture creation for "doctors" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'doctors' already exists"
+2018-11-10 21:13:54 Warning: Warning (512): Fixture creation for "doctors" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'doctors' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:13:54 Error: [Cake\Core\Exception\Exception] Unable to create constraints for fixture "App\Test\Fixture\MedicalCentersFixture" in "App\Test\TestCase\Model\Table\MedicalCentersTableTest" test case: 
+SQLSTATE[HY000]: General error: 1826 Duplicate foreign key constraint name 'test_medicalcentersmanagment/medical_centers_ibfk_1' in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 327
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(331): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#9 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#10 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#11 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#12 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\web\vendor\phpunit.phar(570): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-10 21:18:07 Error: Fixture creation for "medical_centers" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'medical_centers' already exists"
+2018-11-10 21:18:07 Warning: Warning (512): Fixture creation for "medical_centers" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'medical_centers' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:18:07 Error: Fixture creation for "adresses" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'adresses' already exists"
+2018-11-10 21:18:07 Warning: Warning (512): Fixture creation for "adresses" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'adresses' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:18:07 Error: Fixture creation for "doctors" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'doctors' already exists"
+2018-11-10 21:18:07 Warning: Warning (512): Fixture creation for "doctors" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'doctors' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 21:18:07 Error: [Cake\Core\Exception\Exception] Unable to create constraints for fixture "App\Test\Fixture\MedicalCentersFixture" in "App\Test\TestCase\Model\Table\MedicalCentersTableTest" test case: 
+SQLSTATE[HY000]: General error: 1826 Duplicate foreign key constraint name 'test_medicalcentersmanagment/medical_centers_ibfk_1' in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 327
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(331): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#9 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#10 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#11 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#12 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\web\vendor\phpunit.phar(570): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-10 22:36:07 Error: Fixture creation for "medical_centers" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'medical_centers' already exists"
+2018-11-10 22:36:07 Warning: Warning (512): Fixture creation for "medical_centers" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'medical_centers' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 22:36:07 Error: Fixture creation for "adresses" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'adresses' already exists"
+2018-11-10 22:36:08 Warning: Warning (512): Fixture creation for "adresses" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'adresses' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 22:36:08 Error: Fixture creation for "doctors" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'doctors' already exists"
+2018-11-10 22:36:08 Warning: Warning (512): Fixture creation for "doctors" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'doctors' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 22:36:08 Error: [Cake\Core\Exception\Exception] Unable to create constraints for fixture "App\Test\Fixture\MedicalCentersFixture" in "App\Test\TestCase\Model\Table\MedicalCentersTableTest" test case: 
+SQLSTATE[HY000]: General error: 1826 Duplicate foreign key constraint name 'test_medicalcentersmanagment/medical_centers_ibfk_1' in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 327
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(331): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#9 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#10 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#11 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#12 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\web\vendor\phpunit.phar(570): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-10 22:39:11 Error: Fixture creation for "medical_centers" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'medical_centers' already exists"
+2018-11-10 22:39:11 Warning: Warning (512): Fixture creation for "medical_centers" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'medical_centers' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 22:39:11 Error: Fixture creation for "adresses" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'adresses' already exists"
+2018-11-10 22:39:11 Warning: Warning (512): Fixture creation for "adresses" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'adresses' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 22:39:11 Error: Fixture creation for "doctors" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'doctors' already exists"
+2018-11-10 22:39:11 Warning: Warning (512): Fixture creation for "doctors" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'doctors' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 22:39:11 Error: Fixture creation for "users" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists"
+2018-11-10 22:39:11 Warning: Warning (512): Fixture creation for "users" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 22:39:11 Error: [Cake\Core\Exception\Exception] Unable to create constraints for fixture "App\Test\Fixture\MedicalCentersFixture" in "App\Test\TestCase\Model\Table\MedicalCentersTableTest" test case: 
+SQLSTATE[HY000]: General error: 1826 Duplicate foreign key constraint name 'test_medicalcentersmanagment/medical_centers_ibfk_1' in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 327
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(331): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#9 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#10 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#11 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#12 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\web\vendor\phpunit.phar(570): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-10 22:39:43 Error: Fixture creation for "medical_centers" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'medical_centers' already exists"
+2018-11-10 22:39:43 Warning: Warning (512): Fixture creation for "medical_centers" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'medical_centers' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 22:39:43 Error: [Cake\Core\Exception\Exception] Unable to create constraints for fixture "App\Test\Fixture\MedicalCentersFixture" in "App\Test\TestCase\Model\Table\MedicalCentersTableTest" test case: 
+SQLSTATE[HY000]: General error: 1826 Duplicate foreign key constraint name 'test_medicalcentersmanagment/medical_centers_ibfk_1' in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 327
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(331): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#9 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#10 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#11 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#12 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\web\vendor\phpunit.phar(570): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-10 22:41:37 Error: Fixture creation for "medical_centers" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'medical_centers' already exists"
+2018-11-10 22:41:37 Warning: Warning (512): Fixture creation for "medical_centers" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'medical_centers' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 22:41:37 Error: [Cake\Core\Exception\Exception] Unable to create constraints for fixture "App\Test\Fixture\MedicalCentersFixture" in "App\Test\TestCase\Model\Table\MedicalCentersTableTest" test case: 
+SQLSTATE[HY000]: General error: 1826 Duplicate foreign key constraint name 'test_medicalcentersmanagment/medical_centers_ibfk_1' in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 327
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(331): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#9 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#10 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#11 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\MedicalCentersTableTest))
+#12 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\web\vendor\phpunit.phar(570): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-10 22:42:52 Error: Fixture creation for "users" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists"
+2018-11-10 22:42:52 Warning: Warning (512): Fixture creation for "users" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 22:42:52 Error: Fixture creation for "patients" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'patients' already exists"
+2018-11-10 22:42:52 Warning: Warning (512): Fixture creation for "patients" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'patients' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-10 22:42:52 Error: [Cake\Core\Exception\Exception] Unable to create constraints for fixture "App\Test\Fixture\PatientsFixture" in "App\Test\TestCase\Model\Table\UsersTableTest" test case: 
+SQLSTATE[HY000]: General error: 1826 Duplicate foreign key constraint name 'test_medicalcentersmanagment/patients_ibfk_1' in C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 327
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(331): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\UsersTableTest))
+#9 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\UsersTableTest))
+#10 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\UsersTableTest))
+#11 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\UsersTableTest))
+#12 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\web\vendor\phpunit.phar(570): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-10 22:43:16 Error: Fixture creation for "users" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists"
+2018-11-10 22:43:16 Warning: Warning (512): Fixture creation for "users" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists" in [C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - phar://C:/Program Files (x86)/Ampps/www/web/vendor/phpunit.phar/phpunit/TextUI/Command.php, line 148
+[main] - ROOT\vendor\phpunit.phar, line 570
+
+
+
+2018-11-11 00:55:03 Error: [Error] Call to undefined method App\Application::addPlugin() in C:\Program Files (x86)\Ampps\www\web\src\Application.php on line 44
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Console\CommandRunner.php(114): App\Application->bootstrap()
+#1 C:\Program Files (x86)\Ampps\www\web\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-11-11 00:55:40 Error: [Error] Call to undefined method App\Application::addPlugin() in C:\Program Files (x86)\Ampps\www\web\src\Application.php on line 49
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\web\vendor\cakephp\cakephp\src\Console\CommandRunner.php(114): App\Application->bootstrap()
+#1 C:\Program Files (x86)\Ampps\www\web\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+

@@ -52,7 +52,7 @@ class Fixer
      *
      * @var array<int, string>
      */
-    private $tokens = [];
+    private $tokens = array();
 
     /**
      * A list of tokens that have already been fixed.
@@ -62,7 +62,7 @@ class Fixer
      *
      * @var int[]
      */
-    private $fixedTokens = [];
+    private $fixedTokens = array();
 
     /**
      * The last value of each fixed token.
@@ -72,7 +72,7 @@ class Fixer
      *
      * @var array<int, string>
      */
-    private $oldTokenValues = [];
+    private $oldTokenValues = array();
 
     /**
      * A list of tokens that have been fixed during a changeset.
@@ -82,7 +82,7 @@ class Fixer
      *
      * @var array
      */
-    private $changeset = [];
+    private $changeset = array();
 
     /**
      * Is there an open changeset.
@@ -117,10 +117,10 @@ class Fixer
     {
         $this->currentFile = $phpcsFile;
         $this->numFixes    = 0;
-        $this->fixedTokens = [];
+        $this->fixedTokens = array();
 
         $tokens       = $phpcsFile->getTokens();
-        $this->tokens = [];
+        $this->tokens = array();
         foreach ($tokens as $index => $token) {
             if (isset($token['orig_content']) === true) {
                 $this->tokens[$index] = $token['orig_content'];
@@ -143,6 +143,11 @@ class Fixer
         if ($fixable === 0) {
             // Nothing to fix.
             return false;
+        }
+
+        $stdin = false;
+        if (empty($this->currentFile->config->files) === true) {
+            $stdin = true;
         }
 
         $this->enabled = true;
@@ -265,7 +270,7 @@ class Fixer
             $diffLines = explode("\n", $diff);
         }
 
-        $diff = [];
+        $diff = array();
         foreach ($diffLines as $line) {
             if (isset($line[0]) === true) {
                 switch ($line[0]) {
@@ -360,7 +365,7 @@ class Fixer
             ob_start();
         }
 
-        $this->changeset   = [];
+        $this->changeset   = array();
         $this->inChangeset = true;
 
     }//end beginChangeset()
@@ -380,7 +385,7 @@ class Fixer
         $this->inChangeset = false;
 
         $success = true;
-        $applied = [];
+        $applied = array();
         foreach ($this->changeset as $stackPtr => $content) {
             $success = $this->replaceToken($stackPtr, $content);
             if ($success === false) {
@@ -408,7 +413,7 @@ class Fixer
             ob_start();
         }
 
-        $this->changeset = [];
+        $this->changeset = array();
 
     }//end endChangeset()
 
@@ -442,7 +447,7 @@ class Fixer
                 ob_start();
             }
 
-            $this->changeset = [];
+            $this->changeset = array();
         }//end if
 
     }//end rollbackChangeset()
@@ -514,11 +519,11 @@ class Fixer
         }
 
         if (isset($this->oldTokenValues[$stackPtr]) === false) {
-            $this->oldTokenValues[$stackPtr] = [
-                'curr' => $content,
-                'prev' => $this->tokens[$stackPtr],
-                'loop' => $this->loops,
-            ];
+            $this->oldTokenValues[$stackPtr] = array(
+                                                'curr' => $content,
+                                                'prev' => $this->tokens[$stackPtr],
+                                                'loop' => $this->loops,
+                                               );
         } else {
             if ($this->oldTokenValues[$stackPtr]['prev'] === $content
                 && $this->oldTokenValues[$stackPtr]['loop'] === ($this->loops - 1)

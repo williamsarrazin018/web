@@ -22,7 +22,7 @@ class JSHintSniff implements Sniff
      *
      * @var array
      */
-    public $supportedTokenizers = ['JS'];
+    public $supportedTokenizers = array('JS');
 
 
     /**
@@ -32,7 +32,7 @@ class JSHintSniff implements Sniff
      */
     public function register()
     {
-        return [T_OPEN_TAG];
+        return array(T_OPEN_TAG);
 
     }//end register()
 
@@ -61,11 +61,11 @@ class JSHintSniff implements Sniff
         $jshintPath = escapeshellcmd($jshintPath);
 
         $cmd = "$rhinoPath \"$jshintPath\" ".escapeshellarg($fileName);
-        exec($cmd, $output, $retval);
+        $msg = exec($cmd, $output, $retval);
 
         if (is_array($output) === true) {
             foreach ($output as $finding) {
-                $matches    = [];
+                $matches    = array();
                 $numMatches = preg_match('/^(.+)\(.+:([0-9]+).*:[0-9]+\)$/', $finding, $matches);
                 if ($numMatches === 0) {
                     continue;

@@ -69,13 +69,12 @@ class Parser
     /**
      * The parser constructor
      *
-     * @param string $content The content to parse
-     * @param array $context Variables context
+     * @param string      $content          The
      */
-    public function __construct($content, array $context = array())
+    public function __construct($content)
     {
         $this->key_parser = new KeyParser($this);
-        $this->value_parser = new ValueParser($this, $context);
+        $this->value_parser = new ValueParser($this);
         $this->string_helper = new StringHelper();
 
         $this->doParse($content);
@@ -85,13 +84,12 @@ class Parser
      * Parses the .env and returns the contents statically
      *
      * @param string $content The content to parse
-     * @param array $context Variables context
      *
      * @return array The .env contents
      */
-    public static function parse($content, array $context = array())
+    public static function parse($content)
     {
-        $parser = new Parser($content, $context);
+        $parser = new Parser($content);
 
         return $parser->getContent();
     }
@@ -103,7 +101,7 @@ class Parser
      *
      * @return array The .env contents
      */
-    protected function doParse($content)
+    private function doParse($content)
     {
         $raw_lines = array_filter($this->makeLines($content), 'strlen');
 
@@ -187,7 +185,7 @@ class Parser
     private function parseExport($raw_line)
     {
         $line = trim($raw_line);
-
+        
         if ($this->string_helper->startsWith("export", $line)) {
             $export_line = explode("export", $raw_line, 2);
 
@@ -234,11 +232,8 @@ class Parser
      *
      * @return array The .env contents
      */
-    public function getContent($keyName = null)
+    public function getContent()
     {
-		if (!is_null($keyName)) {
-			return (array_key_exists($keyName, $this->lines)) ? $this->lines[$keyName] : null;
-		}
         return $this->lines;
     }
 }

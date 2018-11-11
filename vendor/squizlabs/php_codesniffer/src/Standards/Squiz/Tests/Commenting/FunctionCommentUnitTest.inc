@@ -970,23 +970,3 @@ class TestReturnVoid
         };
     }
 }
-
-/**
- * Comment here.
- *
- * @param integer $a This is A.
- * @param ?array  $b This is B.
- *
- * @return void
- */
-public static function foo(?int $a, ?array $b) {}
-
-/**
- * Comment here.
- *
- * @param object $a This is A.
- * @param object $b This is B.
- *
- * @return void
- */
-public function foo(object $a, ?object $b) {}

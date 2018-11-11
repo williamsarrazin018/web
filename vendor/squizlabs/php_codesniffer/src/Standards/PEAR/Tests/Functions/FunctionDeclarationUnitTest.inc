@@ -237,5 +237,3 @@ function foo(
 /* hello */ { echo 'hi';
     // body
 }
-
-$a = function () {

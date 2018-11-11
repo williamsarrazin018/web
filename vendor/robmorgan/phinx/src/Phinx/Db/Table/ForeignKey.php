@@ -27,8 +27,9 @@
  * @subpackage Phinx\Db
  * @author     Leonid Kuzmin <lndkuzmin@gmail.com>
  */
-
 namespace Phinx\Db\Table;
+
+use Phinx\Db\Table;
 
 class ForeignKey
 {
@@ -40,17 +41,17 @@ class ForeignKey
     /**
      * @var array
      */
-    protected $columns = [];
+    protected $columns = array();
 
     /**
-     * @var \Phinx\Db\Table\Table
+     * @var Table
      */
     protected $referencedTable;
 
     /**
      * @var array
      */
-    protected $referencedColumns = [];
+    protected $referencedColumns = array();
 
     /**
      * @var string
@@ -71,12 +72,11 @@ class ForeignKey
      * Sets the foreign key columns.
      *
      * @param array|string $columns
-     * @return \Phinx\Db\Table\ForeignKey
+     * @return ForeignKey
      */
     public function setColumns($columns)
     {
         $this->columns = is_string($columns) ? [$columns] : $columns;
-
         return $this;
     }
 
@@ -93,20 +93,19 @@ class ForeignKey
     /**
      * Sets the foreign key referenced table.
      *
-     * @param \Phinx\Db\Table\Table $table The table this KEY is pointing to
-     * @return \Phinx\Db\Table\ForeignKey
+     * @param Table $table
+     * @return ForeignKey
      */
     public function setReferencedTable(Table $table)
     {
         $this->referencedTable = $table;
-
         return $this;
     }
 
     /**
      * Gets the foreign key referenced table.
      *
-     * @return \Phinx\Db\Table\Table
+     * @return Table
      */
     public function getReferencedTable()
     {
@@ -117,12 +116,11 @@ class ForeignKey
      * Sets the foreign key referenced columns.
      *
      * @param array $referencedColumns
-     * @return \Phinx\Db\Table\ForeignKey
+     * @return ForeignKey
      */
     public function setReferencedColumns(array $referencedColumns)
     {
         $this->referencedColumns = $referencedColumns;
-
         return $this;
     }
 
@@ -140,12 +138,11 @@ class ForeignKey
      * Sets ON DELETE action for the foreign key.
      *
      * @param string $onDelete
-     * @return \Phinx\Db\Table\ForeignKey
+     * @return ForeignKey
      */
     public function setOnDelete($onDelete)
     {
         $this->onDelete = $this->normalizeAction($onDelete);
-
         return $this;
     }
 
@@ -173,12 +170,11 @@ class ForeignKey
      * Sets ON UPDATE action for the foreign key.
      *
      * @param string $onUpdate
-     * @return \Phinx\Db\Table\ForeignKey
+     * @return ForeignKey
      */
     public function setOnUpdate($onUpdate)
     {
         $this->onUpdate = $this->normalizeAction($onUpdate);
-
         return $this;
     }
 
@@ -186,19 +182,18 @@ class ForeignKey
      * Sets constraint for the foreign key.
      *
      * @param string $constraint
-     * @return \Phinx\Db\Table\ForeignKey
+     * @return ForeignKey
      */
     public function setConstraint($constraint)
     {
         $this->constraint = $constraint;
-
         return $this;
     }
 
     /**
      * Gets constraint name for the foreign key.
      *
-     * @return string|bool
+     * @return string|boolean
      */
     public function getConstraint()
     {
@@ -211,12 +206,12 @@ class ForeignKey
      * @param array $options Options
      * @throws \RuntimeException
      * @throws \InvalidArgumentException
-     * @return \Phinx\Db\Table\ForeignKey
+     * @return ForeignKey
      */
     public function setOptions($options)
     {
         // Valid Options
-        $validOptions = ['delete', 'update', 'constraint'];
+        $validOptions = array('delete', 'update', 'constraint');
         foreach ($options as $option => $value) {
             if (!in_array($option, $validOptions, true)) {
                 throw new \RuntimeException(sprintf('"%s" is not a valid foreign key option.', $option));
@@ -249,7 +244,6 @@ class ForeignKey
         if (!defined($constantName)) {
             throw new \InvalidArgumentException('Unknown action passed: ' . $action);
         }
-
         return constant($constantName);
     }
 }

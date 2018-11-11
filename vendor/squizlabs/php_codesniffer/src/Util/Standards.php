@@ -24,13 +24,13 @@ class Standards
     {
         $ds = DIRECTORY_SEPARATOR;
 
-        $installedPaths = [dirname(dirname(__DIR__)).$ds.'src'.$ds.'Standards'];
+        $installedPaths = array(dirname(dirname(__DIR__)).$ds.'src'.$ds.'Standards');
         $configPaths    = Config::getConfigData('installed_paths');
         if ($configPaths !== null) {
             $installedPaths = array_merge($installedPaths, explode(',', $configPaths));
         }
 
-        $resolvedInstalledPaths = [];
+        $resolvedInstalledPaths = array();
         foreach ($installedPaths as $installedPath) {
             if (substr($installedPath, 0, 1) === '.') {
                 $installedPath = Common::realPath(__DIR__.$ds.'..'.$ds.'..'.$ds.$installedPath);
@@ -74,12 +74,12 @@ class Standards
         $includeGeneric=false,
         $standardsDir=''
     ) {
-        $rulesets = [];
+        $rulesets = array();
 
         if ($standardsDir === '') {
             $installedPaths = self::getInstalledStandardPaths();
         } else {
-            $installedPaths = [$standardsDir];
+            $installedPaths = array($standardsDir);
         }
 
         foreach ($installedPaths as $standardsDir) {
@@ -87,10 +87,6 @@ class Standards
             $csFile = $standardsDir.'/ruleset.xml';
             if (is_file($csFile) === true) {
                 $rulesets[] = $csFile;
-                continue;
-            }
-
-            if (is_dir($standardsDir) === false) {
                 continue;
             }
 
@@ -113,7 +109,7 @@ class Standards
             }
         }//end foreach
 
-        $installedStandards = [];
+        $installedStandards = array();
 
         foreach ($rulesets as $rulesetPath) {
             $ruleset = simplexml_load_string(file_get_contents($rulesetPath));
@@ -130,11 +126,11 @@ class Standards
                 $namespace = $dirname;
             }
 
-            $installedStandards[$dirname] = [
-                'path'      => dirname($rulesetPath),
-                'name'      => $standardName,
-                'namespace' => $namespace,
-            ];
+            $installedStandards[$dirname] = array(
+                                             'path'      => dirname($rulesetPath),
+                                             'name'      => $standardName,
+                                             'namespace' => $namespace,
+                                            );
         }//end foreach
 
         return $installedStandards;
@@ -163,12 +159,12 @@ class Standards
         $includeGeneric=false,
         $standardsDir=''
     ) {
-        $installedStandards = [];
+        $installedStandards = array();
 
         if ($standardsDir === '') {
             $installedPaths = self::getInstalledStandardPaths();
         } else {
-            $installedPaths = [$standardsDir];
+            $installedPaths = array($standardsDir);
         }
 
         foreach ($installedPaths as $standardsDir) {

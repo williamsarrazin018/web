@@ -23,11 +23,11 @@ class OneObjectStructurePerFileSniff implements Sniff
      */
     public function register()
     {
-        return [
-            T_CLASS,
-            T_INTERFACE,
-            T_TRAIT,
-        ];
+        return array(
+                T_CLASS,
+                T_INTERFACE,
+                T_TRAIT,
+               );
 
     }//end register()
 

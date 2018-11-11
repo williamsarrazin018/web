@@ -32,7 +32,7 @@ class Hgblame extends VersionControl
      */
     protected function getAuthor($line)
     {
-        $blameParts = [];
+        $blameParts = array();
         $line       = preg_replace('|\s+|', ' ', $line);
 
         preg_match(

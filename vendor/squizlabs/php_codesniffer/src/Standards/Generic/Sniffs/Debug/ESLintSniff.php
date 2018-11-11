@@ -21,7 +21,7 @@ class ESLintSniff implements Sniff
      *
      * @var array
      */
-    public $supportedTokenizers = ['JS'];
+    public $supportedTokenizers = array('JS');
 
 
     /**
@@ -39,7 +39,7 @@ class ESLintSniff implements Sniff
      */
     public function register()
     {
-        return [T_OPEN_TAG];
+        return array(T_OPEN_TAG);
 
     }//end register()
 
@@ -72,7 +72,7 @@ class ESLintSniff implements Sniff
             }
         }
 
-        $eslintOptions = ['--format json'];
+        $eslintOptions = array('--format json');
         if (empty($configFile) === false) {
             $eslintOptions[] = '--config '.escapeshellarg($configFile);
         }

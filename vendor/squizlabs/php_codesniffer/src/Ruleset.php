@@ -37,7 +37,7 @@ class Ruleset
      *
      * @var string[]
      */
-    public $paths = [];
+    public $paths = array();
 
     /**
      * A list of regular expressions used to ignore specific sniffs for files and folders.
@@ -48,7 +48,7 @@ class Ruleset
      *
      * @var array<string, string>
      */
-    public $ignorePatterns = [];
+    public $ignorePatterns = array();
 
     /**
      * A list of regular expressions used to include specific sniffs for files and folders.
@@ -59,7 +59,7 @@ class Ruleset
      *
      * @var array<string, array<string, string>>
      */
-    public $includePatterns = [];
+    public $includePatterns = array();
 
     /**
      * An array of sniff objects that are being used to check files.
@@ -69,7 +69,7 @@ class Ruleset
      *
      * @var array<string, \PHP_CodeSniffer\Sniff>
      */
-    public $sniffs = [];
+    public $sniffs = array();
 
     /**
      * A mapping of sniff codes to fully qualified class names.
@@ -79,7 +79,7 @@ class Ruleset
      *
      * @var array<string, string>
      */
-    public $sniffCodes = [];
+    public $sniffCodes = array();
 
     /**
      * An array of token types and the sniffs that are listening for them.
@@ -89,7 +89,7 @@ class Ruleset
      *
      * @var array<int, \PHP_CodeSniffer\Sniff>
      */
-    public $tokenListeners = [];
+    public $tokenListeners = array();
 
     /**
      * An array of rules from the ruleset.xml file.
@@ -99,14 +99,14 @@ class Ruleset
      *
      * @var array<string, mixed>
      */
-    public $ruleset = [];
+    public $ruleset = array();
 
     /**
      * The directories that the processed rulesets are in.
      *
      * @var string[]
      */
-    protected $rulesetDirs = [];
+    protected $rulesetDirs = array();
 
     /**
      * The config data for the run.
@@ -126,17 +126,17 @@ class Ruleset
     public function __construct(Config $config)
     {
         // Ignore sniff restrictions if caching is on.
-        $restrictions = [];
-        $exclusions   = [];
+        $restrictions = array();
+        $exclusions   = array();
         if ($config->cache === false) {
             $restrictions = $config->sniffs;
             $exclusions   = $config->exclude;
         }
 
         $this->config = $config;
-        $sniffs       = [];
+        $sniffs       = array();
 
-        $standardPaths = [];
+        $standardPaths = array();
         foreach ($config->standards as $standard) {
             $installed = Util\Standards::getInstalledStandardPath($standard);
             if ($installed === null) {
@@ -175,11 +175,9 @@ class Ruleset
             }
 
             if (defined('PHP_CODESNIFFER_IN_TESTS') === true && empty($restrictions) === false) {
-                // In unit tests, only register the sniffs that the test wants and not the entire standard.
+                // Unit tests use one standard and one sniff at a time.
                 try {
-                    foreach ($restrictions as $restriction) {
-                        $sniffs = array_merge($sniffs, $this->expandRulesetReference($restriction, dirname($standard)));
-                    }
+                    $sniffs = $this->expandRulesetReference($restrictions[0], dirname($standard));
                 } catch (RuntimeException $e) {
                     // Sniff reference could not be expanded, which probably means this
                     // is an installed standard. Let the unit test system take care of
@@ -200,14 +198,14 @@ class Ruleset
             $sniffs = array_merge($sniffs, $this->processRuleset($standard));
         }//end foreach
 
-        $sniffRestrictions = [];
+        $sniffRestrictions = array();
         foreach ($restrictions as $sniffCode) {
             $parts     = explode('.', strtolower($sniffCode));
             $sniffName = $parts[0].'\sniffs\\'.$parts[1].'\\'.$parts[2].'sniff';
             $sniffRestrictions[$sniffName] = true;
         }
 
-        $sniffExclusions = [];
+        $sniffExclusions = array();
         foreach ($exclusions as $sniffCode) {
             $parts     = explode('.', strtolower($sniffCode));
             $sniffName = $parts[0].'\sniffs\\'.$parts[1].'\\'.$parts[2].'sniff';
@@ -320,9 +318,9 @@ class Ruleset
             throw new RuntimeException("Ruleset $rulesetPath is not valid");
         }
 
-        $ownSniffs      = [];
-        $includedSniffs = [];
-        $excludedSniffs = [];
+        $ownSniffs      = array();
+        $includedSniffs = array();
+        $excludedSniffs = array();
 
         $rulesetDir          = dirname($rulesetPath);
         $this->rulesetDirs[] = $rulesetDir;
@@ -463,7 +461,7 @@ class Ruleset
         }//end foreach
 
         // Process custom command line arguments.
-        $cliArgs = [];
+        $cliArgs = array();
         foreach ($ruleset->{'arg'} as $arg) {
             if ($this->shouldProcessElement($arg) === false) {
                 continue;
@@ -572,7 +570,7 @@ class Ruleset
 
         // Merge our own sniff list with our externally included
         // sniff list, but filter out any excluded sniffs.
-        $files = [];
+        $files = array();
         foreach ($includedSniffs as $sniff) {
             if (in_array($sniff, $excludedSniffs) === true) {
                 continue;
@@ -597,7 +595,7 @@ class Ruleset
      */
     private function expandSniffDirectory($directory, $depth=0)
     {
-        $sniffs = [];
+        $sniffs = array();
 
         $rdi = new \RecursiveDirectoryIterator($directory, \RecursiveDirectoryIterator::FOLLOW_SYMLINKS);
         $di  = new \RecursiveIteratorIterator($rdi, 0, \RecursiveIteratorIterator::CATCH_GET_CHILD);
@@ -668,7 +666,7 @@ class Ruleset
                 echo "\t\t* ignoring internal sniff code *".PHP_EOL;
             }
 
-            return [];
+            return array();
         }
 
         // As sniffs can't begin with a full stop, assume references in
@@ -703,7 +701,7 @@ class Ruleset
             if (substr($ref, -9) === 'Sniff.php') {
                 // A single external sniff.
                 $this->rulesetDirs[] = dirname(dirname(dirname($ref)));
-                return [$ref];
+                return array($ref);
             }
         } else {
             // See if this is a whole standard being referenced.
@@ -814,7 +812,7 @@ class Ruleset
 
             if (substr($ref, -9) === 'Sniff.php') {
                 // A single sniff.
-                return [$ref];
+                return array($ref);
             } else {
                 // Assume an external ruleset.xml file.
                 if (PHP_CODESNIFFER_VERBOSITY > 1) {
@@ -843,7 +841,7 @@ class Ruleset
     private function processRule($rule, $newSniffs, $depth=0)
     {
         $ref  = (string) $rule['ref'];
-        $todo = [$ref];
+        $todo = array($ref);
 
         $parts = explode('.', $ref);
         if (count($parts) <= 2) {
@@ -864,7 +862,7 @@ class Ruleset
                 && $this->shouldProcessElement($rule->severity) === true
             ) {
                 if (isset($this->ruleset[$code]) === false) {
-                    $this->ruleset[$code] = [];
+                    $this->ruleset[$code] = array();
                 }
 
                 $this->ruleset[$code]['severity'] = (int) $rule->severity;
@@ -884,7 +882,7 @@ class Ruleset
                 && $this->shouldProcessElement($rule->type) === true
             ) {
                 if (isset($this->ruleset[$code]) === false) {
-                    $this->ruleset[$code] = [];
+                    $this->ruleset[$code] = array();
                 }
 
                 $type = strtolower((string) $rule->type);
@@ -909,7 +907,7 @@ class Ruleset
                 && $this->shouldProcessElement($rule->message) === true
             ) {
                 if (isset($this->ruleset[$code]) === false) {
-                    $this->ruleset[$code] = [];
+                    $this->ruleset[$code] = array();
                 }
 
                 $this->ruleset[$code]['message'] = (string) $rule->message;
@@ -934,54 +932,34 @@ class Ruleset
                     }
 
                     if (isset($this->ruleset[$code]) === false) {
-                        $this->ruleset[$code] = [
-                            'properties' => [],
-                        ];
+                        $this->ruleset[$code] = array(
+                                                 'properties' => array(),
+                                                );
                     } else if (isset($this->ruleset[$code]['properties']) === false) {
-                        $this->ruleset[$code]['properties'] = [];
+                        $this->ruleset[$code]['properties'] = array();
                     }
 
                     $name = (string) $prop['name'];
                     if (isset($prop['type']) === true
                         && (string) $prop['type'] === 'array'
                     ) {
-                        $values = [];
-                        if (isset($prop->element) === true) {
-                            $printValue = '';
-                            foreach ($prop->element as $element) {
-                                if ($this->shouldProcessElement($element) === false) {
-                                    continue;
-                                }
+                        $value  = (string) $prop['value'];
+                        $values = array();
+                        foreach (explode(',', $value) as $val) {
+                            $v = '';
 
-                                $value = (string) $element['value'];
-                                if (isset($element['key']) === true) {
-                                    $key          = (string) $element['key'];
-                                    $values[$key] = $value;
-                                    $printValue  .= $key.'=>'.$value.',';
-                                } else {
-                                    $values[]    = $value;
-                                    $printValue .= $value.',';
-                                }
+                            list($k,$v) = explode('=>', $val.'=>');
+                            if ($v !== '') {
+                                $values[$k] = $v;
+                            } else {
+                                $values[] = $k;
                             }
-
-                            $printValue = rtrim($printValue, ',');
-                        } else {
-                            $value      = (string) $prop['value'];
-                            $printValue = $value;
-                            foreach (explode(',', $value) as $val) {
-                                list($k, $v) = explode('=>', $val.'=>');
-                                if ($v !== '') {
-                                    $values[trim($k)] = trim($v);
-                                } else {
-                                    $values[] = trim($k);
-                                }
-                            }
-                        }//end if
+                        }
 
                         $this->ruleset[$code]['properties'][$name] = $values;
                         if (PHP_CODESNIFFER_VERBOSITY > 1) {
                             echo str_repeat("\t", $depth);
-                            echo "\t\t=> array property \"$name\" set to \"$printValue\"";
+                            echo "\t\t=> array property \"$name\" set to \"$value\"";
                             if ($code !== $ref) {
                                 echo " for $code";
                             }
@@ -1010,7 +988,7 @@ class Ruleset
                 }
 
                 if (isset($this->ignorePatterns[$code]) === false) {
-                    $this->ignorePatterns[$code] = [];
+                    $this->ignorePatterns[$code] = array();
                 }
 
                 if (isset($pattern['type']) === false) {
@@ -1036,7 +1014,7 @@ class Ruleset
                 }
 
                 if (isset($this->includePatterns[$code]) === false) {
-                    $this->includePatterns[$code] = [];
+                    $this->includePatterns[$code] = array();
                 }
 
                 if (isset($pattern['type']) === false) {
@@ -1107,7 +1085,7 @@ class Ruleset
      */
     public function registerSniffs($files, $restrictions, $exclusions)
     {
-        $listeners = [];
+        $listeners = array();
 
         foreach ($files as $file) {
             // Work out where the position of /StandardName/Sniffs/... is
@@ -1168,7 +1146,7 @@ class Ruleset
     public function populateTokenListeners()
     {
         // Construct a list of listeners indexed by token being listened for.
-        $this->tokenListeners = [];
+        $this->tokenListeners = array();
 
         foreach ($this->sniffs as $sniffClass => $sniffObject) {
             $this->sniffs[$sniffClass] = null;
@@ -1184,14 +1162,14 @@ class Ruleset
                 }
             }
 
-            $tokenizers = [];
+            $tokenizers = array();
             $vars       = get_class_vars($sniffClass);
             if (isset($vars['supportedTokenizers']) === true) {
                 foreach ($vars['supportedTokenizers'] as $tokenizer) {
                     $tokenizers[$tokenizer] = $tokenizer;
                 }
             } else {
-                $tokenizers = ['PHP' => 'PHP'];
+                $tokenizers = array('PHP' => 'PHP');
             }
 
             $tokens = $this->sniffs[$sniffClass]->register();
@@ -1200,41 +1178,41 @@ class Ruleset
                 throw new RuntimeException($msg);
             }
 
-            $ignorePatterns = [];
+            $ignorePatterns = array();
             $patterns       = $this->getIgnorePatterns($sniffCode);
             foreach ($patterns as $pattern => $type) {
-                $replacements = [
-                    '\\,' => ',',
-                    '*'   => '.*',
-                ];
+                $replacements = array(
+                                 '\\,' => ',',
+                                 '*'   => '.*',
+                                );
 
                 $ignorePatterns[] = strtr($pattern, $replacements);
             }
 
-            $includePatterns = [];
+            $includePatterns = array();
             $patterns        = $this->getIncludePatterns($sniffCode);
             foreach ($patterns as $pattern => $type) {
-                $replacements = [
-                    '\\,' => ',',
-                    '*'   => '.*',
-                ];
+                $replacements = array(
+                                 '\\,' => ',',
+                                 '*'   => '.*',
+                                );
 
                 $includePatterns[] = strtr($pattern, $replacements);
             }
 
             foreach ($tokens as $token) {
                 if (isset($this->tokenListeners[$token]) === false) {
-                    $this->tokenListeners[$token] = [];
+                    $this->tokenListeners[$token] = array();
                 }
 
                 if (isset($this->tokenListeners[$token][$sniffClass]) === false) {
-                    $this->tokenListeners[$token][$sniffClass] = [
-                        'class'      => $sniffClass,
-                        'source'     => $sniffCode,
-                        'tokenizers' => $tokenizers,
-                        'ignore'     => $ignorePatterns,
-                        'include'    => $includePatterns,
-                    ];
+                    $this->tokenListeners[$token][$sniffClass] = array(
+                                                                  'class'      => $sniffClass,
+                                                                  'source'     => $sniffCode,
+                                                                  'tokenizers' => $tokenizers,
+                                                                  'ignore'     => $ignorePatterns,
+                                                                  'include'    => $includePatterns,
+                                                                 );
                 }
             }
         }//end foreach
@@ -1263,30 +1241,11 @@ class Ruleset
             $value = trim($value);
         }
 
-        if ($value === '') {
-            $value = null;
-        }
-
         // Special case for booleans.
         if ($value === 'true') {
             $value = true;
         } else if ($value === 'false') {
             $value = false;
-        } else if (substr($name, -2) === '[]') {
-            $name   = substr($name, 0, -2);
-            $values = [];
-            if ($value !== null) {
-                foreach (explode(',', $value) as $val) {
-                    list($k, $v) = explode('=>', $val.'=>');
-                    if ($v !== '') {
-                        $values[trim($k)] = trim($v);
-                    } else {
-                        $values[] = trim($k);
-                    }
-                }
-            }
-
-            $value = $values;
         }
 
         $this->sniffs[$sniffClass]->$name = $value;
@@ -1315,7 +1274,7 @@ class Ruleset
             return $this->ignorePatterns[$listener];
         }
 
-        return [];
+        return array();
 
     }//end getIgnorePatterns()
 
@@ -1341,7 +1300,7 @@ class Ruleset
             return $this->includePatterns[$listener];
         }
 
-        return [];
+        return array();
 
     }//end getIncludePatterns()
 

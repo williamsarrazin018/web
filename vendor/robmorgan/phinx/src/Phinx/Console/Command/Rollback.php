@@ -31,6 +31,7 @@ namespace Phinx\Console\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use Phinx\Config\Config;
 
 class Rollback extends AbstractCommand
 {
@@ -43,15 +44,13 @@ class Rollback extends AbstractCommand
 
         $this->addOption('--environment', '-e', InputOption::VALUE_REQUIRED, 'The target environment');
 
-        $this->setName($this->getName() ?: 'rollback')
-            ->setDescription('Rollback the last or to a specific migration')
-            ->addOption('--target', '-t', InputOption::VALUE_REQUIRED, 'The version number to rollback to')
-            ->addOption('--date', '-d', InputOption::VALUE_REQUIRED, 'The date to rollback to')
-            ->addOption('--force', '-f', InputOption::VALUE_NONE, 'Force rollback to ignore breakpoints')
-            ->addOption('--dry-run', '-x', InputOption::VALUE_NONE, 'Dump query to standard output instead of executing it')
-            ->addOption('--fake', null, InputOption::VALUE_NONE, "Mark any rollbacks selected as run, but don\'t actually execute them")
-            ->setHelp(
-                <<<EOT
+        $this->setName('rollback')
+             ->setDescription('Rollback the last or to a specific migration')
+             ->addOption('--target', '-t', InputOption::VALUE_REQUIRED, 'The version number to rollback to')
+             ->addOption('--date', '-d', InputOption::VALUE_REQUIRED, 'The date to rollback to')
+             ->addOption('--force', '-f', InputOption::VALUE_NONE, 'Force rollback to ignore breakpoints')
+             ->setHelp(
+<<<EOT
 The <info>rollback</info> command reverts the last migration, or optionally up to a specific version
 
 <info>phinx rollback -e development</info>
@@ -64,18 +63,18 @@ If you have a breakpoint set, then you can rollback to target 0 and the rollback
 <info>phinx rollback -e development -t 0 </info>
 
 The <info>version_order</info> configuration option is used to determine the order of the migrations when rolling back.
-This can be used to allow the rolling back of the last executed migration instead of the last created one, or combined
+This can be used to allow the rolling back of the last executed migration instead of the last created one, or combined 
 with the <info>-d|--date</info> option to rollback to a certain date using the migration start times to order them.
 
 EOT
-            );
+             );
     }
 
     /**
      * Rollback the migration.
      *
-     * @param \Symfony\Component\Console\Input\InputInterface $input
-     * @param \Symfony\Component\Console\Output\OutputInterface $output
+     * @param InputInterface $input
+     * @param OutputInterface $output
      * @return void
      */
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -83,14 +82,13 @@ EOT
         $this->bootstrap($input, $output);
 
         $environment = $input->getOption('environment');
-        $version = $input->getOption('target');
-        $date = $input->getOption('date');
-        $force = (bool)$input->getOption('force');
-        $fake = (bool)$input->getOption('fake');
+        $version     = $input->getOption('target');
+        $date        = $input->getOption('date');
+        $force       = !!$input->getOption('force');
 
         $config = $this->getConfig();
 
-        if ($environment === null) {
+        if (null === $environment) {
             $environment = $config->getDefaultEnvironment();
             $output->writeln('<comment>warning</comment> no environment specified, defaulting to: ' . $environment);
         } else {
@@ -109,16 +107,12 @@ EOT
         if (isset($envOptions['name'])) {
             $output->writeln('<info>using database</info> ' . $envOptions['name']);
         }
-
+        
         $versionOrder = $this->getConfig()->getVersionOrder();
         $output->writeln('<info>ordering by </info>' . $versionOrder . " time");
 
-        if ($fake) {
-            $output->writeln('<comment>warning</comment> performing fake rollbacks');
-        }
-
         // rollback the specified environment
-        if ($date === null) {
+        if (null === $date) {
             $targetMustMatchVersion = true;
             $target = $version;
         } else {
@@ -127,7 +121,7 @@ EOT
         }
 
         $start = microtime(true);
-        $this->getManager()->rollback($environment, $target, $force, $targetMustMatchVersion, $fake);
+        $this->getManager()->rollback($environment, $target, $force, $targetMustMatchVersion);
         $end = microtime(true);
 
         $output->writeln('');
@@ -147,14 +141,14 @@ EOT
         }
 
         // what we need to append to the date according to the possible date string lengths
-        $dateStrlenToAppend = [
+        $dateStrlenToAppend = array(
             14 => '',
             12 => '00',
             10 => '0000',
             8 => '000000',
             6 => '01000000',
             4 => '0101000000',
-        ];
+        );
 
         if (!isset($dateStrlenToAppend[strlen($date)])) {
             throw new \InvalidArgumentException('Invalid date. Format is YYYY[MM[DD[HH[II[SS]]]]].');

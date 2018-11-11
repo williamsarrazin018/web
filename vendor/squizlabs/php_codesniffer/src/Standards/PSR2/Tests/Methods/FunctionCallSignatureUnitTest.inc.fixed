@@ -129,7 +129,7 @@ $this->listeners[] = $events->getSharedManager()->attach(
     100
 );
 
-// phpcs:set PSR2.Methods.FunctionCallSignature requiredSpacesBeforeClose 1
+// @codingStandardsChangeSetting PSR2.Methods.FunctionCallSignature requiredSpacesBeforeClose 1
 foo('Testing
     multiline text' );
 
@@ -150,7 +150,7 @@ foo('Testing
  . $text
 // . $text2
  */ );
-// phpcs:set PSR2.Methods.FunctionCallSignature requiredSpacesBeforeClose 0
+// @codingStandardsChangeSetting PSR2.Methods.FunctionCallSignature requiredSpacesBeforeClose 0
 
 foo('Testing
     multiline text');

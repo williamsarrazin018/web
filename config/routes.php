@@ -47,13 +47,21 @@ Router::extensions(['json', 'xml']);
  */
 Router::defaultRouteClass(DashedRoute::class);
 
+Router::prefix('api', function ($routes) {
+    $routes->extensions(['json', 'xml']);
+    $routes->resources('Adresses');
+});
+
 Router::scope('/', function (RouteBuilder $routes) {
 
+    
     $routes->connect('/', ['controller' => 'Patients', 'action' => 'index']);
     //$routes->connect('locale', ['controller' => 'Localizations', 'action' => 'index']);
     //$routes->connect('/email', ['controller' => 'Emails', 'action' => 'index']);
 
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
+    
+    
     $routes->fallbacks(DashedRoute::class);
 });

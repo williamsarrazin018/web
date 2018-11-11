@@ -32,14 +32,14 @@ if (class_exists('PHP_CodeSniffer\Autoload', false) === false) {
          *
          * @var array<string, string>
          */
-        private static $loadedClasses = [];
+        private static $loadedClasses = array();
 
         /**
          * A mapping of class names to file names.
          *
          * @var array<string, string>
          */
-        private static $loadedFiles = [];
+        private static $loadedFiles = array();
 
         /**
          * A list of additional directories to search during autoloading.
@@ -48,7 +48,7 @@ if (class_exists('PHP_CodeSniffer\Autoload', false) === false) {
          *
          * @var string[]
          */
-        private static $searchPaths = [];
+        private static $searchPaths = array();
 
 
         /**
@@ -215,18 +215,6 @@ if (class_exists('PHP_CodeSniffer\Autoload', false) === false) {
             self::$searchPaths[$path] = rtrim(trim((string) $nsPrefix), '\\');
 
         }//end addSearchPath()
-
-
-        /**
-         * Retrieve the namespaces and paths registered by external standards.
-         *
-         * @return array
-         */
-        public static function getSearchPaths()
-        {
-            return self::$searchPaths;
-
-        }//end getSearchPaths()
 
 
         /**

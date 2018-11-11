@@ -29,6 +29,7 @@
 namespace Phinx\Migration;
 
 use Phinx\Db\Adapter\AdapterInterface;
+use Phinx\Db\Table;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -55,47 +56,61 @@ interface MigrationInterface
     const DOWN = 'down';
 
     /**
+     * Migrate Up
+     *
+     * @return void
+     */
+    public function up();
+
+    /**
+     * Migrate Down
+     *
+     * @return void
+     */
+    public function down();
+
+    /**
      * Sets the database adapter.
      *
-     * @param \Phinx\Db\Adapter\AdapterInterface $adapter Database Adapter
-     * @return \Phinx\Migration\MigrationInterface
+     * @param AdapterInterface $adapter Database Adapter
+     * @return MigrationInterface
      */
     public function setAdapter(AdapterInterface $adapter);
 
     /**
      * Gets the database adapter.
      *
-     * @return \Phinx\Db\Adapter\AdapterInterface
+     * @return AdapterInterface
      */
     public function getAdapter();
 
     /**
      * Sets the input object to be used in migration object
      *
-     * @param \Symfony\Component\Console\Input\InputInterface $input
-     * @return \Phinx\Migration\MigrationInterface
+     * @param InputInterface $input
+     * @return MigrationInterface
      */
     public function setInput(InputInterface $input);
 
     /**
      * Gets the input object to be used in migration object
      *
-     * @return \Symfony\Component\Console\Input\InputInterface
+     * @return InputInterface
      */
     public function getInput();
 
     /**
      * Sets the output object to be used in migration object
      *
-     * @param \Symfony\Component\Console\Output\OutputInterface $output
-     * @return \Phinx\Migration\MigrationInterface
+     * @param OutputInterface $output
+     * @return MigrationInterface
      */
     public function setOutput(OutputInterface $output);
 
     /**
      * Gets the output object to be used in migration object
      *
-     * @return \Symfony\Component\Console\Output\OutputInterface
+     * @return OutputInterface
      */
     public function getOutput();
 
@@ -107,17 +122,10 @@ interface MigrationInterface
     public function getName();
 
     /**
-     * Gets the detected environment
-     *
-     * @return string
-     */
-    public function getEnvironment();
-
-    /**
      * Sets the migration version number.
      *
      * @param float $version Version
-     * @return \Phinx\Migration\MigrationInterface
+     * @return MigrationInterface
      */
     public function setVersion($version);
 
@@ -127,22 +135,6 @@ interface MigrationInterface
      * @return float
      */
     public function getVersion();
-
-    /**
-     * Sets whether this migration is being applied or reverted
-     *
-     * @param bool $isMigratingUp True if the migration is being applied
-     * @return \Phinx\Migration\MigrationInterface
-     */
-    public function setMigratingUp($isMigratingUp);
-
-    /**
-     * Gets whether this migration is being applied or reverted.
-     * True means that the migration is being applied.
-     *
-     * @return bool
-     */
-    public function isMigratingUp();
 
     /**
      * Executes a SQL statement and returns the number of affected rows.
@@ -159,18 +151,6 @@ interface MigrationInterface
      * @return array
      */
     public function query($sql);
-
-    /**
-     * Returns a new Query object that can be used to build complex SELECT, UPDATE, INSERT or DELETE
-     * queries and execute them against the current database.
-     *
-     * Queries executed through the query builder are always sent to the database, regardless of the
-     * the dry-run settings.
-     *
-     * @see https://api.cakephp.org/3.6/class-Cake.Database.Query.html
-     * @return \Cake\Database\Query
-     */
-    public function getQueryBuilder();
 
     /**
      * Executes a query and returns only one row as an array.
@@ -190,8 +170,6 @@ interface MigrationInterface
 
     /**
      * Insert data into a table.
-     *
-     * @deprecated since 0.10.0. Use $this->table($tableName)->insert($data)->save() instead.
      *
      * @param string $tableName
      * @param array $data
@@ -220,7 +198,7 @@ interface MigrationInterface
      * Checks to see if a table exists.
      *
      * @param string $tableName Table Name
-     * @return bool
+     * @return boolean
      */
     public function hasTable($tableName);
 
@@ -231,28 +209,7 @@ interface MigrationInterface
      *
      * @param string $tableName Table Name
      * @param array $options Options
-     * @return \Phinx\Db\Table
+     * @return Table
      */
     public function table($tableName, $options);
-
-    /**
-     * Perform checks on the migration, print a warning
-     * if there are potential problems.
-     *
-     * @param string|null $direction
-     *
-     * @return void
-     */
-    public function preFlightCheck($direction = null);
-
-    /**
-     * Perform checks on the migration after completion
-     *
-     * Right now, the only check is whether all changes were committed
-     *
-     * @param string|null $direction direction of migration
-     *
-     * @return void
-     */
-    public function postFlightCheck($direction = null);
 }

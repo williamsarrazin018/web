@@ -36,8 +36,7 @@ class LicensesCommand extends BaseCommand
                 new InputOption('format', 'f', InputOption::VALUE_REQUIRED, 'Format of the output: text or json', 'text'),
                 new InputOption('no-dev', null, InputOption::VALUE_NONE, 'Disables search in require-dev packages.'),
             ))
-            ->setHelp(
-                <<<EOT
+            ->setHelp(<<<EOT
 The license command displays detailed information about the licenses of
 the installed dependencies.
 
@@ -75,9 +74,8 @@ EOT
 
                 $table = new Table($output);
                 $table->setStyle('compact');
-                $tableStyle = $table->getStyle();
-                $tableStyle->setVerticalBorderChar('');
-                $tableStyle->setCellRowContentFormat('%s  ');
+                $table->getStyle()->setVerticalBorderChar('');
+                $table->getStyle()->setCellRowContentFormat('%s  ');
                 $table->setHeaders(array('Name', 'Version', 'License'));
                 foreach ($packages as $package) {
                     $table->addRow(array(
