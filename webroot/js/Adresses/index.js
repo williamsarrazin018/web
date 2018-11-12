@@ -1,4 +1,4 @@
-function getAdresses() {
+function getAdresses() code{
     $.ajax({
         type: 'GET',
         url: urlToRestApi,
@@ -11,10 +11,11 @@ function getAdresses() {
                     $.each(adresses.data, function (key, value)
                     {
                         var editDeleteButtons = '</td><td>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editCocktail(' + value.id + ')"></a>' +
+                                '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editAdress(' + value.id + ')"></a>' +
                                 '<a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm(\'Are you sure to delete data?\') ? adressAction(\'delete\', ' + value.id + ') : false;"></a>' +
                                 '</td></tr>';
-                        adressTable.append('<tr><td>' + count + '</td><td>' + value.name + '</td><td>' + value.description + editDeleteButtons);
+                        adressTable.append('<tr><td>' + count + '</td><td>' + value.id + '</td><td>'+ '</td><td>' + value.adress + '</td><td>' + value.city + '</td><td>' + value.zip_code 
+                                +'</td><td>' + value.province +'</td><td>' + value.country +'</td><td>' + value.details +'</td><td>' + value.user_id + editDeleteButtons);
                         count++;
                     });
 
@@ -55,6 +56,7 @@ function adressAction(type, id) {
         adressData = convertFormToJSON($("#addForm").find('.form'));
     } else if (type == 'edit') {
         requestType = 'PUT';
+        ajaxUrl = ajaxUrl + "/" + idEdit.value;
         adressData = convertFormToJSON($("#editForm").find('.form'));
     } else {
         requestType = 'DELETE';
@@ -87,8 +89,13 @@ function editAdress(id) {
         url: urlToRestApi+ "/" + id,
         success: function (data) {
             $('#idEdit').val(data.data.id);
-            $('#nameEdit').val(data.data.name);
-            $('#descriptionEdit').val(data.data.description);
+            $('#adressEdit').val(data.data.adress);
+            $('#cityEdit').val(data.data.city);
+            $('#zip_codeEdit').val(data.data.zip_code);
+            $('#provinceEdit').val(data.data.province);
+            $('#countryEdit').val(data.data.country);
+            $('#detailsEdit').val(data.data.details);
+            $('#user_idEdit').val(data.data.user_id);
             $('#editForm').slideDown();
         }
     });

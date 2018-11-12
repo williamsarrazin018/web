@@ -50,6 +50,7 @@ Router::defaultRouteClass(DashedRoute::class);
 Router::prefix('api', function ($routes) {
     $routes->extensions(['json', 'xml']);
     $routes->resources('Adresses');
+    $routes->resources('Levels');
 });
 
 Router::scope('/', function (RouteBuilder $routes) {
@@ -65,3 +66,5 @@ Router::scope('/', function (RouteBuilder $routes) {
     
     $routes->fallbacks(DashedRoute::class);
 });
+
+Plugin::routes();

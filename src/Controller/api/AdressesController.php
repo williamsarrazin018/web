@@ -8,8 +8,8 @@ class AdressesController extends AppController {
 
     public $paginate = [
         'page' => 1,
-        'limit' => 10,
-        'maxLimit' => 100,
+        'limit' => 5,
+        'maxLimit' => 15,
        'sortWhitelist' => [
             'id', 'adress', 'city', 'zip_code', 'province', 'country', 'details', 'created', 'modified', 'user_id'
         ]

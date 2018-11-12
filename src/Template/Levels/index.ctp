@@ -1,101 +1,79 @@
 <?php
-/**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Level[]|\Cake\Collection\CollectionInterface $levels
- */
+$urlToRestApi = $this->Url->build('/api/levels', true);
+echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
+echo $this->Html->script('Levels/index', ['block' => 'scriptBottom']);
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <?php if($user['type'] === 'secretaireNC') : ?>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default adresses-content">
+            <div class="panel-heading"><?= __('Levels ') ?> <a href="javascript:void(0);" id="addLink" class="pull-right" onclick="javascript:$('#addForm').slideToggle();"><i class="glyphicon glyphicon-plus"></i>Add</a></div>
+            
+            <?php 
+                        $loguser = $this->request->getSession()->read('Auth.User');
+                    ?>
+            <div class="panel-body none formData" id="addForm">
+                <h2 id="actionLabel">Add Level</h2>
+                <form class="form" id="levelAddForm" enctype='application/json'>
+                    <?=$this->Form->control('number'); ?>
+                    <?=$this->Form->control('user_id', ['options' => [$loguser['id']]]); ?>                 
+                    <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-success" onclick="levelAction('add')">Add Level</a>
+                </form>
+            </div>
+            
+            
+            <div class="panel-body none formData" id="editForm">
+                <h2 id="actionLabel">Edit Level</h2>
+                <form class="form" id="levelEditForm" enctype='application/json'>
+                    <?=$this->Form->control('number', ['id' => 'numberEdit']); ?>
+                    
+                    <?=$this->Form->control('user_id', ['id' => 'user_idEdit', 'value' => $loguser['id']]); ?> 
+                    <input type="hidden" class="form-control" name="id" id="idEdit"/>
+                    <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-success" onclick="levelAction('edit')">Update Level</a>
+                </form>
+            </div>
+            
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>id</th>
+                        <th>Number</th>
+                        <th>user id</th>
+                        <th>Actions</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="adressData">
+                    <?php
+                    $count = 0;
+                    foreach ($levels as $level): $count++;
+                        ?>
+                        <tr>
+                            <td><?php echo '#' . $count; ?></td>
+                            <td><?php echo $level['id']; ?></td>
+                            <td><?php echo $level['number']; ?></td>
+                            <td><?php echo $level['user_id']; ?></td>
 
-        <li><?= $this->Html->link(__('See patients'), ['controller' => 'Patients', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('See assignments'), ['controller' => 'Assignments', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('See adresses'), ['controller' => 'Adresses', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('Profile'), ['controller' => 'Users', 'action' => 'view/' . $user['id']]) ?></li> 
-        <li><?= $this->Html->link(__('Resend confirmation link'), ['controller' => 'Emails', 'action' => 'index', $user['uuid'], $user['email'], $user['id']]) ?></li> 
-
-        <?php elseif($user['type'] === 'secretaire') : ?>
-        
-        <li><?= $this->Html->link(__('Patients management'), ['controller' => 'Patients', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('New patient'), ['controller' => 'Patients', 'action' => 'add']) ?></li> 
-        <li><?= $this->Html->link(__('Assignments management'), ['controller' => 'Assignments', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('New assignment'), ['controller' => 'Assignments', 'action' => 'add']) ?></li> 
-        <li><?= $this->Html->link(__('Adresses management'), ['controller' => 'Adresses', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('New adress'), ['controller' => 'Adresses', 'action' => 'add']) ?></li> 
-        <li><?= $this->Html->link(__('Files management'), ['controller' => 'Files', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('New file'), ['controller' => 'Files', 'action' => 'add']) ?></li> 
-        <li><?= $this->Html->link(__('Profile'), ['controller' => 'Users', 'action' => 'view/' . $user['id']]) ?></li> 
-        
-        <?php elseif($user['type'] === 'admin') : ?>
-        
-       
-        <li><?= $this->Html->link(__('Users management'), ['controller' => 'Users', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Medical centers management'), ['controller' => 'MedicalCenters', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('New Medical Center'), ['controller' => 'MedicalCenters', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Departments management'), ['controller' => 'Departments', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('New department'), ['controller' => 'Departments', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Patients management'), ['controller' => 'Patients', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New patient'), ['controller' => 'Patients', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Assignments management'), ['controller' => 'Assignments', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('New assignment'), ['controller' => 'Assignments', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Adresses management'), ['controller' => 'Adresses', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New adress'), ['controller' => 'Adresses', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Chambers management'), ['controller' => 'Chambers', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New chamber'), ['controller' => 'Chambers', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Levels management'), ['controller' => 'Levels', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('New level'), ['controller' => 'Levels', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Files management'), ['controller' => 'Files', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('New file'), ['controller' => 'Files', 'action' => 'add']) ?></li> 
-        <li><?= $this->Html->link(__('Profile'), ['controller' => 'Users', 'action' => 'view/' . $user['id']]) ?></li> 
-        <?php else : ?>
-        
-        <li><?= $this->Html->link(__('New account'), ['controller' => 'Users', 'action' => 'add']) ?></li> 
-        <li><?= $this->Html->link(__('Login'), ['controller' => 'Users', 'action' => 'login']) ?></li> 
-        <li><?= $this->Html->link(__('See medical centers'), ['controller' => 'MedicalCenters', 'action' => 'index']) ?></li> 
-        <li><?= $this->Html->link(__('See departments'), ['controller' => 'Departments', 'action' => 'index']) ?></li> 
-        <?php endif; ?>
-    </ul>
-</nav>
-<div class="levels index large-9 medium-8 columns content">
-    <h3><?= __('Levels') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('number') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($levels as $level): ?>
-            <tr>
-                <td><?= $this->Number->format($level->id) ?></td>
-                <td><?= $this->Number->format($level->number) ?></td>
-                <td><?= h($level->created) ?></td>
-                <td><?= h($level->modified) ?></td>
-                <td><?= $this->Number->format($level->user_id) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $level->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $level->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $level->id], ['confirm' => __('Are you sure you want to delete # {0}?', $level->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
+                            <td>
+                                <a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editLevel('<?php echo $level['id']; ?>')"></a>
+                                <a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete data?') ? levelAction('delete', '<?php echo $level['id']; ?>') : false;"></a>
+                            </td>
+                        </tr>
+                        <?php
+                    endforeach;
+                    ?>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
+    </body>
+</html>
+

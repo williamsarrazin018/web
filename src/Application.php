@@ -36,19 +36,19 @@ class Application extends BaseApplication
     public function bootstrap()
     {
 
+         
         // Call parent to load bootstrap from files.
         parent::bootstrap();
-
+           
         if (PHP_SAPI === 'cli') {
             try {
-
+                   $this->addPlugin('Bake');
             } catch (MissingPluginException $e) {
                 // Do not halt if the plugin is missing
             }
-
+            
 
         }
-
         /*
          * Only try to load DebugKit in development mode
          * Debug Kit should not be installed on a production system
@@ -82,9 +82,10 @@ class Application extends BaseApplication
             ->add(new RoutingMiddleware($this, '_cake_routes_'))
 
             // Add csrf middleware.
+                /*
             ->add(new CsrfProtectionMiddleware([
                 'httpOnly' => true
-            ]));
+            ]))*/;
 
         return $middlewareQueue;
     }

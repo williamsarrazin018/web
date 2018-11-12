@@ -30,15 +30,21 @@ use Cake\I18n\I18n;
  */
 class AppController extends Controller {
 
-    /**
-     * Initialization hook method.
-     *
-     * Use this method to add common initialization code like loading components.
-     *
-     * e.g. `$this->loadComponent('Security');`
-     *
-     * @return void
-     */
+    
+     use \Crud\Controller\ControllerTrait;
+        public $components = [
+            'RequestHandler',
+            'Crud.Crud' => [
+                'actions' => [
+                    'Crud.Index',
+                    'Crud.View',
+                    'Crud.Add',
+                    'Crud.Edit',
+                    'Crud.Delete'
+                ]
+            ]
+        ];
+    
     public function initialize() {
         parent::initialize();
         I18n::setLocale($this->request->session()->read('Config.language'));
@@ -73,6 +79,30 @@ class AppController extends Controller {
         $this->Auth->allow(['display', 'view', 'index', 'changelang']);
     }
 
+    /*
+    //Chargement des helpers Bootstrap
+    public $helpers = [
+        'Form' => [
+            'className' => 'Bootstrap.Form'
+        ],
+        'Html' => [
+            'className' => 'Bootstrap.Html'
+        ],
+        'Modal' => [
+            'className' => 'Bootstrap.Modal'
+        ],
+        'Navbar' => [
+            'className' => 'Bootstrap.Navbar',
+            'autoActiveLink' => true
+        ],
+        'Paginator' => [
+            'className' => 'Bootstrap.Paginator'
+        ],
+        'Panel' => [
+            'className' => 'Bootstrap.Panel'
+        ]
+    ];
+    */
     public function isAuthorized($user) {
         // By default deny access.
         return false;
@@ -84,16 +114,5 @@ class AppController extends Controller {
         return $this->redirect($this->request->referer());
     }
     
-    public function beforeRender(Event $event)
-    {
-        // Note: These defaults are just to get started quickly with development
-        // and should not be used in production. You should instead set "_serialize"
-        // in each action as required.
-        if (!array_key_exists('_serialize', $this->viewVars) &&
-            in_array($this->response->type(), ['application/json', 'application/xml'])
-        ) {
-            $this->set('_serialize', true);
-        }
-    }
 
 }
