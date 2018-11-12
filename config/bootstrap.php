@@ -201,6 +201,6 @@ Type::build('timestamp')
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
 Plugin::load('Crud');
 
-Plugin::load('ADmad/JwtAuth');
+//Plugin::load('ADmad/JwtAuth');
 
 Plugin::load('crud');

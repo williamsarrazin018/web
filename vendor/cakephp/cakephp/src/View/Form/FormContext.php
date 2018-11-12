@@ -94,7 +94,28 @@ class FormContext implements ContextInterface
             return $val;
         }
 
-        return $options['default'];
+        if ($options['default'] !== null || !$options['schemaDefault']) {
+            return $options['default'];
+        }
+
+        return $this->_schemaDefault($field);
+    }
+
+    /**
+     * Get default value from form schema for given field.
+     *
+     * @param string $field Field name.
+
+     * @return mixed
+     */
+    protected function _schemaDefault($field)
+    {
+        $field = $this->_form->schema()->field($field);
+        if ($field) {
+            return $field['default'];
+        }
+
+        return null;
     }
 
     /**
@@ -102,7 +123,7 @@ class FormContext implements ContextInterface
      */
     public function isRequired($field)
     {
-        $validator = $this->_form->validator();
+        $validator = $this->_form->getValidator();
         if (!$validator->hasField($field)) {
             return false;
         }

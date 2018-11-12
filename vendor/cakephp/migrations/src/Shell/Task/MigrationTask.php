@@ -21,6 +21,9 @@ use Migrations\Util\ColumnParser;
 
 /**
  * Task class for generating migration snapshot files.
+ *
+ * @property \Bake\Shell\Task\BakeTemplateTask $BakeTemplate
+ * @property \Bake\Shell\Task\TestTask $Test
  */
 class MigrationTask extends SimpleMigrationTask
 {
@@ -31,7 +34,7 @@ class MigrationTask extends SimpleMigrationTask
     public function bake($name)
     {
         EventManager::instance()->on('Bake.initialize', function (Event $event) {
-            $event->subject->loadHelper('Migrations.Migration');
+            $event->getSubject()->loadHelper('Migrations.Migration');
         });
 
         return parent::bake($name);
@@ -79,10 +82,11 @@ class MigrationTask extends SimpleMigrationTask
         $primaryKey = $columnParser->parsePrimaryKey($arguments);
 
         if (in_array($action[0], ['alter_table', 'add_field']) && !empty($primaryKey)) {
-            $this->error('Adding a primary key to an already existing table is not supported.');
+            $this->abort('Adding a primary key to an already existing table is not supported.');
         }
 
         list($action, $table) = $action;
+
         return [
             'plugin' => $this->plugin,
             'pluginPath' => $pluginPath,

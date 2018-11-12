@@ -21,6 +21,9 @@ use Cake\ORM\TableRegistry;
 /**
  * Task class for creating and updating controller files.
  *
+ * @property \Bake\Shell\Task\ModelTask $Model
+ * @property \Bake\Shell\Task\BakeTemplateTask $BakeTemplate
+ * @property \Bake\Shell\Task\TestTask $Test
  */
 class ControllerTask extends BakeTask
 {
@@ -75,7 +78,7 @@ class ControllerTask extends BakeTask
     {
         $tables = $this->listAll();
         foreach ($tables as $table) {
-            TableRegistry::clear();
+            TableRegistry::getTableLocator()->clear();
             $this->main($table);
         }
     }
@@ -118,10 +121,10 @@ class ControllerTask extends BakeTask
             $plugin .= '.';
         }
 
-        if (TableRegistry::exists($plugin . $currentModelName)) {
-            $modelObj = TableRegistry::get($plugin . $currentModelName);
+        if (TableRegistry::getTableLocator()->exists($plugin . $currentModelName)) {
+            $modelObj = TableRegistry::getTableLocator()->get($plugin . $currentModelName);
         } else {
-            $modelObj = TableRegistry::get($plugin . $currentModelName, [
+            $modelObj = TableRegistry::getTableLocator()->get($plugin . $currentModelName, [
                 'connectionName' => $this->connection
             ]);
         }
@@ -197,7 +200,7 @@ class ControllerTask extends BakeTask
      * Assembles and writes a unit test file
      *
      * @param string $className Controller class name
-     * @return string|null Baked test
+     * @return string|bool Baked test
      */
     public function bakeTest($className)
     {
@@ -206,10 +209,7 @@ class ControllerTask extends BakeTask
         }
         $this->Test->plugin = $this->plugin;
         $this->Test->connection = $this->connection;
-        $prefix = $this->_getPrefix();
-        if ($prefix) {
-            $className = str_replace('/', '\\', $prefix) . '\\' . $className;
-        }
+        $this->Test->interactive = $this->interactive;
 
         return $this->Test->bake('Controller', $className);
     }

@@ -1,4 +1,3 @@
-
 <?php
 namespace App\Controller\Api;
 
@@ -8,6 +7,8 @@ class LevelsController extends AppController
 {
     public $paginate = [
         'page' => 1,
+        'limit' => 5,
+        'maxLimit' => 15,
         'sortWhitelist' => [
             'id', 'number', 'user_id'
         ]

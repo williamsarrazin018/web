@@ -150,7 +150,7 @@ class HtmlHelper extends Helper
      *
      * @param string $name Text for link
      * @param string|array|null $link URL for link (if empty it won't be a link)
-     * @param string|array $options Link attributes e.g. ['id' => 'selected']
+     * @param array $options Link attributes e.g. ['id' => 'selected']
      * @return $this
      * @see \Cake\View\Helper\HtmlHelper::link() for details on $options that can be used.
      * @link https://book.cakephp.org/3.0/en/views/helpers/html.html#creating-breadcrumb-trails-with-htmlhelper
@@ -158,6 +158,11 @@ class HtmlHelper extends Helper
      */
     public function addCrumb($name, $link = null, array $options = [])
     {
+        deprecationWarning(
+            'HtmlHelper::addCrumb() is deprecated. ' .
+            'Use the BreadcrumbsHelper instead.'
+        );
+
         $this->_crumbs[] = [$name, $link, $options];
 
         return $this;
@@ -692,6 +697,11 @@ class HtmlHelper extends Helper
      */
     public function getCrumbs($separator = '&raquo;', $startText = false)
     {
+        deprecationWarning(
+            'HtmlHelper::getCrumbs() is deprecated. ' .
+            'Use the BreadcrumbsHelper instead.'
+        );
+
         $crumbs = $this->_prepareCrumbs($startText);
         if (!empty($crumbs)) {
             $out = [];
@@ -731,6 +741,11 @@ class HtmlHelper extends Helper
      */
     public function getCrumbList(array $options = [], $startText = false)
     {
+        deprecationWarning(
+            'HtmlHelper::getCrumbList() is deprecated. ' .
+            'Use the BreadcrumbsHelper instead.'
+        );
+
         $defaults = ['firstClass' => 'first', 'lastClass' => 'last', 'separator' => '', 'escape' => true];
         $options += $defaults;
         $firstClass = $options['firstClass'];
@@ -784,6 +799,11 @@ class HtmlHelper extends Helper
      */
     protected function _prepareCrumbs($startText, $escape = true)
     {
+        deprecationWarning(
+            'HtmlHelper::_prepareCrumbs() is deprecated. ' .
+            'Use the BreadcrumbsHelper instead.'
+        );
+
         $crumbs = $this->_crumbs;
         if ($startText) {
             if (!is_array($startText)) {
@@ -962,10 +982,11 @@ class HtmlHelper extends Helper
             }
 
             if ($useCount) {
+                $i += 1;
                 if (isset($cellOptions['class'])) {
-                    $cellOptions['class'] .= ' column-' . ++$i;
+                    $cellOptions['class'] .= ' column-' . $i;
                 } else {
-                    $cellOptions['class'] = 'column-' . ++$i;
+                    $cellOptions['class'] = 'column-' . $i;
                 }
             }
 
@@ -1076,7 +1097,7 @@ class HtmlHelper extends Helper
      */
     public function para($class, $text, array $options = [])
     {
-        if (isset($options['escape'])) {
+        if (!empty($options['escape'])) {
             $text = h($text);
         }
         if ($class && !empty($class)) {

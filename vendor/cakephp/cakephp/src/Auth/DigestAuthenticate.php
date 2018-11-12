@@ -15,7 +15,6 @@
 namespace Cake\Auth;
 
 use Cake\Controller\ComponentRegistry;
-use Cake\Core\Configure;
 use Cake\Http\ServerRequest;
 use Cake\Utility\Security;
 
@@ -26,26 +25,26 @@ use Cake\Utility\Security;
  *
  * ### Using Digest auth
  *
- * In your controller's components array, add auth + the required config
+ * Load `AuthComponent` in your controller's `initialize()` and add 'Digest' in 'authenticate' key
+ *
  * ```
- *  public $components = [
- *      'Auth' => [
- *          'authenticate' => ['Digest']
- *      ]
- *  ];
+ *  $this->loadComponent('Auth', [
+ *      'authenticate' => ['Digest'],
+ *      'storage' => 'Memory',
+ *      'unauthorizedRedirect' => false,
+ *  ]);
  * ```
  *
- * You should also set `AuthComponent::$sessionKey = false;` in your AppController's
- * beforeFilter() to prevent CakePHP from sending a session cookie to the client.
+ * You should set `storage` to `Memory` to prevent CakePHP from sending a
+ * session cookie to the client.
  *
- * Since HTTP Digest Authentication is stateless you don't need a login() action
+ * You should set `unauthorizedRedirect` to `false`. This causes `AuthComponent` to
+ * throw a `ForbiddenException` exception instead of redirecting to another page.
+ *
+ * Since HTTP Digest Authentication is stateless you don't need call `setUser()`
  * in your controller. The user credentials will be checked on each request. If
  * valid credentials are not provided, required authentication headers will be sent
  * by this authentication provider which triggers the login dialog in the browser/client.
- *
- * You may also want to use `$this->Auth->unauthorizedRedirect = false;`.
- * This causes AuthComponent to throw a ForbiddenException exception instead of
- * redirecting to another page.
  *
  * ### Generating passwords compatible with Digest authentication.
  *
@@ -61,6 +60,8 @@ use Cake\Utility\Security;
  * example `User.digest_pass` could be used for a digest password, while
  * `User.password` would store the password hash for use with other methods like
  * Basic or Form.
+ *
+ * @see https://book.cakephp.org/3.0/en/controllers/components/authentication.html
  */
 class DigestAuthenticate extends BasicAuthenticate
 {
@@ -71,7 +72,7 @@ class DigestAuthenticate extends BasicAuthenticate
      * Besides the keys specified in BaseAuthenticate::$_defaultConfig,
      * DigestAuthenticate uses the following extra keys:
      *
-     * - `secret` The secret to use for nonce validation. Defaults to Security.salt.
+     * - `secret` The secret to use for nonce validation. Defaults to Security::getSalt().
      * - `realm` The realm authentication is for, Defaults to the servername.
      * - `qop` Defaults to 'auth', no other values are supported at this time.
      * - `opaque` A string that must be returned unchanged by clients.
@@ -86,7 +87,7 @@ class DigestAuthenticate extends BasicAuthenticate
     {
         $this->setConfig([
             'nonceLifetime' => 300,
-            'secret' => Configure::read('Security.salt'),
+            'secret' => Security::getSalt(),
             'realm' => null,
             'qop' => 'auth',
             'opaque' => null,
@@ -212,7 +213,7 @@ class DigestAuthenticate extends BasicAuthenticate
      * Generate the login headers
      *
      * @param \Cake\Http\ServerRequest $request Request object.
-     * @return string Headers for logging in.
+     * @return array Headers for logging in.
      */
     public function loginHeaders(ServerRequest $request)
     {
@@ -240,7 +241,9 @@ class DigestAuthenticate extends BasicAuthenticate
             }
         }
 
-        return 'WWW-Authenticate: Digest ' . implode(',', $opts);
+        return [
+            'WWW-Authenticate' => 'Digest ' . implode(',', $opts)
+        ];
     }
 
     /**
@@ -251,7 +254,8 @@ class DigestAuthenticate extends BasicAuthenticate
     protected function generateNonce()
     {
         $expiryTime = microtime(true) + $this->getConfig('nonceLifetime');
-        $signatureValue = hash_hmac('sha256', $expiryTime . ':' . $this->getConfig('secret'), Security::getSalt());
+        $secret = $this->getConfig('secret');
+        $signatureValue = hash_hmac('sha256', $expiryTime . ':' . $secret, $secret);
         $nonceValue = $expiryTime . ':' . $signatureValue;
 
         return base64_encode($nonceValue);
@@ -277,7 +281,8 @@ class DigestAuthenticate extends BasicAuthenticate
         if ($expires < microtime(true)) {
             return false;
         }
-        $check = hash_hmac('sha1', $expires . ':' . $this->getConfig('secret'), $this->getConfig('secret'));
+        $secret = $this->getConfig('secret');
+        $check = hash_hmac('sha256', $expires . ':' . $secret, $secret);
 
         return hash_equals($check, $checksum);
     }

@@ -24,7 +24,7 @@ trait EventDispatcherTrait
      * Instance of the Cake\Event\EventManager this object is using
      * to dispatch inner events.
      *
-     * @var \Cake\Event\EventManager
+     * @var \Cake\Event\EventManagerInterface|\Cake\Event\EventManager
      */
     protected $_eventManager;
 
@@ -33,7 +33,7 @@ trait EventDispatcherTrait
      *
      * @var string
      */
-    protected $_eventClass = '\Cake\Event\Event';
+    protected $_eventClass = Event::class;
 
     /**
      * Returns the Cake\Event\EventManager manager instance for this object.
@@ -47,6 +47,10 @@ trait EventDispatcherTrait
      */
     public function eventManager(EventManager $eventManager = null)
     {
+        deprecationWarning(
+            'EventDispatcherTrait::eventManager() is deprecated. ' .
+            'Use EventDispatcherTrait::setEventManager()/getEventManager() instead.'
+        );
         if ($eventManager !== null) {
             $this->setEventManager($eventManager);
         }

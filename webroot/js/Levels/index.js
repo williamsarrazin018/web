@@ -77,7 +77,6 @@ function editLevel(id) {
         success: function (data) {
             $('#idEdit').val(data.data.id);
             $('#numberEdit').val(data.data.number);
-            $('#user_idEdit').val(data.data.user_id);
             $('#editForm').slideDown();
         }
     });

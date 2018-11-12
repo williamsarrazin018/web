@@ -351,6 +351,8 @@ class TableSchema implements TableSchemaInterface, SqlGeneratorInterface
      */
     public function column($name)
     {
+        deprecationWarning('TableSchema::column() is deprecated. Use TableSchema::getColumn() instead.');
+
         return $this->getColumn($name);
     }
 
@@ -379,6 +381,8 @@ class TableSchema implements TableSchemaInterface, SqlGeneratorInterface
      */
     public function columnType($name, $type = null)
     {
+        deprecationWarning('TableSchema::columnType() is deprecated. Use TableSchema::setColumnType() or TableSchema::getColumnType() instead.');
+
         if ($type !== null) {
             $this->setColumnType($name, $type);
         }
@@ -436,7 +440,7 @@ class TableSchema implements TableSchemaInterface, SqlGeneratorInterface
             return null;
         }
 
-        if (Type::map($type)) {
+        if (Type::getMap($type)) {
             $type = Type::build($type)->getBaseType();
         }
 
@@ -536,6 +540,8 @@ class TableSchema implements TableSchemaInterface, SqlGeneratorInterface
      */
     public function index($name)
     {
+        deprecationWarning('TableSchema::index() is deprecated. Use TableSchema::getIndex() instead.');
+
         return $this->getIndex($name);
     }
 
@@ -689,6 +695,8 @@ class TableSchema implements TableSchemaInterface, SqlGeneratorInterface
      */
     public function constraint($name)
     {
+        deprecationWarning('TableSchema::constraint() is deprecated. Use TableSchema::getConstraint() instead.');
+
         return $this->getConstraint($name);
     }
 
@@ -734,6 +742,8 @@ class TableSchema implements TableSchemaInterface, SqlGeneratorInterface
      */
     public function options($options = null)
     {
+        deprecationWarning('TableSchema::options() is deprecated. Use TableSchema::setOptions() or TableSchema::getOptions() instead.');
+
         if ($options !== null) {
             return $this->setOptions($options);
         }
@@ -768,6 +778,10 @@ class TableSchema implements TableSchemaInterface, SqlGeneratorInterface
      */
     public function temporary($temporary = null)
     {
+        deprecationWarning(
+            'TableSchema::temporary() is deprecated. ' .
+            'Use TableSchema::setTemporary()/isTemporary() instead.'
+        );
         if ($temporary !== null) {
             return $this->setTemporary($temporary);
         }
@@ -834,7 +848,25 @@ class TableSchema implements TableSchemaInterface, SqlGeneratorInterface
 
         return $dialect->dropConstraintSql($this);
     }
+
+    /**
+     * Returns an array of the table schema.
+     *
+     * @return array
+     */
+    public function __debugInfo()
+    {
+        return [
+            'table' => $this->_table,
+            'columns' => $this->_columns,
+            'indexes' => $this->_indexes,
+            'constraints' => $this->_constraints,
+            'options' => $this->_options,
+            'typeMap' => $this->_typeMap,
+            'temporary' => $this->_temporary,
+        ];
+    }
 }
 
-// @deprecated Add backwards compat alias.
+// @deprecated 3.4.0 Add backwards compat alias.
 class_alias('Cake\Database\Schema\TableSchema', 'Cake\Database\Schema\Table');

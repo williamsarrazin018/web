@@ -1261,3 +1261,47 @@ Stack Trace:
 #2 {main}
 
 
+2018-11-12 21:42:29 Error: [Error] Call to undefined method App\Application::addPlugin() in C:\Program Files (x86)\Ampps\www\CakeMedical\src\Application.php on line 45
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\CommandRunner.php(114): App\Application->bootstrap()
+#1 C:\Program Files (x86)\Ampps\www\CakeMedical\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-11-12 21:42:42 Error: [Error] Call to undefined method App\Application::addPlugin() in C:\Program Files (x86)\Ampps\www\CakeMedical\src\Application.php on line 45
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\CommandRunner.php(114): App\Application->bootstrap()
+#1 C:\Program Files (x86)\Ampps\www\CakeMedical\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-11-12 21:45:48 Error: [Cake\Core\Exception\MissingPluginException] Plugin ADmad/JwtAuth could not be found. in C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'ADmad/JwtAuth',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('ADmad/JwtAuth')
+#1 C:\Program Files (x86)\Ampps\www\CakeMedical\config\bootstrap.php(204): Cake\Core\Plugin::load('ADmad/JwtAuth')
+#2 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\CakeMedical\src\Application.php(41): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\CommandRunner.php(191): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\CakeMedical\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#7 {main}
+
+
+2018-11-12 21:45:58 Error: [Cake\Core\Exception\MissingPluginException] Plugin ADmad/JwtAuth could not be found. in C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'ADmad/JwtAuth',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('ADmad/JwtAuth')
+#1 C:\Program Files (x86)\Ampps\www\CakeMedical\config\bootstrap.php(204): Cake\Core\Plugin::load('ADmad/JwtAuth')
+#2 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\CakeMedical\src\Application.php(41): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\CommandRunner.php(191): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\CakeMedical\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#7 {main}
+
+

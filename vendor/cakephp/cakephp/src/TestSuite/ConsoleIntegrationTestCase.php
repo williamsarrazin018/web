@@ -16,6 +16,7 @@ namespace Cake\TestSuite;
 use Cake\Console\CommandRunner;
 use Cake\Console\ConsoleInput;
 use Cake\Console\ConsoleIo;
+use Cake\Console\Exception\StopException;
 use Cake\Core\Configure;
 use Cake\TestSuite\Stub\ConsoleOutput;
 
@@ -23,7 +24,7 @@ use Cake\TestSuite\Stub\ConsoleOutput;
  * A test case class intended to make integration tests of cake console commands
  * easier.
  */
-class ConsoleIntegrationTestCase extends TestCase
+abstract class ConsoleIntegrationTestCase extends TestCase
 {
     /**
      * Whether or not to use the CommandRunner
@@ -35,28 +36,28 @@ class ConsoleIntegrationTestCase extends TestCase
     /**
      * Last exit code
      *
-     * @var int
+     * @var int|null
      */
     protected $_exitCode;
 
     /**
      * Console output stub
      *
-     * @var ConsoleOutput
+     * @var \Cake\TestSuite\Stub\ConsoleOutput|\PHPUnit_Framework_MockObject_MockObject|null
      */
     protected $_out;
 
     /**
      * Console error output stub
      *
-     * @var ConsoleOutput
+     * @var \Cake\TestSuite\Stub\ConsoleOutput|\PHPUnit_Framework_MockObject_MockObject|null
      */
     protected $_err;
 
     /**
      * Console input mock
      *
-     * @var ConsoleInput
+     * @var \Cake\Console\ConsoleInput|\PHPUnit_Framework_MockObject_MockObject|null
      */
     protected $_in;
 
@@ -90,7 +91,11 @@ class ConsoleIntegrationTestCase extends TestCase
 
         $io = new ConsoleIo($this->_out, $this->_err, $this->_in);
 
-        $this->_exitCode = $runner->run($args, $io);
+        try {
+            $this->_exitCode = $runner->run($args, $io);
+        } catch (StopException $exception) {
+            $this->_exitCode = $exception->getCode();
+        }
     }
 
     /**
@@ -162,6 +167,18 @@ class ConsoleIntegrationTestCase extends TestCase
         $output = implode(PHP_EOL, $this->_out->messages());
         $this->assertContains($expected, $output, $message);
     }
+    /**
+     * Asserts `stdout` does not contain expected output
+     *
+     * @param string $expected Expected output
+     * @param string $message Failure message
+     * @return void
+     */
+    public function assertOutputNotContains($expected, $message = '')
+    {
+        $output = implode(PHP_EOL, $this->_out->messages());
+        $this->assertNotContains($expected, $output, $message);
+    }
 
     /**
      * Asserts `stdout` contains expected regexp
@@ -190,7 +207,7 @@ class ConsoleIntegrationTestCase extends TestCase
         }, $row);
         $cells = implode('\s+\|\s+', $row);
         $pattern = '/' . $cells . '/';
-        $this->assertOutputRegexp($pattern);
+        $this->assertOutputRegExp($pattern);
     }
 
     /**
@@ -240,8 +257,10 @@ class ConsoleIntegrationTestCase extends TestCase
     {
         if ($this->_useCommandRunner) {
             $applicationClassName = Configure::read('App.namespace') . '\Application';
+            /** @var \Cake\Http\BaseApplication $applicationClass */
+            $applicationClass = new $applicationClassName(CONFIG);
 
-            return new CommandRunner(new $applicationClassName([CONFIG]));
+            return new CommandRunner($applicationClass);
         }
 
         return new LegacyCommandRunner();

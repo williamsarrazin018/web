@@ -163,7 +163,7 @@ class Debugger
      * Returns a reference to the Debugger singleton object instance.
      *
      * @param string|null $class Class name.
-     * @return object|\Cake\Error\Debugger
+     * @return \Cake\Error\Debugger
      */
     public static function getInstance($class = null)
     {
@@ -486,7 +486,7 @@ class Debugger
      * This is done to protect database credentials, which could be accidentally
      * shown in an error message if CakePHP is deployed in development mode.
      *
-     * @param string $var Variable to convert.
+     * @param mixed $var Variable to convert.
      * @param int $depth The depth to output to. Defaults to 3.
      * @return string Variable as a formatted string
      */
@@ -688,6 +688,9 @@ class Debugger
      */
     public static function outputAs($format = null)
     {
+        deprecationWarning(
+            'Debugger::outputAs() is deprecated. Use Debugger::getOutputFormat()/setOutputFormat() instead.'
+        );
         $self = Debugger::getInstance();
         if ($format === null) {
             return $self->_outputFormat;
@@ -766,7 +769,7 @@ class Debugger
     /**
      * Takes a processed array of data from an error and displays it in the chosen format.
      *
-     * @param string $data Data to output.
+     * @param array $data Data to output.
      * @return void
      */
     public function outputError($data)
@@ -914,7 +917,7 @@ class Debugger
             $file = str_replace($search, '', $file);
         }
         $html = <<<HTML
-<div class="cake-debug-output">
+<div class="cake-debug-output" style="direction:ltr">
 %s
 <pre class="cake-debug">
 %s

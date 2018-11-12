@@ -57,3 +57,190 @@
 2018-11-12 17:37:57 Debug: duration=1 rows=1 SELECT Adresses.id AS "Adresses__id", Adresses.adress AS "Adresses__adress", Adresses.city AS "Adresses__city", Adresses.zip_code AS "Adresses__zip_code", Adresses.province AS "Adresses__province", Adresses.country AS "Adresses__country", Adresses.details AS "Adresses__details", Adresses.created AS "Adresses__created", Adresses.modified AS "Adresses__modified", Adresses.user_id AS "Adresses__user_id" FROM adresses Adresses WHERE Adresses.id = 5 LIMIT 1
 2018-11-12 17:37:57 Debug: duration=1 rows=1 SELECT Adresses.id AS "Adresses__id", Adresses.adress AS "Adresses__adress", Adresses.city AS "Adresses__city", Adresses.zip_code AS "Adresses__zip_code", Adresses.province AS "Adresses__province", Adresses.country AS "Adresses__country", Adresses.details AS "Adresses__details", Adresses.created AS "Adresses__created", Adresses.modified AS "Adresses__modified", Adresses.user_id AS "Adresses__user_id" FROM adresses Adresses WHERE Adresses.id = 5 LIMIT 1
 2018-11-12 17:37:57 Debug: duration=1 rows=1 SELECT Adresses.id AS "Adresses__id", Adresses.adress AS "Adresses__adress", Adresses.city AS "Adresses__city", Adresses.zip_code AS "Adresses__zip_code", Adresses.province AS "Adresses__province", Adresses.country AS "Adresses__country", Adresses.details AS "Adresses__details", Adresses.created AS "Adresses__created", Adresses.modified AS "Adresses__modified", Adresses.user_id AS "Adresses__user_id" FROM adresses Adresses WHERE Adresses.id = 5 LIMIT 1
+2018-11-12 22:53:27 Debug: duration=24 rows=5 PRAGMA table_info("levels")
+2018-11-12 22:53:27 Debug: duration=0 rows=0 PRAGMA index_list("levels")
+2018-11-12 22:53:27 Debug: duration=0 rows=0 PRAGMA foreign_key_list("levels")
+2018-11-12 22:53:27 Debug: duration=0 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 2 LIMIT 1
+2018-11-12 22:53:41 Debug: duration=0 rows=0 BEGIN
+2018-11-12 22:53:41 Debug: duration=1 rows=8 PRAGMA table_info("users")
+2018-11-12 22:53:41 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-11-12 22:53:41 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-11-12 22:53:41 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 22:53:41 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 22:53:45 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 22:53:48 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 2 LIMIT 1
+2018-11-12 22:53:50 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 3 LIMIT 1
+2018-11-12 22:53:54 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 3 LIMIT 1
+2018-11-12 22:53:54 Debug: duration=0 rows=0 BEGIN
+2018-11-12 22:53:54 Debug: duration=1 rows=1 DELETE FROM levels WHERE id = 3
+2018-11-12 22:53:54 Debug: duration=0 rows=0 COMMIT
+2018-11-12 22:53:56 Debug: duration=1 rows=2 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-11-12 22:53:56 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-11-12 22:54:05 Debug: duration=0 rows=0 BEGIN
+2018-11-12 22:54:05 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 22:54:05 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 22:54:10 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 2 LIMIT 1
+2018-11-12 22:56:54 Debug: duration=0 rows=0 BEGIN
+2018-11-12 22:56:54 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 22:56:54 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 22:56:57 Debug: duration=0 rows=0 BEGIN
+2018-11-12 22:56:57 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 22:56:57 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 22:56:58 Debug: duration=0 rows=0 BEGIN
+2018-11-12 22:56:58 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 22:56:58 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 22:57:06 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 22:57:20 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 22:57:20 Debug: duration=0 rows=0 BEGIN
+2018-11-12 22:57:20 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 22:57:20 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 22:57:24 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 22:57:24 Debug: duration=0 rows=0 BEGIN
+2018-11-12 22:57:24 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 22:57:24 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 22:57:24 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 22:57:24 Debug: duration=0 rows=0 BEGIN
+2018-11-12 22:57:24 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 22:57:24 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 22:57:44 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 2 LIMIT 1
+2018-11-12 22:57:47 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 23:01:27 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 23:01:29 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 2 LIMIT 1
+2018-11-12 23:02:20 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 23:02:22 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 2 LIMIT 1
+2018-11-12 23:02:27 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 2 LIMIT 1
+2018-11-12 23:02:27 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:02:27 Debug: duration=1 rows=1 UPDATE levels SET number = 21 , modified = '11/12/18, 11:02 PM' WHERE id = 2
+2018-11-12 23:02:27 Debug: duration=0 rows=0 COMMIT
+2018-11-12 23:02:30 Debug: duration=1 rows=2 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-11-12 23:02:30 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-11-12 23:02:41 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 2 LIMIT 1
+2018-11-12 23:02:44 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 2 LIMIT 1
+2018-11-12 23:02:44 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:02:44 Debug: duration=1 rows=1 UPDATE levels SET number = 2 , modified = '11/12/18, 11:02 PM' WHERE id = 2
+2018-11-12 23:02:44 Debug: duration=0 rows=0 COMMIT
+2018-11-12 23:02:45 Debug: duration=1 rows=2 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-11-12 23:02:45 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-11-12 23:02:56 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:02:56 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:02:56 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:03:39 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:03:39 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:04:03 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:04:03 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:04:05 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:04:05 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:04:05 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:04:05 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:05:18 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:05:18 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:05:19 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:05:19 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:05:19 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:05:19 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:06:48 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 23:06:55 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 23:06:55 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:06:55 Debug: duration=6 rows=1 UPDATE levels SET number = 12 , modified = '11/12/18, 11:06 PM' WHERE id = 1
+2018-11-12 23:06:55 Debug: duration=0 rows=0 COMMIT
+2018-11-12 23:06:56 Debug: duration=1 rows=2 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-11-12 23:06:56 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-11-12 23:06:59 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 23:07:02 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 23:07:02 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:07:02 Debug: duration=1 rows=1 UPDATE levels SET number = 1 , modified = '11/12/18, 11:07 PM' WHERE id = 1
+2018-11-12 23:07:02 Debug: duration=0 rows=0 COMMIT
+2018-11-12 23:07:04 Debug: duration=1 rows=2 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-11-12 23:07:04 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-11-12 23:07:09 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:07:09 Debug: duration=0 rows=8 PRAGMA table_info("users")
+2018-11-12 23:07:09 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-11-12 23:07:09 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-11-12 23:07:09 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:07:09 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:07:11 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:07:11 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:07:11 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:07:11 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:07:11 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:07:11 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:07:11 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:07:11 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:07:11 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:07:12 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:07:12 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:07:12 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:08:31 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:08:31 Debug: duration=1 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:08:31 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:08:32 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:08:32 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:08:32 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:08:34 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:08:34 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:08:34 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:08:34 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:08:34 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:08:34 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:09:16 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 23:09:32 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:09:32 Debug: duration=1 rows=8 PRAGMA table_info("users")
+2018-11-12 23:09:32 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-11-12 23:09:32 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-11-12 23:09:32 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:09:32 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:09:33 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:09:33 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:09:33 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:09:33 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:09:33 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:09:33 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:09:33 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:09:33 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:09:33 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:09:33 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:09:33 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:09:34 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:09:34 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:09:34 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:09:34 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:09:34 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:09:34 Debug: duration=1 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:09:34 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:09:34 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:09:34 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:09:34 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:09:34 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:09:34 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:09:34 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:11:28 Debug: duration=1 rows=5 PRAGMA table_info("levels")
+2018-11-12 23:11:28 Debug: duration=0 rows=0 PRAGMA index_list("levels")
+2018-11-12 23:11:28 Debug: duration=0 rows=0 PRAGMA foreign_key_list("levels")
+2018-11-12 23:11:28 Debug: duration=0 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-11-12 23:12:28 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:12:28 Debug: duration=0 rows=8 PRAGMA table_info("users")
+2018-11-12 23:12:28 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-11-12 23:12:28 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-11-12 23:12:28 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:12:28 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:14:02 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:14:02 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:14:02 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:14:03 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:14:03 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:14:03 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:14:03 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:14:03 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:14:03 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:14:04 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:14:04 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:14:04 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:14:05 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:14:05 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:14:05 Debug: duration=0 rows=0 ROLLBACK
+2018-11-12 23:14:36 Debug: duration=0 rows=0 BEGIN
+2018-11-12 23:14:36 Debug: duration=0 rows=8 PRAGMA table_info("users")
+2018-11-12 23:14:36 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-11-12 23:14:36 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-11-12 23:14:36 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.id = 0 LIMIT 1
+2018-11-12 23:14:36 Debug: duration=0 rows=0 ROLLBACK

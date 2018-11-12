@@ -117,7 +117,7 @@ class Hash
      *
      * @param array|\ArrayAccess $data The data to extract from.
      * @param string $path The path to extract.
-     * @return array An array of the extracted values. Returns an empty array
+     * @return array|\ArrayAccess An array of the extracted values. Returns an empty array
      *   if there are no matches.
      * @link https://book.cakephp.org/3.0/en/core-libraries/hash.html#Cake\Utility\Hash::extract
      */
@@ -160,6 +160,7 @@ class Hash
 
             foreach ($context[$_key] as $item) {
                 if (is_object($item) && method_exists($item, 'toArray')) {
+                    /** @var \Cake\Datasource\EntityInterface $item */
                     $item = $item->toArray();
                 }
                 foreach ((array)$item as $k => $v) {
@@ -266,6 +267,8 @@ class Hash
                 $prop = $prop ? '1' : '0';
             } elseif ($isBool) {
                 $prop = $prop ? 'true' : 'false';
+            } elseif (is_numeric($prop)) {
+                $prop = (string)$prop;
             }
 
             // Pattern matches and other operators.
@@ -999,15 +1002,15 @@ class Hash
             $dir = SORT_DESC;
         }
         if ($type === 'numeric') {
-            $type = SORT_NUMERIC;
+            $type = \SORT_NUMERIC;
         } elseif ($type === 'string') {
-            $type = SORT_STRING;
+            $type = \SORT_STRING;
         } elseif ($type === 'natural') {
-            $type = SORT_NATURAL;
+            $type = \SORT_NATURAL;
         } elseif ($type === 'locale') {
-            $type = SORT_LOCALE_STRING;
+            $type = \SORT_LOCALE_STRING;
         } else {
-            $type = SORT_REGULAR;
+            $type = \SORT_REGULAR;
         }
         if ($ignoreCase) {
             $values = array_map('mb_strtolower', $values);

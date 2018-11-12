@@ -33,10 +33,48 @@ class Validation
 
     /**
      * Default locale
-     *
-     * @var string
      */
     const DEFAULT_LOCALE = 'en_US';
+
+    /**
+     * Same as operator.
+     */
+    const COMPARE_SAME = '===';
+
+    /**
+     * Not same as comparison operator.
+     */
+    const COMPARE_NOT_SAME = '!==';
+
+    /**
+     * Equal to comparison operator.
+     */
+    const COMPARE_EQUAL = '==';
+
+    /**
+     * Not equal to comparison operator.
+     */
+    const COMPARE_NOT_EQUAL = '!=';
+
+    /**
+     * Greater than comparison operator.
+     */
+    const COMPARE_GREATER = '>';
+
+    /**
+     * Greater than or equal to comparison operator.
+     */
+    const COMPARE_GREATER_OR_EQUAL = '>=';
+
+    /**
+     * Less than comparison operator.
+     */
+    const COMPARE_LESS = '<';
+
+    /**
+     * Less than or equal to comparison operator.
+     */
+    const COMPARE_LESS_OR_EQUAL = '<=';
 
     /**
      * Some complex patterns needed in multiple places
@@ -67,7 +105,10 @@ class Validation
      */
     public static function notEmpty($check)
     {
-        trigger_error('Validation::notEmpty() is deprecated. Use Validation::notBlank() instead.', E_USER_DEPRECATED);
+        deprecationWarning(
+            'Validation::notEmpty() is deprecated. ' .
+            'Use Validation::notBlank() instead.'
+        );
 
         return static::notBlank($check);
     }
@@ -132,11 +173,13 @@ class Validation
      *
      * @param string $check Value to check
      * @return bool Success
-     * @deprecated 3.0.2
+     * @deprecated 3.0.2 Validation::blank() is deprecated.
      */
     public static function blank($check)
     {
-        trigger_error('Validation::blank() is deprecated.', E_USER_DEPRECATED);
+        deprecationWarning(
+            'Validation::blank() is deprecated.'
+        );
 
         return !static::_check($check, '/[^\\s]/');
     }
@@ -165,20 +208,18 @@ class Validation
             return false;
         }
 
-        if ($regex !== null) {
-            if (static::_check($check, $regex)) {
-                return !$deep || static::luhn($check);
-            }
+        if ($regex !== null && static::_check($check, $regex)) {
+            return !$deep || static::luhn($check);
         }
         $cards = [
             'all' => [
-                'amex' => '/^3[4|7]\\d{13}$/',
+                'amex' => '/^3[47]\\d{13}$/',
                 'bankcard' => '/^56(10\\d\\d|022[1-5])\\d{10}$/',
                 'diners' => '/^(?:3(0[0-5]|[68]\\d)\\d{11})|(?:5[1-5]\\d{14})$/',
                 'disc' => '/^(?:6011|650\\d)\\d{12}$/',
                 'electron' => '/^(?:417500|4917\\d{2}|4913\\d{2})\\d{10}$/',
                 'enroute' => '/^2(?:014|149)\\d{11}$/',
-                'jcb' => '/^(3\\d{4}|2100|1800)\\d{11}$/',
+                'jcb' => '/^(3\\d{4}|2131|1800)\\d{11}$/',
                 'maestro' => '/^(?:5020|6\\d{3})\\d{12}$/',
                 'mc' => '/^(5[1-5]\\d{14})|(2(?:22[1-9]|2[3-9][0-9]|[3-6][0-9]{2}|7[0-1][0-9]|720)\\d{12})$/',
                 'solo' => '/^(6334[5-9][0-9]|6767[0-9]{2})\\d{10}(\\d{2,3})?$/',
@@ -238,12 +279,11 @@ class Validation
     /**
      * Used to compare 2 numeric values.
      *
-     * @param string $check1 if string is passed for, a string must also be passed for $check2
-     *    used as an array it must be passed as ['check1' => value, 'operator' => 'value', 'check2' => value]
+     * @param string $check1 The left value to compare.
      * @param string $operator Can be either a word or operand
      *    is greater >, is less <, greater or equal >=
      *    less or equal <=, is less <, equal to ==, not equal !=
-     * @param int $check2 only needed if $check1 is a string
+     * @param int $check2 The right value to compare.
      * @return bool Success
      */
     public static function comparison($check1, $operator, $check2)
@@ -252,41 +292,83 @@ class Validation
             return false;
         }
 
+        $message = 'Operator `%s` is deprecated, use constant `Validation::%s` instead.';
+
         $operator = str_replace([' ', "\t", "\n", "\r", "\0", "\x0B"], '', strtolower($operator));
         switch ($operator) {
             case 'isgreater':
-            case '>':
+                /*
+                 * @deprecated 3.6.0 Use Validation::COMPARE_GREATER instead.
+                 */
+                deprecationWarning(sprintf($message, $operator, 'COMPARE_GREATER'));
+                // no break
+            case static::COMPARE_GREATER:
                 if ($check1 > $check2) {
                     return true;
                 }
                 break;
             case 'isless':
-            case '<':
+                /*
+                 * @deprecated 3.6.0 Use Validation::COMPARE_LESS instead.
+                 */
+                deprecationWarning(sprintf($message, $operator, 'COMPARE_LESS'));
+                // no break
+            case static::COMPARE_LESS:
                 if ($check1 < $check2) {
                     return true;
                 }
                 break;
             case 'greaterorequal':
-            case '>=':
+                /*
+                 * @deprecated 3.6.0 Use Validation::COMPARE_GREATER_OR_EQUAL instead.
+                 */
+                deprecationWarning(sprintf($message, $operator, 'COMPARE_GREATER_OR_EQUAL'));
+                // no break
+            case static::COMPARE_GREATER_OR_EQUAL:
                 if ($check1 >= $check2) {
                     return true;
                 }
                 break;
             case 'lessorequal':
-            case '<=':
+                /*
+                 * @deprecated 3.6.0 Use Validation::COMPARE_LESS_OR_EQUAL instead.
+                 */
+                deprecationWarning(sprintf($message, $operator, 'COMPARE_LESS_OR_EQUAL'));
+                // no break
+            case static::COMPARE_LESS_OR_EQUAL:
                 if ($check1 <= $check2) {
                     return true;
                 }
                 break;
             case 'equalto':
-            case '==':
+                /*
+                 * @deprecated 3.6.0 Use Validation::COMPARE_EQUAL instead.
+                 */
+                deprecationWarning(sprintf($message, $operator, 'COMPARE_EQUAL'));
+                // no break
+            case static::COMPARE_EQUAL:
                 if ($check1 == $check2) {
                     return true;
                 }
                 break;
             case 'notequal':
-            case '!=':
+                /*
+                 * @deprecated 3.6.0 Use Validation::COMPARE_NOT_EQUAL instead.
+                 */
+                deprecationWarning(sprintf($message, $operator, 'COMPARE_NOT_EQUAL'));
+                // no break
+            case static::COMPARE_NOT_EQUAL:
                 if ($check1 != $check2) {
+                    return true;
+                }
+                break;
+            case static::COMPARE_SAME:
+                if ($check1 === $check2) {
+                    return true;
+                }
+                break;
+            case static::COMPARE_NOT_SAME:
+                if ($check1 !== $check2) {
                     return true;
                 }
                 break;
@@ -309,11 +391,28 @@ class Validation
      */
     public static function compareWith($check, $field, $context)
     {
+        return self::compareFields($check, $field, static::COMPARE_SAME, $context);
+    }
+
+    /**
+     * Compare one field to another.
+     *
+     * Return true if the comparison matches the expected result.
+     *
+     * @param mixed $check The value to find in $field.
+     * @param string $field The field to check $check against. This field must be present in $context.
+     * @param string $operator Comparison operator.
+     * @param array $context The validation context.
+     * @return bool
+     * @since 3.6.0
+     */
+    public static function compareFields($check, $field, $operator, $context)
+    {
         if (!isset($context['data'][$field])) {
             return false;
         }
 
-        return $context['data'][$field] === $check;
+        return static::comparison($check, $operator, $context['data'][$field]);
     }
 
     /**
@@ -498,7 +597,7 @@ class Validation
      * @param string|int|null $format any format accepted by IntlDateFormatter
      * @return bool Success
      * @throws \InvalidArgumentException when unsupported $type given
-     * @see \Cake\I18N\Time::parseDate(), \Cake\I18N\Time::parseTime(), \Cake\I18N\Time::parseDateTime()
+     * @see \Cake\I18n\Time::parseDate(), \Cake\I18n\Time::parseTime(), \Cake\I18n\Time::parseDateTime()
      */
     public static function localizedTime($check, $type = 'datetime', $format = null)
     {
@@ -527,7 +626,7 @@ class Validation
      * The list of what is considered to be boolean values, may be set via $booleanValues.
      *
      * @param bool|int|string $check Value to check.
-     * @param string $booleanValues List of valid boolean values, defaults to `[true, false, 0, 1, '0', '1']`.
+     * @param array $booleanValues List of valid boolean values, defaults to `[true, false, 0, 1, '0', '1']`.
      * @return bool Success.
      */
     public static function boolean($check, array $booleanValues = [])
@@ -617,8 +716,7 @@ class Validation
         $decimalPoint = $formatter->getSymbol(NumberFormatter::DECIMAL_SEPARATOR_SYMBOL);
         $groupingSep = $formatter->getSymbol(NumberFormatter::GROUPING_SEPARATOR_SYMBOL);
 
-        $check = str_replace($groupingSep, '', $check);
-        $check = str_replace($decimalPoint, '.', $check);
+        $check = str_replace([$groupingSep, $decimalPoint], ['', '.'], $check);
 
         return static::_check($check, $regex);
     }
@@ -656,7 +754,7 @@ class Validation
                 return true;
             }
 
-            return is_array(gethostbynamel($regs[1]));
+            return is_array(gethostbynamel($regs[1] . '.'));
         }
 
         return false;
@@ -677,12 +775,15 @@ class Validation
     /**
      * Checks that value has a valid file extension.
      *
-     * @param string|array $check Value to check
+     * @param string|array|\Psr\Http\Message\UploadedFileInterface $check Value to check
      * @param array $extensions file extensions to allow. By default extensions are 'gif', 'jpeg', 'png', 'jpg'
      * @return bool Success
      */
     public static function extension($check, $extensions = ['gif', 'jpeg', 'png', 'jpg'])
     {
+        if ($check instanceof UploadedFileInterface) {
+            return static::extension($check->getClientFilename(), $extensions);
+        }
         if (is_array($check)) {
             $check = isset($check['name']) ? $check['name'] : array_shift($check);
 
@@ -904,11 +1005,14 @@ class Validation
      * @param string $check Value to check
      * @param bool $strict Require URL to be prefixed by a valid scheme (one of http(s)/ftp(s)/file/news/gopher)
      * @return bool Success
+     * @link https://tools.ietf.org/html/rfc3986
      */
     public static function url($check, $strict = false)
     {
         static::_populateIp();
-        $alpha = '0-9\p{L}\p{N}';
+
+        $emoji = '\x{1F190}-\x{1F9EF}';
+        $alpha = '0-9\p{L}\p{N}' . $emoji;
         $hex = '(%[0-9a-f]{2})';
         $subDelimiters = preg_quote('/!"$&\'()*+,-.@_:;=~[]', '/');
         $path = '([' . $subDelimiters . $alpha . ']|' . $hex . ')';
@@ -954,9 +1058,9 @@ class Validation
      */
     public static function userDefined($check, $object, $method, $args = null)
     {
-        trigger_error(
-            'Validation::userDefined() is deprecated. Just set a callable for `rule` key when adding validators instead.',
-            E_USER_DEPRECATED
+        deprecationWarning(
+            'Validation::userDefined() is deprecated. ' .
+            'You can just set a callable for `rule` key when adding validators.'
         );
 
         return $object->$method($check, $args);
@@ -1007,7 +1111,7 @@ class Validation
         }
 
         for ($position = ($length % 2); $position < $length; $position += 2) {
-            $number = $check[$position] * 2;
+            $number = (int)$check[$position] * 2;
             $sum += ($number < 10) ? $number : $number - 9;
         }
 
@@ -1083,7 +1187,11 @@ class Validation
             return $check['tmp_name'];
         }
 
-        return $check;
+        if (is_string($check)) {
+            return $check;
+        }
+
+        return false;
     }
 
     /**
@@ -1153,7 +1261,7 @@ class Validation
      * - `optional` - Whether or not this file is optional. Defaults to false.
      *   If true a missing file will pass the validator regardless of other constraints.
      *
-     * @param array $file The uploaded file data from PHP.
+     * @param array|\Psr\Http\Message\UploadedFileInterface $file The uploaded file data from PHP.
      * @param array $options An array of options for the validation.
      * @return bool
      */
@@ -1189,10 +1297,10 @@ class Validation
         if ($options['optional'] && $error === UPLOAD_ERR_NO_FILE) {
             return true;
         }
-        if (isset($options['minSize']) && !static::fileSize($file, '>=', $options['minSize'])) {
+        if (isset($options['minSize']) && !static::fileSize($file, static::COMPARE_GREATER_OR_EQUAL, $options['minSize'])) {
             return false;
         }
-        if (isset($options['maxSize']) && !static::fileSize($file, '<=', $options['maxSize'])) {
+        if (isset($options['maxSize']) && !static::fileSize($file, static::COMPARE_LESS_OR_EQUAL, $options['maxSize'])) {
             return false;
         }
         if (isset($options['types']) && !static::mimeType($file, $options['types'])) {
@@ -1205,7 +1313,7 @@ class Validation
     /**
      * Validates the size of an uploaded image.
      *
-     * @param array $file The uploaded file data from PHP.
+     * @param array|\Psr\Http\Message\UploadedFileInterface  $file The uploaded file data from PHP.
      * @param array $options Options to validate width and height.
      * @return bool
      */
@@ -1215,11 +1323,7 @@ class Validation
             throw new InvalidArgumentException('Invalid image size validation parameters! Missing `width` and / or `height`.');
         }
 
-        if ($file instanceof UploadedFileInterface) {
-            $file = $file->getStream()->getContents();
-        } elseif (is_array($file) && isset($file['tmp_name'])) {
-            $file = $file['tmp_name'];
-        }
+        $file = static::getFilename($file);
 
         list($width, $height) = getimagesize($file);
 
@@ -1229,7 +1333,7 @@ class Validation
         if (isset($options['width'])) {
             $validWidth = self::comparison($width, $options['width'][0], $options['width'][1]);
         }
-        if (isset($validHeight) && isset($validWidth)) {
+        if (isset($validHeight, $validWidth)) {
             return ($validHeight && $validWidth);
         }
         if (isset($validHeight)) {
@@ -1246,7 +1350,7 @@ class Validation
      * Validates the image width.
      *
      * @param array $file The uploaded file data from PHP.
-     * @param string $operator Comparision operator.
+     * @param string $operator Comparison operator.
      * @param int $width Min or max width.
      * @return bool
      */
@@ -1264,7 +1368,7 @@ class Validation
      * Validates the image width.
      *
      * @param array $file The uploaded file data from PHP.
-     * @param string $operator Comparision operator.
+     * @param string $operator Comparison operator.
      * @param int $height Min or max width.
      * @return bool
      */

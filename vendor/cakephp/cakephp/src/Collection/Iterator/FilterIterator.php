@@ -67,6 +67,7 @@ class FilterIterator extends Collection
      */
     public function unwrap()
     {
+        /** @var \IteratorIterator $filter */
         $filter = $this->getInnerIterator();
         $iterator = $filter->getInnerIterator();
 
@@ -74,7 +75,7 @@ class FilterIterator extends Collection
             $iterator = $iterator->unwrap();
         }
 
-        if (!$iterator instanceof ArrayIterator) {
+        if (get_class($iterator) !== ArrayIterator::class) {
             return $filter;
         }
 

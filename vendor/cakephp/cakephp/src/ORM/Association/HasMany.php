@@ -141,6 +141,10 @@ class HasMany extends Association
      */
     public function saveStrategy($strategy = null)
     {
+        deprecationWarning(
+            'HasMany::saveStrategy() is deprecated. ' .
+            'Use setSaveStrategy()/getSaveStrategy() instead.'
+        );
         if ($strategy !== null) {
             $this->setSaveStrategy($strategy);
         }
@@ -155,8 +159,7 @@ class HasMany extends Association
      * `$options`
      *
      * @param \Cake\Datasource\EntityInterface $entity an entity from the source table
-     * @param array|\ArrayObject $options options to be passed to the save method in
-     * the target table
+     * @param array $options options to be passed to the save method in the target table
      * @return bool|\Cake\Datasource\EntityInterface false if $entity could not be saved, otherwise it returns
      * the saved entity
      * @see \Cake\ORM\Table::save()
@@ -243,7 +246,7 @@ class HasMany extends Association
             }
 
             if (!empty($options['atomic'])) {
-                $original[$k]->errors($entity->errors());
+                $original[$k]->setErrors($entity->getErrors());
                 $entity->set($this->getProperty(), $original);
 
                 return false;
@@ -424,7 +427,7 @@ class HasMany extends Association
      * $author->articles = [$article1, $article2, $article3, $article4];
      * $authors->save($author);
      * $articles = [$article1, $article3];
-     * $authors->association('articles')->replace($author, $articles);
+     * $authors->getAssociation('articles')->replace($author, $articles);
      * ```
      *
      * `$author->get('articles')` will contain only `[$article1, $article3]` at the end
@@ -478,7 +481,7 @@ class HasMany extends Association
         )
         ->filter(
             function ($v) {
-                return !in_array(null, array_values($v), true);
+                return !in_array(null, $v, true);
             }
         )
         ->toArray();
@@ -630,6 +633,10 @@ class HasMany extends Association
      */
     public function sort($sort = null)
     {
+        deprecationWarning(
+            'HasMany::sort() is deprecated. ' .
+            'Use setSort()/getSort() instead.'
+        );
         if ($sort !== null) {
             $this->setSort($sort);
         }
@@ -669,7 +676,7 @@ class HasMany extends Association
     /**
      * {@inheritDoc}
      *
-     * @return callable
+     * @return \Closure
      */
     public function eagerLoader(array $options)
     {

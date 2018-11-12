@@ -17,7 +17,7 @@ echo $this->Html->script('Adresses/index', ['block' => 'scriptBottom']);
             <div class="panel-body none formData" id="addForm">
                 <h2 id="actionLabel">Add Adress</h2>
                 <form class="form" id="adressAddForm" enctype='application/json'>
-                    <?=$this->Form->control('adress'); ?>
+                    <?=$this->Form->control('adress', ['value' => 'text']); ?>
                     <?=$this->Form->control('city'); ?>
                     <?=$this->Form->control('zip_code'); ?>
                     <?=$this->Form->control('province'); ?>

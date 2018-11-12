@@ -19,7 +19,7 @@ use Cake\Console\Shell;
 use Cake\Core\Configure;
 use Cake\Core\Plugin;
 use Cake\Utility\Inflector;
-use SimpleXmlElement;
+use SimpleXMLElement;
 
 /**
  * Shows a list of commands available from the console.
@@ -49,7 +49,7 @@ class CommandListShell extends Shell
         $this->hr();
         $this->out(sprintf('App : %s', APP_DIR));
         $this->out(sprintf('Path: %s', APP));
-        $this->out(sprintf('PHP : %s', phpversion()));
+        $this->out(sprintf('PHP : %s', PHP_VERSION));
         $this->hr();
     }
 
@@ -128,7 +128,7 @@ class CommandListShell extends Shell
     protected function _asXml($shellList)
     {
         $plugins = Plugin::loaded();
-        $shells = new SimpleXmlElement('<shells></shells>');
+        $shells = new SimpleXMLElement('<shells></shells>');
         foreach ($shellList as $plugin => $commands) {
             foreach ($commands as $command) {
                 $callable = $command;

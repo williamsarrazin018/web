@@ -16,7 +16,6 @@ namespace Cake\View\Helper;
 
 use Cake\Core\Configure;
 use Cake\Core\Exception\Exception;
-use Cake\Form\Form;
 use Cake\Routing\Router;
 use Cake\Utility\Hash;
 use Cake\Utility\Inflector;
@@ -25,6 +24,7 @@ use Cake\View\Form\ContextInterface;
 use Cake\View\Helper;
 use Cake\View\StringTemplateTrait;
 use Cake\View\View;
+use Cake\View\Widget\WidgetLocator;
 use Cake\View\Widget\WidgetRegistry;
 use DateTime;
 use RuntimeException;
@@ -218,11 +218,11 @@ class FormHelper extends Helper
     protected $_unlockedFields = [];
 
     /**
-     * Registry for input widgets.
+     * Locator for input widgets.
      *
-     * @var \Cake\View\Widget\WidgetRegistry
+     * @var \Cake\View\Widget\WidgetLocator
      */
-    protected $_registry;
+    protected $_locator;
 
     /**
      * Context for the current form.
@@ -254,6 +254,13 @@ class FormHelper extends Helper
     protected $_valueSources = ['context'];
 
     /**
+     * Grouped input types.
+     *
+     * @var array
+     */
+    protected $_groupedInputTypes = ['radio', 'multicheckbox', 'date', 'time', 'datetime'];
+
+    /**
      * Construct the widgets and binds the default context providers
      *
      * @param \Cake\View\View $View The View this helper is being attached to.
@@ -261,11 +268,16 @@ class FormHelper extends Helper
      */
     public function __construct(View $View, array $config = [])
     {
-        $registry = null;
+        $locator = null;
         $widgets = $this->_defaultWidgets;
         if (isset($config['registry'])) {
-            $registry = $config['registry'];
+            deprecationWarning('`registry` config key is deprecated in FormHelper, use `locator` instead.');
+            $config['locator'] = $config['registry'];
             unset($config['registry']);
+        }
+        if (isset($config['locator'])) {
+            $locator = $config['locator'];
+            unset($config['locator']);
         }
         if (isset($config['widgets'])) {
             if (is_string($config['widgets'])) {
@@ -275,9 +287,17 @@ class FormHelper extends Helper
             unset($config['widgets']);
         }
 
+        if (isset($config['groupedInputTypes'])) {
+            $this->_groupedInputTypes = $config['groupedInputTypes'];
+            unset($config['groupedInputTypes']);
+        }
+
         parent::__construct($View, $config);
 
-        $this->widgetRegistry($registry, $widgets);
+        if (!$locator) {
+            $locator = new WidgetLocator($this->templater(), $this->_View, $widgets);
+        }
+        $this->setWidgetLocator($locator);
         $this->_idPrefix = $this->getConfig('idPrefix');
     }
 
@@ -287,19 +307,43 @@ class FormHelper extends Helper
      * @param \Cake\View\Widget\WidgetRegistry|null $instance The registry instance to set.
      * @param array $widgets An array of widgets
      * @return \Cake\View\Widget\WidgetRegistry
+     * @deprecated 3.6.0 Use FormHelper::widgetLocator() instead.
      */
     public function widgetRegistry(WidgetRegistry $instance = null, $widgets = [])
     {
-        if ($instance === null) {
-            if ($this->_registry === null) {
-                $this->_registry = new WidgetRegistry($this->templater(), $this->_View, $widgets);
-            }
+        deprecationWarning('widgetRegistry is deprecated, use widgetLocator instead.');
 
-            return $this->_registry;
+        if ($instance) {
+            $instance->add($widgets);
+            $this->setWidgetLocator($instance);
         }
-        $this->_registry = $instance;
 
-        return $this->_registry;
+        return $this->getWidgetLocator();
+    }
+
+    /**
+     * Get the widget locator currently used by the helper.
+     *
+     * @return \Cake\View\Widget\WidgetLocator Current locator instance
+     * @since 3.6.0
+     */
+    public function getWidgetLocator()
+    {
+        return $this->_locator;
+    }
+
+    /**
+     * Set the widget locator the helper will use.
+     *
+     * @param \Cake\View\Widget\WidgetLocator $instance The locator instance to set.
+     * @return $this
+     * @since 3.6.0
+     */
+    public function setWidgetLocator(WidgetLocator $instance)
+    {
+        $this->_locator = $instance;
+
+        return $this;
     }
 
     /**
@@ -403,7 +447,7 @@ class FormHelper extends Helper
         unset($options['templates']);
 
         if ($options['action'] === false || $options['url'] === false) {
-            $url = $this->request->here(false);
+            $url = $this->request->getRequestTarget();
             $action = null;
         } else {
             $url = $this->_formUrl($context, $options);
@@ -477,12 +521,12 @@ class FormHelper extends Helper
      *
      * @param \Cake\View\Form\ContextInterface $context The context object to use.
      * @param array $options An array of options from create()
-     * @return string The action attribute for the form.
+     * @return string|array The action attribute for the form.
      */
     protected function _formUrl($context, $options)
     {
         if ($options['action'] === null && $options['url'] === null) {
-            return $this->request->here(false);
+            return $this->request->getRequestTarget();
         }
 
         if (is_string($options['url']) ||
@@ -804,6 +848,8 @@ class FormHelper extends Helper
      * - `for` - Set the for attribute, if its not defined the for attribute
      *   will be generated from the $fieldName parameter using
      *   FormHelper::_domId().
+     * - `escape` - Set to `false` to turn off escaping of label text.
+     *   Defaults to `true`.
      *
      * Examples:
      *
@@ -950,6 +996,11 @@ class FormHelper extends Helper
      */
     public function allInputs(array $fields = [], array $options = [])
     {
+        deprecationWarning(
+            'FormHelper::allInputs() is deprecated. ' .
+            'Use FormHelper::allControls() instead.'
+        );
+
         return $this->allControls($fields, $options);
     }
 
@@ -1008,6 +1059,11 @@ class FormHelper extends Helper
      */
     public function inputs(array $fields, array $options = [])
     {
+        deprecationWarning(
+            'FormHelper::inputs() is deprecated. ' .
+            'Use FormHelper::controls() instead.'
+        );
+
         return $this->controls($fields, $options);
     }
 
@@ -1037,13 +1093,13 @@ class FormHelper extends Helper
         }
 
         if ($legend === true) {
-            $actionName = __d('cake', 'New %s');
             $isCreate = $context->isCreate();
-            if (!$isCreate) {
-                $actionName = __d('cake', 'Edit %s');
-            }
             $modelName = Inflector::humanize(Inflector::singularize($this->request->getParam('controller')));
-            $legend = sprintf($actionName, $modelName);
+            if (!$isCreate) {
+                $legend = __d('cake', 'Edit {0}', $modelName);
+            } else {
+                $legend = __d('cake', 'New {0}', $modelName);
+            }
         }
 
         if ($fieldset !== false) {
@@ -1186,6 +1242,11 @@ class FormHelper extends Helper
      */
     public function input($fieldName, array $options = [])
     {
+        deprecationWarning(
+            'FormHelper::input() is deprecated. ' .
+            'Use FormHelper::control() instead.'
+        );
+
         return $this->control($fieldName, $options);
     }
 
@@ -1406,7 +1467,7 @@ class FormHelper extends Helper
 
         if ($allowOverride && substr($fieldName, -5) === '._ids') {
             $options['type'] = 'select';
-            if (empty($options['multiple'])) {
+            if (!isset($options['multiple']) || ($options['multiple'] && $options['multiple'] != 'checkbox')) {
                 $options['multiple'] = true;
             }
         }
@@ -1503,8 +1564,7 @@ class FormHelper extends Helper
         }
 
         $labelAttributes['for'] = $options['id'];
-        $groupTypes = ['radio', 'multicheckbox', 'date', 'time', 'datetime'];
-        if (in_array($options['type'], $groupTypes, true)) {
+        if (in_array($options['type'], $this->_groupedInputTypes, true)) {
             $labelAttributes['for'] = false;
         }
         if ($options['nestedInput']) {
@@ -1731,6 +1791,7 @@ class FormHelper extends Helper
      * ### Options:
      *
      * - `escape` - HTML entity encode the $title of the button. Defaults to false.
+     * - `confirm` - Confirm message to show. Form execution will only continue if confirmed then.
      *
      * @param string $title The button's caption. Not automatically HTML encoded
      * @param array $options Array of options and HTML attributes.
@@ -1739,8 +1800,14 @@ class FormHelper extends Helper
      */
     public function button($title, array $options = [])
     {
-        $options += ['type' => 'submit', 'escape' => false, 'secure' => false];
+        $options += ['type' => 'submit', 'escape' => false, 'secure' => false, 'confirm' => null];
         $options['text'] = $title;
+
+        $confirmMessage = $options['confirm'];
+        unset($options['confirm']);
+        if ($confirmMessage) {
+            $options['onclick'] = $this->_confirm($confirmMessage, 'return true;', 'return false;', $options);
+        }
 
         return $this->widget('button', $options);
     }
@@ -1758,6 +1825,7 @@ class FormHelper extends Helper
      *   HTTP/1.1 DELETE (or others) request. Defaults to 'post'.
      * - `form` - Array with any option that FormHelper::create() can take
      * - Other options is the same of button method.
+     * - `confirm` - Confirm message to show. Form execution will only continue if confirmed then.
      *
      * @param string $title The button's caption. Not automatically HTML encoded
      * @param string|array $url URL as string or array
@@ -1805,7 +1873,7 @@ class FormHelper extends Helper
      * - `data` - Array with key/value to pass in input hidden
      * - `method` - Request method to use. Set to 'delete' to simulate
      *   HTTP/1.1 DELETE request. Defaults to 'post'.
-     * - `confirm` - Confirm message to show.
+     * - `confirm` - Confirm message to show. Form execution will only continue if confirmed then.
      * - `block` - Set to true to append form to view block "postLink" or provide
      *   custom block name.
      * - Other options are the same of HtmlHelper::link() method.
@@ -2427,6 +2495,9 @@ class FormHelper extends Helper
             if (isset($options['empty'][$type])) {
                 $options[$type]['empty'] = $options['empty'][$type];
             }
+            if (isset($options['required']) && is_array($options[$type])) {
+                $options[$type]['required'] = $options['required'];
+            }
         }
 
         $hasYear = is_array($options['year']);
@@ -2749,7 +2820,7 @@ class FormHelper extends Helper
      */
     public function addWidget($name, $spec)
     {
-        $this->_registry->add([$name => $spec]);
+        $this->_locator->add([$name => $spec]);
     }
 
     /**
@@ -2771,7 +2842,7 @@ class FormHelper extends Helper
             $secure = $data['secure'];
             unset($data['secure']);
         }
-        $widget = $this->_registry->get($name);
+        $widget = $this->_locator->get($name);
         $out = $widget->render($data, $this->context());
         if (isset($data['name']) && $secure !== null && $secure !== self::SECURE_SKIP) {
             foreach ($widget->secureFields($data) as $field) {
@@ -2841,14 +2912,23 @@ class FormHelper extends Helper
      */
     public function getSourceValue($fieldname, $options = [])
     {
+        $valueMap = [
+            'data' => 'getData',
+            'query' => 'getQuery'
+        ];
         foreach ($this->getValueSources() as $valuesSource) {
             if ($valuesSource === 'context') {
                 $val = $this->_getContext()->val($fieldname, $options);
                 if ($val !== null) {
                     return $val;
                 }
-            } elseif ($this->request->{$valuesSource}($fieldname) !== null) {
-                return $this->request->{$valuesSource}($fieldname);
+            }
+            if (isset($valueMap[$valuesSource])) {
+                $method = $valueMap[$valuesSource];
+                $value = $this->request->{$method}($fieldname);
+                if ($value !== null) {
+                    return $value;
+                }
             }
         }
 
