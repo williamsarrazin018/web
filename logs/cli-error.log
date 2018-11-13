@@ -1305,3 +1305,92 @@ Stack Trace:
 #7 {main}
 
 
+2018-11-13 16:46:14 Error: [RuntimeException] Unknown command `cake phpunit`. Run `cake --help` to get the list of valid commands. in C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 321
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'phpunit')
+#1 C:\Program Files (x86)\Ampps\www\CakeMedical\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-11-13 16:46:17 Error: [RuntimeException] Unknown command `cake phpunit`. Run `cake --help` to get the list of valid commands. in C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 321
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Console\CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'phpunit')
+#1 C:\Program Files (x86)\Ampps\www\CakeMedical\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-11-13 17:16:15 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 17:16:15 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'C:\\Program File...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-13 17:26:13 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 17:26:13 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'C:\\Program File...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-13 17:29:02 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 17:29:02 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'C:\\Program File...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-13 17:37:50 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 17:37:50 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'C:\\Program File...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-13 17:38:32 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 17:38:32 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakeMedical\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'C:\\Program File...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

@@ -42,7 +42,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             'base.css',
             'style.css',
             'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
-            'Cocktails/basic.css',
+            'Levels/basic.css',
             'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'
         ]);
     ?>
@@ -52,7 +52,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?php
     echo $this->Html->script([
         'https://code.jquery.com/jquery-1.12.4.js',
-        'https://code.jquery.com/ui/1.12.1/jquery-ui.js'
+        'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
+        'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
     ], ['block' => 'scriptLibraries']
     );
     ?>
@@ -66,7 +67,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Boutons de gauche -->
+            <!-- Menu Avec Bootstrap-->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <?= $this->Html->link(__('Home'), ['controller' => 'Patients', 'action' => 'index'], ['class' => 'nav-link']) ?>
@@ -75,17 +76,35 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Menu
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <?= $this->Html->link(__('Patients'), ['controller' => 'Patients', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
-                        <?= $this->Html->link(__('Adresses'), ['controller' => 'Adresses', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">              
                         
                         <?php if ($loguser['type'] === 'admin'): ?>
-                   
-                        <?= $this->Html->link(__('Users'), ['controller' => 'Users', 'action' => 'index'], ['class' => 'dropdown-item']);?>
-                 
+                        <?= $this->Html->link(__('Patients'), ['controller' => 'Patients', 'action' => 'index', 'prefix' => false], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Assignments'), ['controller' => 'Assignments', 'action' => 'index', 'prefix' => false], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Files'), ['controller' => 'Files', 'action' => 'index', 'prefix' => false], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Adresses'), ['controller' => 'Adresses', 'action' => 'index', 'prefix' => false], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Medical centers'), ['controller' => 'MedicalCenters', 'action' => 'index', 'prefix' => false], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Departments'), ['controller' => 'Departments', 'action' => 'index', 'prefix' => false], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Chambers'), ['controller' => 'Chambers', 'action' => 'index', 'prefix' => false], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Levels'), ['controller' => 'Levels', 'action' => 'index', 'prefix' => false], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Users'), ['controller' => 'Users', 'action' => 'index', 'prefix' => false], ['class' => 'dropdown-item']);?>
+                         
+                        <?php elseif ($loguser['type'] === 'secretaireNC'): ?>
+                        
+                        <?= $this->Html->link(__('Patients'), ['controller' => 'Patients', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Assignments'), ['controller' => 'Assignments', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Adresses'), ['controller' => 'Adresses', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+                        
+                        <?php elseif ($loguser['type'] === 'secretaire'): ?>
+                        
+                        <?= $this->Html->link(__('Patients'), ['controller' => 'Patients', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Assignments'), ['controller' => 'Assignments', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Files'), ['controller' => 'Files', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+                        <?= $this->Html->link(__('Adresses'), ['controller' => 'Adresses', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
                         <?php endif;?>
                        
                         <div class="dropdown-divider"></div>
+                        <?= $this->Html->link(__('Profile'), ['controller' => 'Users', 'action' => 'view', $loguser['id']], ['class' => 'dropdown-item']);?>
                         <?= $this->Html->link(__('About'), ['controller' => 'Apropos', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
                     </div>
                 </li>
@@ -94,25 +113,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <!-- droite -->
             <ul class="navbar-nav ml-auto navbar-right">
 
-                <?php if ($loguser): ?>
-                    <li class="nav-item">
-                        <?= $this->Html->link(($loguser['email']), ['controller' => 'Users', 'action' => 'view', $loguser['id']], ['class' => 'nav-link']);?>
-                    </li>
-
-                    <li class="nav-item">
-                        <?= $this->Html->link(__(' Logout '), ['controller' => 'Users', 'action' => 'logout'], ['class' => 'nav-link']);?>
-                    </li>
-
-                <?php else: ?>
-                <li class="nav-item">
-                    <?= $this->Html->link(__(' Login '), ['controller' => 'Users', 'action' => 'logout'], ['class' => 'nav-link']);?>
-                </li>
-
-                <?php endif;?>
-
-             
                 
-                <span class="border-right"></span>
 
                 <li class="nav-item">
                     <?= $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['class' => 'nav-link'], ['escape' => false]); ?>
@@ -125,6 +126,41 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 <li class="nav-item">
                     <?= $this->Html->link('Espanol', ['action' => 'changeLang', 'es_MX'], ['class' => 'nav-link'], ['escape' => false]); ?>
                 </li>
+                
+                
+                
+                <?php if ($loguser['type'] === 'admin'): ?>
+                <span class="border-right"></span>
+                <li class="nav-item">
+                        <?= $this->Html->link(__(' Interface Admin '), ['controller' => 'Levels', 'action' => 'index', 'prefix' => 'admin'], ['class' => 'nav-link']);?>
+                    </li>
+                    <li class="nav-item">
+                        <?= $this->Html->link(__(' Monopage interface '), ['controller' => 'Levels', 'action' => 'index', 'prefix' => false], ['class' => 'nav-link']);?>
+                    </li>
+                <?php endif;?>
+                 <span class="border-right"></span>
+                
+                <?php if ($loguser): ?>
+                    <li class="nav-item">
+                        <?= $this->Html->link(($loguser['email']), ['controller' => 'Users', 'action' => 'view', $loguser['id']], ['class' => 'nav-link']);?>
+                    </li>
+
+                    <li class="nav-item">
+                        <?= $this->Html->link(__(' Logout '), ['controller' => 'Users', 'action' => 'logout'], ['class' => 'nav-link']);?>
+                    </li>
+                    
+                    
+
+                <?php else: ?>
+                <li class="nav-item">
+                    <?= $this->Html->link(__(' Login '), ['controller' => 'Users', 'action' => 'logout'], ['class' => 'nav-link']);?>
+                </li>
+
+                <?php endif;?>
+
+             
+                
+                
             </ul>
             
     </nav>

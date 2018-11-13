@@ -54,6 +54,10 @@ class PatientsTableTest extends TestCase
         parent::tearDown();
     }
 
+     
+    
+
+    
     /**
      * Test initialize method
      *
@@ -64,6 +68,34 @@ class PatientsTableTest extends TestCase
         $this->markTestIncomplete('Not implemented yet.');
     }
 
+    public function testFindByAdressID()
+    {
+        $query = $this->Patients->findByAdressId(1);
+        
+        $this->assertInstanceOf('Cake\ORM\Query', $query);
+        
+        $result = $query->enableHydration(false)->toArray();
+        
+        $expected = [
+            [
+                'id' => 1,
+                'adress_id' => 1,
+                'first_name' => 'Patient 1',
+                'last_name' => 'aaa',
+                'gender' => 'male',
+                'birth_date' => '2018-09-08',
+                'email' => 'patient1@email.com',
+                'created' => '2018-09-08 18:59:00',
+                'modified' => '2018-09-08 18:59:00',
+                'slug' => 'aaa',
+                'user_id' => 1
+            ]
+           
+        ];
+        $this->assertEquals($expected, $result);
+    }
+
+    
     /**
      * Test validationDefault method
      *
@@ -74,6 +106,29 @@ class PatientsTableTest extends TestCase
         $this->markTestIncomplete('Not implemented yet.');
     }
 
+    public function testValidatorEmailUnique(){
+        
+        
+        $data = [
+                'id' => 3,
+                'adress_id' => 1,
+                'first_name' => 'Patient 3',
+                'last_name' => 'aaa',
+                'gender' => 'male',
+                'birth_date' => '2018-09-08',
+                'email' => 'patient1@email.com',
+                'created' => '2018-09-08 18:59:00',
+                'modified' => '2018-09-08 18:59:00',
+                'slug' => 'aaa',
+                'user_id' => 3
+            ];
+        $this->Patients->newEntity($data);
+        $resultingError = $this->Patients->getValidator()->errors($data);
+        //Il y a une erreur
+        $this->assertNotEmpty($resultingError);
+        
+    }
+    
     /**
      * Test buildRules method
      *

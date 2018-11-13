@@ -27,7 +27,7 @@ and open the template in the editor.
                         <h2 id="actionLabel"><?= __('Add Level') ?></h2>
                         <form class="form" id="levelAddForm" enctype='application/json'>
                             <?=$this->Form->control('number'); ?>
-                            <?=$this->Form->control('user_id', ['options' => [$loguser['id']]]); ?>               
+              
                             <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
                             <a href="javascript:void(0);" class="btn btn-success" onclick="levelAction('add')"><?= __('Add Level') ?></a>
                         </form>
@@ -48,7 +48,6 @@ and open the template in the editor.
                             <tr>
                                 <th></th>
                                 <th>Number</th>
-                                <th>User ID</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -60,7 +59,6 @@ and open the template in the editor.
                                     <tr>
                                         <td><?php echo '#' . $count; ?></td>
                                         <td><?php echo $level['number']; ?></td>
-                                        <td><?php echo $level['user_id']; ?></td>
                                         <td>
                                             <a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editLevel('<?php echo $level['id']; ?>')"></a>
                                             <a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete data?') ? levelAction('delete', '<?php echo $level['id']; ?>') : false;"></a>

@@ -54,15 +54,29 @@ class PatientsFixture extends TestFixture
             [
                 'id' => 1,
                 'adress_id' => 1,
-                'first_name' => 'Lorem ipsum dolor sit amet',
-                'last_name' => 'Lorem ipsum dolor sit amet',
-                'gender' => 'Lorem ipsum dolor sit amet',
+                'first_name' => 'Patient 1',
+                'last_name' => 'aaa',
+                'gender' => 'male',
                 'birth_date' => '2018-09-08',
-                'email' => 'Lorem ipsum dolor sit amet',
+                'email' => 'patient1@email.com',
                 'created' => '2018-09-08 18:59:00',
                 'modified' => '2018-09-08 18:59:00',
-                'slug' => 'Lorem ipsum dolor sit amet',
+                'slug' => 'aaa',
                 'user_id' => 1
+            ],
+            
+            [
+                'id' => 2,
+                'adress_id' => 2,
+                'first_name' => 'Patient 2',
+                'last_name' => 'aaa',
+                'gender' => 'male',
+                'birth_date' => '2018-09-08',
+                'email' => 'patient2@email.com',
+                'created' => '2018-09-08 18:59:00',
+                'modified' => '2018-09-08 18:59:00',
+                'slug' => 'aaa',
+                'user_id' => 2
             ],
         ];
         parent::init();

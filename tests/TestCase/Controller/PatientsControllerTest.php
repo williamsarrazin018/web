@@ -29,7 +29,8 @@ class PatientsControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/patients');
+        $this->assertResponseOk();
     }
 
     /**
@@ -39,7 +40,22 @@ class PatientsControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        
+        $this->session([
+            'Auth' => [
+                'User' => [
+                    'id' => 1,
+                    'username' => 'User1',
+                    'email' => 'user1@test.com',
+                    'password' => 'password1',
+                    'type' => 'admin'
+                    
+                ]
+            ]
+        ]);
+        
+        $this->get('/patients/view/1');
+        $this->assertResponseOk();
     }
 
     /**
@@ -49,7 +65,22 @@ class PatientsControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->session([
+            'Auth' => [
+                'User' => [
+                    'id' => 1,
+                    'username' => 'User1',
+                    'email' => 'user1@test.com',
+                    'password' => 'password1',
+                    'type' => 'admin'
+                    
+                ]
+            ]
+        ]);
+        
+        $this->get('/patients/add');
+        $this->assertResponseOk();
+
     }
 
     /**
@@ -59,7 +90,21 @@ class PatientsControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+
+        $this->session([
+            'Auth' => [
+                'User' => [
+                    'id' => 1,
+                    'username' => 'User1',
+                    'email' => 'user1@test.com',
+                    'password' => 'password1',
+                    'type' => 'admin'
+                    
+                ]
+            ]
+        ]);
+        $this->get('/patients/edit/1');
+        $this->assertResponseOk();
     }
 
     /**
@@ -69,6 +114,27 @@ class PatientsControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->session([
+            'Auth' => [
+                'User' => [
+                    'id' => 1,
+                    'username' => 'User1',
+                    'email' => 'user1@test.com',
+                    'password' => 'password1',
+                    'type' => 'admin'
+                    
+                ]
+            ]
+        ]);
+        $this->get('/patients/delete/1');
+        $this->assertResponseOk();
+    }
+    
+    public function testDeleteUnauthorized()
+    {
+        // Pas de données de session définies.
+        $this->get('/patients/delete/1');
+
+        $this->assertRedirect($_SERVER['HTTP_REFERER']);
     }
 }

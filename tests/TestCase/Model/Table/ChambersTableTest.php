@@ -54,6 +54,20 @@ class ChambersTableTest extends TestCase
         parent::tearDown();
     }
 
+     //Test de la faille XSS
+     
+    public function testSaveXSS()
+    {
+        $data = ['number' => '<script>alert("hello world")</script>', 'level_id' => 1, 'user_id' => 1, 'department_id' => 1];
+        $model = $this->Chambers->newEntity($data);
+        $this->Chambers->save($chamber);
+        $nombreEntity = $this->Chambers->find()->count();
+        $this->assertEquals(3, $nbEntity);
+        $expected = 'alert("hello world")';
+        $result = $this->Chambers->get(3);
+        $this->assertEquals($expected, $result->number);
+    }
+    
     /**
      * Test initialize method
      *

@@ -57,6 +57,15 @@ class ChambersFixture extends TestFixture
                 'modified' => '2018-09-08 18:54:13',
                 'user_id' => 1
             ],
+            [
+                'id' => 2,
+                'number' => 2,
+                'level_id' => 1,
+                'department_id' => 1,
+                'created' => '2018-09-08 18:54:13',
+                'modified' => '2018-09-08 18:54:13',
+                'user_id' => 1
+            ],
         ];
         parent::init();
     }

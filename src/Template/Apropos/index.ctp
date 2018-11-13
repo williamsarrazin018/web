@@ -67,14 +67,45 @@
     <br />
     <br />
     <h4>Titre du cours</h4>
-    420-5B7 MO Applications internet<br />
+    420-267 MO Développer un site Web et une application pour Internet.<br />
     Automne 2018, Collège Montmorency
+    
+    <br />
+    <br />
+    
+    <h4>Lien vers Git Repository</h4>
+    <a href="https://github.com/williamsarrazin018/web">Lien</a>
+    
+     <br />
+    <br />
+    <h4>Altérations au fonctionnement pour le TP2</h4>
+    
+    <p>
+       Malgré beaucoup d'efforts, je n'ai pas réussi à faire fonctionner certaines des fonctionnalités complètement.
+       Pour ce qui est des Tests, j'ai rencontré des problèmes avec phpUnit, je n'ai donc pas vraiment roulé les tests, mais le code est là.
+       Par exemple, pour les tests de modèles, j'ai testé la méthode FindbyAdressId dans PatientsTableTest.  Et pour la faille XSS j'ai testé l'injection
+       de script pour l'ajout d'une chambre dans ChambersTableTest.  Pour le controller, j'ai testé PatientsControllerTest.  Je n'ai donc pas pu non plus
+       générer la page de coverage.
+       <br />
+       <br />
+       Pour ce qui est du menu avec le twitterbootstrap dans routage admin, je n'ai pas réussi èa le faire s,afficher, mais le code est là.  Toutfois,
+       j'ai utilisé bootstrap pour ajouter un menu déroulant dans le layout/default.ctp avec les actions des controlelrs principaux.
+       <br />
+       <br />
+       Pour ce qui est de l'affichage en pdf, je réussi à faire changer l'url vers /adresses/view/numerodel'adresse.pdf, mais il semble y avoir un problème
+       avec mon plugin cakePdf qui empêcherait le download.  Le code est donc là, mais ça ne va pas plus loin.
+       <br />
+       
+    </p>
+    
     
     <br />
     <br />
     <h4>Étapes d'utilisation typique</h4>
     
     <p>
+        POUR TP1 :
+        <br />
         Le but de l'application est de créer des patients et diverses informations dans le but que créer des affectations dans le centre médical.
         Un visiteur peut voir les les différents centres médicaux et leurs différents départements seulement.  Tandis que les secrétaires peuvent
          ajouter de nouvelles informations dans le système (Patients, affectations, fichiers, adresses, etc.) tant que leur compte soit confirmé.  Elle peuvent aussi modifier
@@ -82,20 +113,31 @@
          Donc, pour utiliser l'application, on commence par se créer un compte et le confirmer à partir d'un lien reçu par courriel.  Par la suite, en tant
           que secrétaire, on pourra ajouter des adresses, des patients, des fichiers, des nouvelles affectations, etc.  Même chose en tant qu'administrateur.
           Il nous est aussi possible, en tant que n'importe qui, de changer la langue d'affichage du site en Francais, Anglais ou Espagnol.
+         <br />
+        POUR TP2 :
+        <br />
+        Avant de commencer, Pour commencer, il faut se connecter à l'application.  Il est préférable de se connecter en tant qu'administrateur pour avoir accès à toutes les fonctionnalités
+         (email: admin@admin.com, mot de passe: admin).  Pour tester l'interface monopage, il suffit d'aller dans le menu déroulant fait avec bootstrap en haut à gauche et cliquer
+          sur Levels.  On arrive donc sur la page de gestion des Levels qui permet d'ajouter, modifier, supprimer et voir.  Pour tester les listes liées, il faut
+          aller dans la gestion des Chambers et les listes liées sont à propos de Level et Chambers.  Pour l'autocomplétion, elle se fait quand on veut 
+           modifier un département sur le champs département.  Pour tester l'interface Admin avec le préfixe, il suffit de cliquer dans la barre de menu en haut sur Interface
+            Admin.  On a donc accès aux actions du controller Levels.  Pour le PDF, il suffirait de cliquer dans adresses/index sur (pdf).  On sera donc amener
+            à /adresses/view/X.pdf.  Techniquement, cela devrait commencer un téléchargement avec le plugin cakePdf, mais il semble y avoir un problème avec mon plugin.
     </p>
+    
     
     
     <br />
     <br />
     <h4>Diagramme actuel</h4>
     
-    <?php echo $this->Html->image('bd_actuelle.JPG', array('alt' => 'actiuelle', 'border' => '0')); ?>
+    <?php echo $this->Html->image('bd_actuelle.JPG', array('alt' => 'actuelle', 'border' => '0')); ?>
     
     <br />
     <br />
     <h4>Diagramme de base</h4>
     
-    <?php echo $this->Html->image('bd_originale.gif', array('alt' => 'actiuelle', 'border' => '0', 'data-src' => 'holder.js/100%x100')); ?>
+    <?php echo $this->Html->image('bd_originale.gif', array('alt' => 'actuelle', 'border' => '0', 'data-src' => 'holder.js/100%x100')); ?>
     
     <br />
     <br />

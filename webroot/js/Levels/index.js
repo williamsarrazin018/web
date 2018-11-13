@@ -14,7 +14,7 @@ function getLevels() {
                         '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editLevel(' + value.id + ')"></a>' +
                         '<a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm(\'Are you sure to delete data?\') ? levelAction(\'delete\', ' + value.id + ') : false;"></a>' +
                         '</td></tr>';
-                    levelTable.append('<tr><td>' + '#' + count + '</td><td>' + value.number + '</td><td>' + value.user_id + '</td>' + editDeleteButtons);
+                    levelTable.append('<tr><td>' + '#' + count + '</td><td>' + value.number + '</td>' + editDeleteButtons);
                     count++;
                 });
 

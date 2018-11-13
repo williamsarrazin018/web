@@ -7,7 +7,6 @@ use Cake\Event\Event;
 class AppController extends Controller
 {
     use \Crud\Controller\ControllerTrait;
-
     public $components = [
         'RequestHandler',
         'Crud.Crud' => [
