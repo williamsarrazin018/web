@@ -2,14 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Template/Levels/index.ctp</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Controller/api/AppController.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Controller/AppController.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/tests/TestCase/Model/Table/ChambersTableTest.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/webroot/js/Levels/index.js</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Template/Apropos/index.ctp</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Model/Table/LevelsTable.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

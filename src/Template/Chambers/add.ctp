@@ -4,6 +4,17 @@
  * @var \App\Model\Entity\Chamber $chamber
  */
 ?>
+
+<?php
+$urlToLinkedListFilter = $this->Url->build([
+    "controller" => "Levels",
+    "action" => "getLevels",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
+echo $this->Html->script('Assignments/add', ['block' => 'scriptBottom']);
+?>
+
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>

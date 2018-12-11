@@ -4,6 +4,8 @@
  * @var \App\Model\Entity\Assignment $assignment
  */
 
+
+
 $urlToLinkedListFilter = $this->Url->build([
     "controller" => "Chambers",
     "action" => "getByLevel",
@@ -71,13 +73,36 @@ echo $this->Html->script('Assignments/add', ['block' => 'scriptBottom']);
     <?= $this->Form->create($assignment) ?>
     <fieldset>
         <legend><?= __('Add Assignment') ?></legend>
+        
+        <div>
+            Levels: 
+            <select name="level_id"
+                    id="level-id" 
+                    ng-model="level" 
+                    ng-options="level.number for level in levels track by level.id"
+                    >
+                <option value=''>Select</option>
+            </select>
+        </div>
+        <div>
+            Chambers: 
+            <select name="chamber_id"
+                    id="chamber-id" 
+                    ng-disabled="!level" 
+                    ng-model="chamber"
+                    ng-options="chamber.number for chamber in level.chambers track by chamber.id"
+                    >
+                <option value=''>Select</option>
+            </select>
+        </div>
+        
         <?php
             echo $this->Form->control('department_id', ['options' => $departments]);
             echo $this->Form->control('patient_id', ['options' => $patients]);
             echo $this->Form->control('assignment_date');
             echo $this->Form->control('reason');
-            echo $this->Form->control('level_id', ['options' => $levels]);
-            echo $this->Form->control('chamber_id', ['options' => $chambers]);
+            //echo $this->Form->control('level_id', ['options' => $levels]);
+            //echo $this->Form->control('chamber_id', ['options' => $chambers]);
             echo $this->Form->hidden('user_id', ['value' => $user['id']]);
         ?>
     </fieldset>

@@ -109,6 +109,7 @@ class AssignmentsController extends AppController
         $users = $this->Assignments->Users->find('list', ['limit' => 200]);
         $user = $this->Auth->user();
         $this->set(compact('assignment', 'departments', 'patients', 'users', 'user', 'chambers', 'levels'));
+        $this->set('_serialize', ['assignment', 'departments', 'patients', 'users', 'user', 'chambers', 'levels']);
     }
 
     /**

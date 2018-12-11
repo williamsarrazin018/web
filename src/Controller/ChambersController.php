@@ -39,13 +39,23 @@ class ChambersController extends AppController
     }
     
     public function getByLevel() {
+        
         $level_id = $this->request->query('level_id');
 
         $chambers = $this->Chambers->find('all', [
             'conditions' => ['Chambers.level_id' => $level_id],
         ]);
-        $this->set('chambers', $chambers);
+        $this->set('chambers',$chambers);
         $this->set('_serialize', ['chambers']);
+    
+    }
+    
+    public function getSubcategoriesSortedByCategories() {
+        $levels = $this->Chambers->Levels->find('all', [
+            'contain' => ['Chambers'],
+        ]);
+        $this->set('levels',$levels);
+        $this->set('_serialize', ['levels']);
     }
     
     /**
