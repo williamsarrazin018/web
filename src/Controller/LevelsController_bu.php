@@ -38,6 +38,19 @@ class LevelsController extends AppController
         
     }
     
+        public function getLevels() {
+        $this->autoRender = false; // avoid to render view
+
+        $levels = $this->Levels->find('all', [
+            'contain' => ['Chambers'],
+        ]);
+
+        $levelsJ = json_encode($levels);
+        $this->response->type('json');
+        $this->response->body($levelsJ);
+
+    }
+    
     /**
      * Index method
      *

@@ -7,8 +7,8 @@
 
 
 $urlToLinkedListFilter = $this->Url->build([
-    "controller" => "Chambers",
-    "action" => "getByLevel",
+    "controller" => "Levels",
+    "action" => "getLevels",
     "_ext" => "json"
         ]);
 echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
@@ -69,14 +69,23 @@ echo $this->Html->script('Assignments/add', ['block' => 'scriptBottom']);
         <?php endif; ?>
     </ul>
 </nav>
-<div class="assignments form large-9 medium-8 columns content">
+<div class="assignments form large-9 medium-8 columns content" ng-app="linkedlists"
+     ng-controller="levelsController">
     <?= $this->Form->create($assignment) ?>
     <fieldset>
         <legend><?= __('Add Assignment') ?></legend>
-        
+        <?php
+            echo $this->Form->control('department_id', ['options' => $departments]);
+            echo $this->Form->control('patient_id', ['options' => $patients]);
+            echo $this->Form->control('assignment_date');
+            echo $this->Form->control('reason');
+            //echo $this->Form->control('level_id', ['options' => $levels]);
+            //echo $this->Form->control('chamber_id', ['options' => $chambers]);
+            echo $this->Form->hidden('user_id', ['value' => $user['id']]);
+        ?>
         <div>
             Levels: 
-            <select name="level_id"
+            <select name="Level_id"
                     id="level-id" 
                     ng-model="level" 
                     ng-options="level.number for level in levels track by level.id"
@@ -96,15 +105,7 @@ echo $this->Html->script('Assignments/add', ['block' => 'scriptBottom']);
             </select>
         </div>
         
-        <?php
-            echo $this->Form->control('department_id', ['options' => $departments]);
-            echo $this->Form->control('patient_id', ['options' => $patients]);
-            echo $this->Form->control('assignment_date');
-            echo $this->Form->control('reason');
-            //echo $this->Form->control('level_id', ['options' => $levels]);
-            //echo $this->Form->control('chamber_id', ['options' => $chambers]);
-            echo $this->Form->hidden('user_id', ['value' => $user['id']]);
-        ?>
+        
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
