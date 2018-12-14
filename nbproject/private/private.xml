@@ -3,12 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Template/Layout/default.ctp</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Controller/LevelsController.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Template/Assignments/add.ctp</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Controller/AssignmentsController.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Controller/ChambersController.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/webroot/js/Assignments/add.js</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Template/Levels/index.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/webroot/js/Levels/index.js</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakeMedical/src/Template/Layout/monopage.ctp</file>
         </group>
     </open-files>
 </project-private>
