@@ -221,4 +221,5 @@ Configure::write('CakePdf', [
     'download' => true
 ]);
 
+Plugin::load('ADmad/JwtAuth');
 Plugin::load('CakePdf', ['bootstrap' => true, 'routes' => true]);

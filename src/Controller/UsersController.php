@@ -42,7 +42,7 @@ class UsersController extends AppController
         }
     }
 
-    public function login() {
+    /*public function login() {
         if ($this->request->is('post')) {
             $user = $this->Auth->identify();
             if ($user) {
@@ -53,6 +53,21 @@ class UsersController extends AppController
                 return $this->redirect($this->Auth->redirectUrl());
             }
             $this->Flash->error('Your username or password is incorrect.');
+        }
+    }*/
+    public function login()
+    {
+        if ($this->request->is('post')) {
+            $user = $this->Auth->identify();
+            if ($user) {
+                
+                if ($user['type'] === 'secretaireNC') {
+                    $this->Flash->success(__('Please confirm your account to get full secretary priviledges.'));
+                }
+                $this->Auth->setUser($user);
+                return $this->redirect($this->Auth->redirectUrl());
+            }
+            $this->Flash->error(__('Your username or password is incorrect.'));
         }
     }
 

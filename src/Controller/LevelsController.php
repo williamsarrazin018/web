@@ -26,7 +26,7 @@ class LevelsController extends AppController
     }
     
     public function getLevels() {
-        $this->autoRender = false; // avoid to render view
+        /*$this->autoRender = false; // avoid to render view
 
         $levels = $this->Levels->find('all', [
             'contain' => ['chambers'],
@@ -34,9 +34,13 @@ class LevelsController extends AppController
 
         $levelsJ = json_encode($levels);
         $this->response->type('json');
-        $this->response->body($levelsJ);
-        //$this->set(compact('levels'));
-        //$this->set('_serialize', ['levels']);
+        $this->response->body($levelsJ);*/
+        $levels = $this->Levels->find('all', [
+            'contain' => ['chambers'],
+        ]);
+
+        $this->set(compact('levels'));
+        $this->set('_serialize', ['levels']);
 
     }
     

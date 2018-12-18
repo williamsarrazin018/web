@@ -2764,3 +2764,1439 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
 
 
 
+2018-12-17 22:38:05 Notice: Notice (8): Undefined variable: user in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Files\add.ctp, line 10]
+Request URL: /files/add
+Referer URL: http://localhost:8888/CakeMedical/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Files\add.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:38:05 Notice: Notice (8): Undefined variable: user in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Files\add.ctp, line 18]
+Request URL: /files/add
+Referer URL: http://localhost:8888/CakeMedical/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Files\add.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:38:05 Notice: Notice (8): Undefined variable: user in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Files\add.ctp, line 30]
+Request URL: /files/add
+Referer URL: http://localhost:8888/CakeMedical/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Files\add.ctp, line 30
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:38:28 Notice: Notice (8): Undefined variable: user in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Files\add.ctp, line 10]
+Request URL: /files/add
+Referer URL: http://localhost:8888/CakeMedical/files/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Files\add.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:38:28 Notice: Notice (8): Undefined variable: user in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Files\add.ctp, line 18]
+Request URL: /files/add
+Referer URL: http://localhost:8888/CakeMedical/files/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Files\add.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:38:28 Notice: Notice (8): Undefined variable: user in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Files\add.ctp, line 30]
+Request URL: /files/add
+Referer URL: http://localhost:8888/CakeMedical/files/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Files\add.ctp, line 30
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:44:52 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /files
+Referer URL: http://localhost:8888/CakeMedical/files/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:45:10 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /files
+Referer URL: http://localhost:8888/CakeMedical/files/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:45:16 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /medical-centers
+Referer URL: http://localhost:8888/CakeMedical/files
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:45:20 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /files
+Referer URL: http://localhost:8888/CakeMedical/files/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:46:21 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /files
+Referer URL: http://localhost:8888/CakeMedical/files/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:46:23 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /users/view/2
+Referer URL: http://localhost:8888/CakeMedical/files
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:46:26 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /files
+Referer URL: http://localhost:8888/CakeMedical/files/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:46:44 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /admin/Levels
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:46:59 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /files
+Referer URL: http://localhost:8888/CakeMedical/files/index
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:48:38 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /admin/levels
+Referer URL: http://localhost:8888/CakeMedical/levels
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:48:45 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:57:09 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 22:59:06 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:07:47 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:07:52 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /chambers
+Referer URL: http://localhost:8888/CakeMedical/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:09:25 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:10:21 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:22:56 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:23:04 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:24:26 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments
+Referer URL: http://localhost:8888/CakeMedical/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:24:31 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments/add
+Referer URL: http://localhost:8888/CakeMedical/assignments
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:24:40 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments
+Referer URL: http://localhost:8888/CakeMedical/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:24:42 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments/edit/1
+Referer URL: http://localhost:8888/CakeMedical/assignments
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:25:53 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments/edit/1
+Referer URL: http://localhost:8888/CakeMedical/assignments
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:26:14 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments/add
+Referer URL: http://localhost:8888/CakeMedical/assignments/edit/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:26:30 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /chambers
+Referer URL: http://localhost:8888/CakeMedical/assignments/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:26:41 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments/add
+Referer URL: http://localhost:8888/CakeMedical/chambers
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:28:31 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments/add
+Referer URL: http://localhost:8888/CakeMedical/chambers
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:31:17 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments/add
+Referer URL: http://localhost:8888/CakeMedical/chambers
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:32:40 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments/add
+Referer URL: http://localhost:8888/CakeMedical/assignments/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:32:45 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments
+Referer URL: http://localhost:8888/CakeMedical/assignments/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:32:48 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments/edit/1
+Referer URL: http://localhost:8888/CakeMedical/assignments
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:34:54 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments/edit/1
+Referer URL: http://localhost:8888/CakeMedical/assignments
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-17 23:35:22 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /assignments/edit/1
+Referer URL: http://localhost:8888/CakeMedical/assignments
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 04:17:58 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Referer URL: http://localhost:8888/CakeMedical/users/login
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 14:53:17 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Referer URL: http://localhost:8888/CakeMedical/users/login
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 14:55:12 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Referer URL: http://localhost:8888/CakeMedical/users/login
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 14:55:14 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /users/login
+Referer URL: http://localhost:8888/CakeMedical/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 14:55:32 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Referer URL: http://localhost:8888/CakeMedical/users/login
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 15:09:50 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /admin/levels
+Referer URL: http://localhost:8888/CakeMedical/levels
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 15:10:02 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 15:10:11 Notice: Notice (8): Undefined index: verified in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 239]
+Request URL: /
+Referer URL: http://localhost:8888/CakeMedical/users/login
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 239
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 15:22:31 Notice: Notice (8): Undefined variable: loguser in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 245]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 245
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 15:22:31 Notice: Notice (8): Undefined variable: loguser in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 256]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 256
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 15:22:31 Notice: Notice (8): Undefined variable: loguser in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 262]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 262
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 15:22:31 Notice: Notice (8): Undefined variable: loguser in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 271]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 271
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 15:22:31 Notice: Notice (8): Undefined variable: loguser in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 296]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 296
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-18 15:22:31 Notice: Notice (8): Undefined variable: loguser in [C:\Program Files (x86)\Ampps\www\CakeMedical\src\Template\Layout\default.ctp, line 307]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Layout\default.ctp, line 307
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+

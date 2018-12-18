@@ -385,3 +385,152 @@
 2018-11-13 19:12:56 Debug: duration=0 rows=0 COMMIT
 2018-11-13 19:12:57 Debug: duration=1 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
 2018-11-13 19:12:57 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-17 20:35:13 Debug: duration=22 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-17 20:35:13 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 00:37:17 Debug: duration=13 rows=9 PRAGMA table_info("users")
+2018-12-18 00:37:17 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-12-18 00:37:17 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-12-18 00:40:30 Debug: duration=1 rows=9 PRAGMA table_info("users")
+2018-12-18 00:40:30 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-12-18 00:40:30 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-12-18 00:43:53 Debug: duration=1 rows=9 PRAGMA table_info("users")
+2018-12-18 00:43:53 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-12-18 00:43:53 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-12-18 00:46:31 Debug: duration=1 rows=9 PRAGMA table_info("users")
+2018-12-18 00:46:31 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-12-18 00:46:31 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-12-18 00:48:33 Debug: duration=1 rows=9 PRAGMA table_info("users")
+2018-12-18 00:48:33 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-12-18 00:48:33 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-12-18 00:51:24 Debug: duration=1 rows=9 PRAGMA table_info("users")
+2018-12-18 00:51:24 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-12-18 00:51:24 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-12-18 00:51:53 Debug: duration=0 rows=0 BEGIN
+2018-12-18 00:51:53 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.email = 'williamsarrazixvc@gmail.com' LIMIT 1
+2018-12-18 00:51:53 Debug: duration=0 rows=0 SELECT 1 AS "existing" FROM users Users WHERE Users.username = 'williammmm' LIMIT 1
+2018-12-18 00:51:53 Debug: duration=1 rows=1 INSERT INTO users (email, password, username, created, modified, type, uuid) VALUES ('williamsarrazixvc@gmail.com', '$2y$10$vSjqiIZmQa2eXFswq8xhwejDIW89ThvQJswCEehUTW2c4qCox/n/C', 'williammmm', '12/18/18, 12:51 AM', '12/18/18, 12:51 AM', 'admin', 'x')
+2018-12-18 00:51:53 Debug: duration=0 rows=0 COMMIT
+2018-12-18 00:57:42 Debug: duration=1 rows=9 PRAGMA table_info("users")
+2018-12-18 00:57:42 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-12-18 00:57:42 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-12-18 00:57:42 Debug: duration=0 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'williammmm' AND Users.active = 1) LIMIT 1
+2018-12-18 00:58:24 Debug: duration=1 rows=0 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'admin' AND Users.active = 1) LIMIT 1
+2018-12-18 00:58:33 Debug: duration=1 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 04:18:06 Debug: duration=1 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 04:18:06 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 04:18:21 Debug: duration=1 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 04:18:21 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 04:20:49 Debug: duration=1 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 04:20:49 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 04:20:59 Debug: duration=1 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 04:20:59 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 04:21:15 Debug: duration=1 rows=9 PRAGMA table_info("users")
+2018-12-18 04:21:15 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-12-18 04:21:15 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-12-18 04:21:15 Debug: duration=0 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 04:21:16 Debug: duration=1 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 04:21:16 Debug: duration=1 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 04:21:30 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-12-18 04:21:31 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 2 LIMIT 1
+2018-12-18 04:21:38 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 4 LIMIT 1
+2018-12-18 14:55:39 Debug: duration=4 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 14:55:39 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 14:55:56 Debug: duration=3 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-12-18 14:55:57 Debug: duration=4 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 1 LIMIT 1
+2018-12-18 14:58:05 Debug: duration=4 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 14:58:05 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 14:58:48 Debug: duration=4 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 14:58:48 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:00:26 Debug: duration=1 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:00:26 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:08:57 Debug: duration=1 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:08:57 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:09:03 Debug: duration=1 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:09:03 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:09:18 Debug: duration=2 rows=9 PRAGMA table_info("users")
+2018-12-18 15:09:18 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-12-18 15:09:18 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-12-18 15:09:18 Debug: duration=0 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 15:09:25 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 4 LIMIT 1
+2018-12-18 15:09:28 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 4 LIMIT 1
+2018-12-18 15:09:28 Debug: duration=1 rows=4 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:09:28 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:09:37 Debug: duration=0 rows=0 BEGIN
+2018-12-18 15:09:37 Debug: duration=12 rows=1 INSERT INTO levels (number, created, modified) VALUES (5, '12/18/18, 3:09 PM', '12/18/18, 3:09 PM')
+2018-12-18 15:09:37 Debug: duration=0 rows=0 COMMIT
+2018-12-18 15:09:38 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:09:38 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:09:40 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:09:40 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:10:15 Debug: duration=2 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:10:15 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:16:18 Debug: duration=1 rows=5 PRAGMA table_info("levels")
+2018-12-18 15:16:18 Debug: duration=0 rows=0 PRAGMA index_list("levels")
+2018-12-18 15:16:18 Debug: duration=0 rows=0 PRAGMA foreign_key_list("levels")
+2018-12-18 15:16:18 Debug: duration=0 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 3 LIMIT 1
+2018-12-18 15:16:44 Debug: duration=2 rows=9 PRAGMA table_info("users")
+2018-12-18 15:16:44 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-12-18 15:16:44 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-12-18 15:16:44 Debug: duration=0 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 15:16:48 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 3 LIMIT 1
+2018-12-18 15:16:48 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:16:48 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:16:50 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:16:50 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:26:19 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:26:19 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:26:34 Debug: duration=1 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 15:26:38 Debug: duration=0 rows=0 BEGIN
+2018-12-18 15:26:38 Debug: duration=1 rows=1 INSERT INTO levels (number, created, modified) VALUES (6, '12/18/18, 3:26 PM', '12/18/18, 3:26 PM')
+2018-12-18 15:26:38 Debug: duration=0 rows=0 COMMIT
+2018-12-18 15:26:38 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:26:38 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:26:41 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:26:41 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:26:53 Debug: duration=1 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 15:27:05 Debug: duration=1 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE Users.id = 2 LIMIT 1
+2018-12-18 15:27:05 Debug: duration=0 rows=0 BEGIN
+2018-12-18 15:27:05 Debug: duration=1 rows=1 UPDATE users SET password = '$2y$10$DrXBMXKl8eGk0cjVN6n1VukJfHurmvt6fjCwNL5md3gt386QkWWom' , modified = '12/18/18, 3:27 PM' WHERE id = 2
+2018-12-18 15:27:05 Debug: duration=0 rows=0 COMMIT
+2018-12-18 15:27:13 Debug: duration=1 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 15:27:20 Debug: duration=1 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 15:27:38 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:27:38 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:28:08 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:28:08 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:28:18 Debug: duration=3 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 15:28:29 Debug: duration=1 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE Users.id = 2 LIMIT 1
+2018-12-18 15:28:29 Debug: duration=0 rows=0 BEGIN
+2018-12-18 15:28:29 Debug: duration=1 rows=1 UPDATE users SET password = '$2y$10$BRil3U2w6GMq7l/35xJ.NeLP.mhJ7e8Ms3wUyHqBiT4LN0ZdF/4HC' , modified = '12/18/18, 3:28 PM' WHERE id = 2
+2018-12-18 15:28:29 Debug: duration=0 rows=0 COMMIT
+2018-12-18 15:31:26 Debug: duration=2 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:31:26 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:31:31 Debug: duration=2 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:31:31 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:31:44 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:31:44 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:33:21 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:33:21 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:33:29 Debug: duration=1 rows=9 PRAGMA table_info("users")
+2018-12-18 15:33:29 Debug: duration=0 rows=0 PRAGMA index_list("users")
+2018-12-18 15:33:29 Debug: duration=0 rows=0 PRAGMA foreign_key_list("users")
+2018-12-18 15:33:29 Debug: duration=0 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 15:33:34 Debug: duration=2 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 3 LIMIT 1
+2018-12-18 15:34:16 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:34:16 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:34:25 Debug: duration=1 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 15:34:31 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 4 LIMIT 1
+2018-12-18 15:34:36 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 4 LIMIT 1
+2018-12-18 15:34:36 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:34:36 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:34:38 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:34:38 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:34:52 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:34:52 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:35:01 Debug: duration=1 rows=1 SELECT Users.id AS "Users__id", Users.email AS "Users__email", Users.password AS "Users__password", Users.username AS "Users__username", Users.created AS "Users__created", Users.modified AS "Users__modified", Users.type AS "Users__type", Users.uuid AS "Users__uuid", Users.active AS "Users__active" FROM users Users WHERE (Users.username = 'Admin' AND Users.active = 1) LIMIT 1
+2018-12-18 15:35:05 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 4 LIMIT 1
+2018-12-18 15:35:08 Debug: duration=1 rows=1 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels WHERE Levels.id = 4 LIMIT 1
+2018-12-18 15:35:08 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:35:08 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels
+2018-12-18 15:35:11 Debug: duration=1 rows=5 SELECT Levels.id AS "Levels__id", Levels.number AS "Levels__number", Levels.created AS "Levels__created", Levels.modified AS "Levels__modified", Levels.user_id AS "Levels__user_id" FROM levels Levels LIMIT 5 OFFSET 0
+2018-12-18 15:35:11 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS "count" FROM levels Levels

@@ -73,6 +73,40 @@
     <br />
     <br />
     
+    <h4>Intérêt du site Web</h4>
+    
+    <p>
+        Objectifs du site : <br />
+        L'application sert à la gestion de base (puisqu'il s'agit d'un prototype) de centres médicaux.  On peut y faire la gestion des centres, c'est-à-dire
+        qu'on peut gérer les patients, les affectations, les départements, les adresses, les centres, etc. Pour l'entreprise, elle sert à pouvoir entrer des 
+        données importantes de façon rapide dans une base de données et d'utiliser ces données, par la suite, pour offrir des services aux patients.
+         <br />
+          <br />
+        Public cible : <br />
+        L'application à comme plus grand public cible les employés des centres médicaux.  Elle leur sert à accomplir surtout des tâches de gestion en rapport avec 
+        les clients et leurs affectations.  Il est surtout utilisé par les secrétaires et les administrateurs.  Toutefois, il est également possible pour les visiteurs 
+        d'accéder au site, mais ils ne pourront rien ajouter comme données et seulement voir des données qui ne sont pas privées.  L'application est quand même facile 
+        d'utilisation, mais reste quand même un peu complexe puisqu'il s'agit aussi de traiter de la gestion d'un grand centre complexe.
+    </p>
+    
+    <br />
+    <br />
+    
+    <h4>Comptes pour les tests</h4>
+    
+    <p>
+   
+        Username : Sandrine Password : 1234 (Secrétaire confirmée)
+        <br />
+        Username : Admin Password : admin (Administrateur)
+        
+    </p>
+    
+    
+    
+    <br />
+    <br />
+    
     <h4>Lien vers Git Repository</h4>
     <a href="https://github.com/williamsarrazin018/web">Lien</a>
     
@@ -101,6 +135,16 @@
     
     <br />
     <br />
+    
+    <h4>Altérations au fonctionnement pour le TP3</h4>
+    
+    <p>    
+       Malgré mes efforts, j'ai été incapable de faire fonctionner la fonction EDIT de mon interface monopage (levels).  Toutefois, mon code est là, mais je pense qu'il s'ahit d'une erreur que j,ai fait pendant l'implantation.
+    </p>
+    
+    <br />
+    <br />
+    
     <h4>Étapes d'utilisation typique</h4>
     
     <p>
@@ -123,6 +167,25 @@
            modifier un département sur le champs département.  Pour tester l'interface Admin avec le préfixe, il suffit de cliquer dans la barre de menu en haut sur Interface
             Admin.  On a donc accès aux actions du controller Levels.  Pour le PDF, il suffirait de cliquer dans adresses/index sur (pdf).  On sera donc amener
             à /adresses/view/X.pdf.  Techniquement, cela devrait commencer un téléchargement avec le plugin cakePdf, mais il semble y avoir un problème avec mon plugin.
+            <br />
+        POUR TP3 :
+        <br />
+        Pour tester les listes liées, on peut se connecter en tant qu'Admin (Username : Admin, Password : admin), puis on va dans l'action add du controleur 
+        des affectations (Assignments).  Les listes sont en rapport avec les levels.
+         <br />
+          <br />
+          Pour tester l'interface monopage modifiées pour AngularJS, on va dans l'index du controleur des étages (Levels), soit, Levels Managment dans le menu. 
+          À partir de cette page, on se connecte encore en tant qu'admin (User : Admin, Pwd : admin), puis on peut ajouter ou modifier par la suite les étages.
+           <br />
+            <br />
+          Pour tester le Captcha et la modification du mot de passe, on reste dans l,interface monopage.  On commence par se connecter avec le bouton Login et les
+           informations du compte Admin données précédement sans oublier de cocher la vérification Captcha.  Ensuite, pour modifier le mot de passe, on reclique sur le même bouton qui permet soit de se déconnecter ou de changer 
+           le mot de passe.  On peut  donc entrer le nouveau mot de passe dans le champs texte et valider.
+            <br />
+             <br />
+          Pour ce qui est de l'ajout de fichier en glissant l'images dans le index de Files, il suffit de se conencter avec les infos du compte Admin pour tester. 
+          Puis, de glisser un image sur la page index.  L'image sera donc ajoutée dans l,index et dans la base de données de l'application.
+        
     </p>
     
     

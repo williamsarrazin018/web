@@ -38,7 +38,7 @@ class Application extends BaseApplication
         
         // Call parent to load bootstrap from files.
         parent::bootstrap();
-          
+          $this->addPlugin('ADmad/JwtAuth');
         $this->addPlugin('CakePdf', ['bootstrap' => true]);
 
         $this->addPlugin('CakePdf', ['bootstrap' => true]);

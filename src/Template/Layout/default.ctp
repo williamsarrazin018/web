@@ -1,67 +1,45 @@
 <?php
 
-/**
- * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- * @link          https://cakephp.org CakePHP(tm) Project
- * @since         0.10.0
- * @license       https://opensource.org/licenses/mit-license.php MIT License
- */
 
-//Bootstrap et jquery
-echo $this->Html->css(['https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', 'Customers/basic.css']);
-echo $this->Html->script([
-    'https://code.jquery.com/jquery-3.3.1.slim.min.js',
-    'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
-    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'
-]);
-
-$loguser = $this->request->getSession()->read('Auth.User');
-
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'Medical centers managment';
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
     <?= $this->Html->charset() ?>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
         <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
-        </title>
+    </title>
     <?= $this->Html->meta('icon') ?>
 
     <?php
-        echo $this->Html->css([
-            'base.css',
-            'style.css',
-            'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
-            'Levels/basic.css',
-            'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'
-        ]);
+    echo $this->Html->css([
+        'base.css',
+        'style.css',
+        'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css',
+        'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
+        'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
+        'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'
+    ]);
     ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?php
+    $loguser = $this->request->getSession()->read('Auth.User');
     echo $this->Html->script([
         'https://code.jquery.com/jquery-1.12.4.js',
         'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
+        'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js',
         'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
     ], ['block' => 'scriptLibraries']
     );
     ?>
-     
-    </head>
-    <body>
-    <nav class="navbar navbar-expand-lg navbar-cyan bg-dark" style="border-radius: 0; margin-bottom: 0;">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-cyan bg-dark" style="border-radius: 0; margin-bottom: 0;">
         <a class="navbar-brand" href="#"><?= $this->fetch('title') ?></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -165,14 +143,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </ul>
             
     </nav>
-    <?= $this->Flash->render() ?>
-        <div class="container clearfix">
-        <?= $this->fetch('content') ?>
-        </div>
-        <footer>
-        </footer>
-        <?= $this->fetch('scriptLibraries') ?>
-        <?= $this->fetch('script'); ?>
-        <?= $this->fetch('scriptBottom') ?> 
-    </body>
+<?= $this->Flash->render() ?>
+<div class="container clearfix">
+    <?= $this->fetch('content') ?>
+</div>
+<footer>
+</footer>
+<?= $this->fetch('scriptLibraries') ?>
+<?= $this->fetch('script'); ?>
+<?= $this->fetch('scriptBottom') ?>
+</body>
 </html>

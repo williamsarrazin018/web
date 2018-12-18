@@ -12,11 +12,11 @@
  * @since         0.10.0
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'levels managment';
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
     <head>
         <?= $this->Html->charset() ?>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,9 +29,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?php
         echo $this->Html->css([
             'base.css',
-            //'style.css',
+            'style.css',
             'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
-            'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'
+            'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css',
+            'https://fonts.googleapis.com/icon?family=Material+Icons',
+            'materialize/css/materialize.min.css'
         ]);
         ?>
 
@@ -41,43 +43,53 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         echo $this->Html->script([
             'https://code.jquery.com/jquery-1.12.4.js',
             'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
-             'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js',
-            'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
-                ], ['block' => 'scriptLibraries']
+            'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js',
+            'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit',
+            'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js',
+            'materialize.min'
+        ], ['block' => 'scriptLibraries']
         );
         ?>
     </head>
 </head>
 <body>
-    <nav class="top-bar expanded" data-topbar role="navigation">
-        <ul class="title-area large-3 medium-4 columns">
-            <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
+<nav class="top-bar expanded" data-topbar role="navigation">
+    <ul class="title-area large-3 medium-4 columns">
+        <li class="name">
+            <h1><a href=""><?= $this->fetch('title') ?></a></h1>
+        </li>
+    </ul>
+    <div class="top-bar-section">
+        <ul class="right">
+            <li><?=
+                $this->Html->link('Section Admin PHP', [
+                    'prefix' => 'admin',
+                    'controller' => 'Levels',
+                    'action' => 'index'
+                ]);
+                ?>
+                
+            </li>
+            <li><?=
+                $this->Html->link('Home', [
+                    'prefix' => null,
+                    'controller' => 'Patients',
+                    'action' => 'index'
+                ]);
+                ?>
+                
             </li>
         </ul>
-        <div class="top-bar-section">
-            <ul class="right">
-                <li><?=
-                    $this->Html->link('Section Admin en PHP', [
-                        'prefix' => 'admin',
-                        'controller' => 'Levels',
-                        'action' => 'index'
-                    ]);
-                    ?>
-                </li>
-                <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
-            </ul>
-        </div>
-    </nav>
-    <?= $this->Flash->render() ?>
-    <div class="container clearfix">
-        <?= $this->fetch('content') ?>
     </div>
-    <footer>
-    </footer>
-    <?= $this->fetch('scriptLibraries') ?>
-    <?= $this->fetch('script'); ?>
-    <?= $this->fetch('scriptBottom') ?> 
+</nav>
+<?= $this->Flash->render() ?>
+<div class="container clearfix">
+    <?= $this->fetch('content') ?>
+</div>
+<footer>
+</footer>
+<?= $this->fetch('scriptLibraries') ?>
+<?= $this->fetch('script'); ?>
+<?= $this->fetch('scriptBottom') ?>
 </body>
 </html>

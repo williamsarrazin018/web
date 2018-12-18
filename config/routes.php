@@ -47,15 +47,20 @@ Router::extensions(['json', 'xml']);
  */
 Router::defaultRouteClass(DashedRoute::class);
 
+
 Router::prefix('api', function ($routes) {
-    $routes->extensions(['json', 'xml', 'pdf']);
-    $routes->resources('Adresses');
+    $routes->extensions(['json', 'xml']);
     $routes->resources('Levels');
+    $routes->resources('Users');
+    Router::connect('/api/users/register', ['controller' => 'Users', 'action' => 'add', 'prefix' => 'api']);
+    $routes->fallbacks('InflectedRoute');
 });
+
 
 Router::prefix('Admin', function ($routes) {
     $routes->fallbacks('InflectedRoute');
 });
+
 
 Router::scope('/', function (RouteBuilder $routes) {
 
